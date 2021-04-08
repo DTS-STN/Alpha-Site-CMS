@@ -1,0 +1,63 @@
+repositories:
+  - name: dts
+    url: https://helm.dts-stn.com
+  - name: bitnami
+    url: https://charts.bitnami.com/bitnami
+
+{{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
+context: EsDCDTSRG-K8S
+{{ else }}
+context: EsDCDTSDevRG-K8S
+{{ end }}
+
+environments:
+  dev:
+  prod-blue:
+  prod-green:
+  omar-strapi-dev:
+
+helmDefaults:
+  timeout: 900
+  wait: true
+
+
+releases:
+  - name: cms-bakeoff-strapi-api-{{ .Environment.Name }}
+    chart: ../helm/charts/strapi-backend
+    version: 0.0.1
+    values:
+      - overrides/strapi-backend.yaml.gotmpl
+    labels:
+      category: dts
+      app: cms-bakeoff-strapi-{{ .Environment.Name }}
+      tier: server
+    namespace: cms-bakeoff-strapi-api-{{ .Environment.Name }}
+    installed: true
+    wait: true
+    force: false
+  - name: cms-bakeoff-strapi-admin-{{ .Environment.Name }}
+    chart: ../helm/charts/strapi-admin
+    values:
+      - overrides/strapi-admin.yaml.gotmpl
+    labels:
+      category: dts
+      app: cms-bakeoff-strapi-{{ .Environment.Name }}
+      tier: server
+    installed: true
+    wait: true
+    force: false
+  - name: cms-bakeoff-strapi-pg-{{ .Environment.Name }}
+    chart: bitnami/postgresql
+    namespace: cms-bakeoff-strapi-api-{{ .Environment.Name }}
+    values:
+      - overrides/strapi-psql.yaml.gotmpl
+    labels:
+      category: dts
+      app: cms-bakeoff-strapi-{{ .Environment.Name }}
+      tier: database
+    installed: true
+    wait: false
+    force: false
+
+
+

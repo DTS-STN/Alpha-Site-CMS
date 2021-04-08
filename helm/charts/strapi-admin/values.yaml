@@ -1,0 +1,42 @@
+# Default values for strapi
+replicaCount: 1
+
+strapiAdminPort:
+  enabled: true
+  name: http
+  port: 80
+  protocol: TCP
+
+image:
+  repository: mtscontainers.axurecr.io/ebf-strapi-admin
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
+ingress:
+  enabled: true
+
+resources: {}
+
+nodeSeletor: {}
+
+tolerations: []
+
+affinity: {}
+
+livenessProbe:
+  enabled: false
+  delay: 30
+  path: /
+
+readinessProbe:
+  enabled: false
+  delay: 30
+  path: /
+
+nameOverride: ""
+fullnameOverride: ""

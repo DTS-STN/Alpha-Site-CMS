@@ -1,0 +1,54 @@
+image:
+  repository: mtscontainers.azurecr.io/cms-bakeoff-strapi-api
+{{ if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") (eq .Environment.Name "dev") }}
+  tag: "{{ requiredEnv "DOCKER_TAG" }}"
+{{ else }}
+  tag: latest
+{{ end }}
+  pullPolicy: Always
+
+ingress:
+  enabled: true
+  hosts:
+  {{ if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
+    - cms-bakeoff-strapi-api.{{ requiredEnv "BASE_DOMAIN" }}
+    - cms-bakeoff-strapi-api.{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN" }}
+  {{ else }}
+    - cms-bakeoff-strapi-api-{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN_DEV" }}
+  {{ end }}
+
+resources:
+  requests:
+    cpu: 200m
+    memory: 512Mi
+
+livenessProbe:
+  enabled: false
+  delay: 60
+  path: {{ requiredEnv "STRAPI_API_BACKEND_URL" }}
+
+readinessProbe:
+  enabled: false
+  delay: 30
+  path: {{ requiredEnv "STRAPI_API_BACKEND_URL" }}
+
+port: 80
+
+extraEnv:
+  - name: DATABASE_CLIENT
+    value: "postgres"
+  - name: DATABASE_HOST
+    value: {{ requiredEnv "STRAPI_DATABASE_HOST" | quote }}
+  - name: DATABASE_PORT
+    value: {{ requiredEnv "STRAPI_DATABASE_PORT" | quote }}
+  - name: DATABASE_NAME
+    value: {{ requiredEnv "STRAPI_DATABASE_NAME" | quote }}
+  - name: DATABASE_USERNAME
+    value: {{ requiredEnv "STRAPI_DATABASE_USERNAME" | quote }}
+  - name: DATABASE_PASSWORD
+    value: {{ requiredEnv "STRAPI_DATABASE_PASSWORD" | quote }}
+  - name: STRAPI_ADMIN_JWT_SECRET
+    value: {{ requiredEnv "STRAPI_ADMIN_JWT_SECRET" | quote }}
+  - name: STRAPI_API_BACKEND_URL
+    value: {{ requiredEnv "STRAPI_API_BACKEND_URL" | quote }}
+

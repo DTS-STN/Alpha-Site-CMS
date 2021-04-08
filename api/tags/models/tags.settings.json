@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tags",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Tag_EN": {
+      "type": "string"
+    },
+    "Tag_FR": {
+      "type": "string"
+    },
+    "TagPreviewImage_EN": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "TagDescription_EN": {
+      "type": "text"
+    },
+    "posts": {
+      "collection": "posts",
+      "via": "tags",
+      "dominant": true
+    },
+    "TagID_EN": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "TagID_FR": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "TagPreviewImage_FR": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "TagDescription_FR": {
+      "type": "text"
+    }
+  }
+}

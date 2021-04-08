@@ -1,0 +1,31 @@
+image:
+  tag: 11.9.0
+persistence:
+    enabled: true
+    {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
+    storageClass: dtsstorageclass
+    {{- else }}
+    storageClass: dtsstorageclass-dev
+    {{- end }}
+global:
+    {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
+    storageClass: dtsstorageclass
+    {{- else }}
+    storageClass: dtsstorageclass-dev
+    {{- end }}
+postgresqlUsername: "{{ requiredEnv "STRAPI_DATABASE_USERNAME" }}"
+postgresqlPassword: "{{ requiredEnv "STRAPI_DATABASE_PASSWORD" }}"
+postgresqlDatabase: "{{ requiredEnv "STRAPI_DATABASE_NAME" }}"
+resources:
+{{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
+    requests:
+      cpu: "1"
+      memory: 1Gi
+{{ else }}
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 200m
+      memory: 512Mi
+{{ end }}

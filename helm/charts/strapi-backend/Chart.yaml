@@ -1,0 +1,10 @@
+name: strapi-backend
+home: https://github.com/DTS-STN/ExperimentalBenefitsFinderCMS
+apiVersion: v1
+version: 0.0.1
+description: strapi api chart for experimental benefits finder
+maintainers:
+  - name: omarnasr
+    email: omar.nasr@hrsdc-rhdcc.gc.ca
+  - name: ericdube
+    email: eric.dube@hrsdc-rhdcc.gc.ca
