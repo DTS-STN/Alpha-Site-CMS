@@ -14,6 +14,7 @@ RUN npm install && npm run build
 FROM nginx
 
 COPY --from=0 build /usr/share/nginx/html
+COPY ./nginx/conf.d /etc/nginx/conf.d
 
 
 
