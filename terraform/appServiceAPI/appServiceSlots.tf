@@ -27,7 +27,7 @@ resource "azurerm_app_service_slot" "app-service-primary-staging" {
         "SLOT_NAME"                       = "default"
         "DATABASE_HOST" = "alphasite-pgsql-server-dev.postgres.database.azure.com"
         "DATABASE_PORT" = 5432
-        "DATASBASE_USERNAME" = var.database_user_dev
+        "DATABASE_USERNAME" = var.database_user_dev
         "DATABASE_PASSWORD" = var.database_pass_dev
         "DATABASE_SSL" = true
         "STRAPI_API_BACKEND_URL" = "alphasite2.dts-stn.com"
@@ -39,6 +39,7 @@ resource "azurerm_app_service_slot" "app-service-primary-staging" {
         "STORAGE_ACCOUNT_URL" = var.storage_account_url
         "STORAGE_ACCOUNT_CONTAINER" = var.application_name
         "STRAPI_ADMIN_JWT_SECRET" = var.alphasite-strapi-admin-jwt-secret-dev
+        "WEBSITES_PORT" = 1337
     }
 
 }
@@ -72,7 +73,7 @@ resource "azurerm_app_service_slot" "app-service-secondary-staging" {
         "SLOT_NAME"                       = "default"
         "DATABASE_HOST" = "alphasite-pgsql-server-dev.postgres.database.azure.com"
         "DATABASE_PORT" = 5432
-        "DATASBASE_USERNAME" = var.database_user_dev
+        "DATABASE_USERNAME" = var.database_user_dev
         "DATABASE_PASSWORD" = var.database_pass_dev
         "DATABASE_SSL" = true
         "STRAPI_API_BACKEND_URL" = "alphasite2.dts-stn.com"
@@ -84,7 +85,7 @@ resource "azurerm_app_service_slot" "app-service-secondary-staging" {
         "STORAGE_ACCOUNT_URL" = var.storage_account_url
         "STORAGE_ACCOUNT_CONTAINER" = var.application_name
         "STRAPI_ADMIN_JWT_SECRET" = var.alphasite-strapi-admin-jwt-secret-dev
-
+        "WEBSITES_PORT" = 1337
     }
 
 }
