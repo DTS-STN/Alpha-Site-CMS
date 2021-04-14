@@ -62,6 +62,7 @@ resource "azurerm_app_service" "app-service-primary" {
     "SLOT_NAME" = "default"
     "DATABASE_HOST" = "alphasite-pgsql-server-dev.postgres.database.azure.com"
     "DATABASE_PORT" = 5432
+    "DATABASE_NAME" = var.database_name
     "DATABASE_USERNAME" = var.database_user_dev
     "DATABASE_PASSWORD" = var.database_pass_dev
     "DATABASE_SSL" = true
@@ -114,6 +115,7 @@ resource "azurerm_app_service" "app-service-secondary" {
     "SLOT_NAME"                       = "default"
     "DATABASE_HOST" = "alphasite-pgsql-server-dev.postgres.database.azure.com"
     "DATABASE_PORT" = 5432
+    "DATABASE_NAME" = var.database_name
     "DATABASE_USERNAME" = var.database_user_dev
     "DATABASE_PASSWORD" = var.database_pass_dev
     "DATABASE_SSL" = true
