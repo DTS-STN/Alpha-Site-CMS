@@ -115,3 +115,23 @@ license.txt
 exports
 .cache
 build
+
+############################
+# Terraform
+############################
+
+**/.terraform/*
+**/provider.tf
+**/.terraform.lock.hcl
+*.pfx
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+!example.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
