@@ -66,7 +66,7 @@ resource "azurerm_app_service" "app-service-primary" {
     "DATABASE_USERNAME" = var.database_user_dev
     "DATABASE_PASSWORD" = var.database_pass_dev
     "DATABASE_SSL" = true
-    "STRAPI_API_BACKEND_URL" = "alphasite2.dts-stn.com"
+    "STRAPI_API_BACKEND_URL" = "alphasite-api.dts-stn.com"
     "STRAPI_API_HOST" = "0.0.0.0" 
     "STRAPI_API_PORT" = 1337
     "STRAPI_STORAGE" = "azure"
@@ -119,7 +119,7 @@ resource "azurerm_app_service" "app-service-secondary" {
     "DATABASE_USERNAME" = var.database_user_dev
     "DATABASE_PASSWORD" = var.database_pass_dev
     "DATABASE_SSL" = true
-    "STRAPI_API_BACKEND_URL" = "alphasite2.dts-stn.com"
+    "STRAPI_API_BACKEND_URL" = "alphasite-api.dts-stn.com"
     "STRAPI_API_HOST" = "0.0.0.0" 
     "STRAPI_API_PORT" = 1337
     "STRAPI_STORAGE" = "azure"
