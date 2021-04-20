@@ -1,5 +1,5 @@
 resource "azurerm_app_service_slot" "app-service-primary-staging" {
-    name                    = "staging-api"
+    name                    = "staging-admin"
     app_service_name        = azurerm_app_service.app-service-primary.name
     location                = var.location
     resource_group_name     = var.resource_group_name
@@ -10,7 +10,7 @@ resource "azurerm_app_service_slot" "app-service-primary-staging" {
     site_config {
         always_on = "true"
 
-        linux_fx_version  = "DOCKER|${var.staging_docker_registry}/${var.staging_docker_container_api}"
+        linux_fx_version  = "DOCKER|${var.staging_docker_registry}/${var.staging_docker_container_admin}"
 
         health_check_path = var.healthcheck_page # health check required in order that internal app service plan loadbalancer do not loadbalance on instance down
     }
@@ -25,28 +25,12 @@ resource "azurerm_app_service_slot" "app-service-primary-staging" {
     "DOCKER_REGISTRY_SERVER_USERNAME" = var.staging_docker_registry_username
     "DOCKER_REGISTRY_SERVER_PASSWORD" = var.staging_docker_registry_password
     "SLOT_NAME" = "default"
-    "DATABASE_HOST" = var.database_host_dev
-    "DATABASE_PORT" = var.database_port
-    "DATABASE_NAME" = var.database_name_dev
-    "DATABASE_USERNAME" = var.database_login_dev
-    "DATABASE_PASSWORD" = var.database_pass_dev
-    "DATABASE_SSL" = true
-    "STRAPI_API_BACKEND_URL" = var.api_url_dev
-    "STRAPI_API_HOST" = "0.0.0.0" 
-    "STRAPI_API_PORT" = var.api_port
-    "STRAPI_STORAGE" = "azure"
-    "STORAGE_ACCOUNT" = var.storage_account_name
-    "STORAGE_ACCOUNT_KEY" = var.storage_account_key
-    "STORAGE_ACCOUNT_URL" = var.storage_account_url
-    "STORAGE_ACCOUNT_CONTAINER" = var.application_name
-    "STRAPI_ADMIN_JWT_SECRET" = var.alphasite-strapi-admin-jwt-secret-dev
-    "WEBSITES_PORT" = var.api_port
     }
 
 }
 
 resource "azurerm_app_service_slot" "app-service-secondary-staging" {
-    name                    = "staging-api"
+    name                    = "staging-admin"
     app_service_name        = azurerm_app_service.app-service-secondary.name
     location                = var.backup_location
     resource_group_name     = var.resource_group_name
@@ -57,7 +41,7 @@ resource "azurerm_app_service_slot" "app-service-secondary-staging" {
     site_config {
         always_on = "true"
 
-        linux_fx_version  = "DOCKER|${var.staging_docker_registry}/${var.staging_docker_container_api}"
+        linux_fx_version  = "DOCKER|${var.staging_docker_registry}/${var.staging_docker_container_admin}"
 
         health_check_path = var.healthcheck_page # health check required in order that internal app service plan loadbalancer do not loadbalance on instance down
     }
@@ -72,22 +56,6 @@ resource "azurerm_app_service_slot" "app-service-secondary-staging" {
     "DOCKER_REGISTRY_SERVER_USERNAME" = var.staging_docker_registry_username
     "DOCKER_REGISTRY_SERVER_PASSWORD" = var.staging_docker_registry_password
     "SLOT_NAME" = "default"
-    "DATABASE_HOST" = var.database_host_dev
-    "DATABASE_PORT" = var.database_port
-    "DATABASE_NAME" = var.database_name_dev
-    "DATABASE_USERNAME" = var.database_login_dev
-    "DATABASE_PASSWORD" = var.database_pass_dev
-    "DATABASE_SSL" = true
-    "STRAPI_API_BACKEND_URL" = var.api_url_dev
-    "STRAPI_API_HOST" = "0.0.0.0" 
-    "STRAPI_API_PORT" = var.api_port
-    "STRAPI_STORAGE" = "azure"
-    "STORAGE_ACCOUNT" = var.storage_account_name
-    "STORAGE_ACCOUNT_KEY" = var.storage_account_key
-    "STORAGE_ACCOUNT_URL" = var.storage_account_url
-    "STORAGE_ACCOUNT_CONTAINER" = var.application_name
-    "STRAPI_ADMIN_JWT_SECRET" = var.alphasite-strapi-admin-jwt-secret-dev
-    "WEBSITES_PORT" = var.api_port
     }
 
 }
