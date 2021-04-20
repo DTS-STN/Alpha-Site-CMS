@@ -41,7 +41,7 @@ variable "staging_docker_registry" {
     type = string
 }
 
-variable "staging_docker_container" {
+variable "staging_docker_container_api" {
     type = string
 }
 
