@@ -1,28 +1,5 @@
-resource "random_password" "alphasite-db-pass-dev" {
-  length = 16
-  special = false
-}
-
-resource "azurerm_key_vault_secret" "alphasite-db-pass-dev" {
-  name     = "alphasite-db-pass-dev"
-  value    = random_password.alphasite-db-pass-dev.result
-  key_vault_id = var.keyvault_id_dev
-}
-
-resource "random_password" "alphasite-strapi-admin-jwt-secret-dev" {
-  length = 32
-  special = false
-}
-
-resource "azurerm_key_vault_secret" "alphasite-strapi-admin-jwt-secret-dev" {
-  name     = "alphasite-strapi-admin-jwt-secret-dev"
-  value    = random_password.alphasite-strapi-admin-jwt-secret-dev.result
-  key_vault_id = var.keyvault_id_dev
-}
-
-
 resource "azurerm_postgresql_server" "alphasite-pgsql-server-dev" {
-  name                = "alphasite-pgsql-server-dev"
+  name                = var.database_server_dev
   location            = var.location
   resource_group_name = var.resource_group_name
 
@@ -40,7 +17,7 @@ resource "azurerm_postgresql_server" "alphasite-pgsql-server-dev" {
 }
 
 resource "azurerm_postgresql_database" "alphasite-db-dev" {
-  name                = "alphasitedbdev"
+  name                = var.database_name_dev
   resource_group_name = var.resource_group_name
   server_name         = azurerm_postgresql_server.alphasite-pgsql-server-dev.name
   charset             = "UTF8"

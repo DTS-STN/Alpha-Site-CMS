@@ -85,6 +85,10 @@ variable "database_user_dev" {
     type = string
 }
 
+variable "database_login_dev" {
+    type = string
+}
+
 variable "database_pass_dev" {
     type = string
 }
