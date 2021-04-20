@@ -61,8 +61,24 @@ variable "keyvault_id_dev" {
     type = string
 }
 
-variable "database_name" {
+variable "database_name_dev" {
     type = string
+}
+
+variable "database_host_dev" {
+    type = string
+}
+
+variable "database_port" {
+    type = number
+}
+
+variable "api_url_dev" {
+    type = string
+}
+
+variable "api_port" {
+    type = number
 }
 
 variable "database_user_dev" {
