@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_page_elements_quotes",
+  "info": {
+    "name": "Quote",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Quote_EN": {
+      "type": "string",
+      "required": true
+    },
+    "Quote_FR": {
+      "type": "string",
+      "required": true
+    },
+    "Size": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "three_quarters",
+        "two_thirds",
+        "half",
+        "third",
+        "quarter"
+      ],
+      "required": true
+    }
+  }
+}

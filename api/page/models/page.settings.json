@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Components": {
+      "type": "dynamiczone",
+      "components": [
+        "page-elements.list",
+        "page-elements.quote",
+        "page-elements.text-call-to-action"
+      ]
+    },
+    "Title_EN": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Title_FR": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "EnableBanner": {
+      "type": "boolean",
+      "default": false
+    },
+    "BannerImage_EN": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "BannerImage_FR": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "PagePath_EN": {
+      "type": "string",
+      "required": true,
+      "regex": "^([a-z]*-[a-z]*)*$"
+    },
+    "PagePath_FR": {
+      "type": "string",
+      "required": true,
+      "regex": "^([a-z]*-[a-z]*)*$"
+    }
+  }
+}

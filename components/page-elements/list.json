@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_page_elements_lists",
+  "info": {
+    "name": "List",
+    "icon": "clipboard-list"
+  },
+  "options": {},
+  "attributes": {
+    "ListName_EN": {
+      "type": "string",
+      "required": true
+    },
+    "ListName_FR": {
+      "type": "string",
+      "required": true
+    },
+    "Size": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "three_quarters",
+        "two_thirds",
+        "half",
+        "third",
+        "quarter"
+      ],
+      "required": true,
+      "default": "full"
+    },
+    "ListItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sub-components.list-item"
+    }
+  }
+}

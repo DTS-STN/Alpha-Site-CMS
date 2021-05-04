@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sub_components_list_items",
+  "info": {
+    "name": "ListItem",
+    "icon": "circle"
+  },
+  "options": {},
+  "attributes": {
+    "ItemName_EN": {
+      "type": "string",
+      "required": true
+    },
+    "ItemName_FR": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
