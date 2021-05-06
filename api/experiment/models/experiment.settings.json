@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiments",
+  "info": {
+    "name": "Experiment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ExperimentTitle_EN": {
+      "type": "string",
+      "required": true
+    },
+    "ExperimentTitle_FR": {
+      "type": "string",
+      "required": true
+    },
+    "ExperimentDescription_EN": {
+      "type": "text"
+    },
+    "ExperimentDescription_FR": {
+      "type": "text"
+    },
+    "ExperimentLink_EN": {
+      "type": "string",
+      "regex": "(http(s)?:\\/\\/.)?(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)"
+    },
+    "ExperimentLink_FR": {
+      "type": "string",
+      "regex": "(http(s)?:\\/\\/.)?(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)"
+    },
+    "ExperimentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "coming_soon"
+      ],
+      "default": "coming_soon"
+    }
+  }
+}
