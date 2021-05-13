@@ -32,5 +32,7 @@
 "api_port":"changeme",
 "alphasite-strapi-admin-jwt-secret-dev" : "changeme",
 "location":"CanadaCentral",
-"backup_location":"CanadaEast"
+"backup_location":"CanadaEast",
+"primary_app_service_plan_id": "changeme",
+"secondary_app_service_plan_id":"changeme"
 }

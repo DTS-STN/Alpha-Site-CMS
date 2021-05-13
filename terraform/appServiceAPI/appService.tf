@@ -1,36 +1,9 @@
-# Create App Service Plans
-resource "azurerm_app_service_plan" "app-service-plan-primary" {
-  name                = "${var.application_name}-api-asp-${var.location}"
-  kind                = "Linux"
-  reserved            = true
-  location            = var.location
-  resource_group_name = var.resource_group_name
-
-  sku {
-    tier = "Standard"
-    size = "S1"
-  }
-}
-
-resource "azurerm_app_service_plan" "app-service-plan-secondary" {
-  name                = "${var.application_name}-api-asp-${var.backup_location}"
-  kind                = "Linux"
-  reserved            = true
-  location            = var.backup_location
-  resource_group_name = var.resource_group_name
-
-  sku {
-    tier = "Standard"
-    size = "S1"
-  }
-}
-
 # Create App Services
 resource "azurerm_app_service" "app-service-primary" {
   name                = "${var.application_name}-api-as-${var.location}"
   location            = var.location
   resource_group_name = var.resource_group_name
-  app_service_plan_id = azurerm_app_service_plan.app-service-plan-primary.id
+  app_service_plan_id = var.primary_app_service_plan_id
   https_only          = true
 
   site_config {
@@ -85,7 +58,7 @@ resource "azurerm_app_service" "app-service-secondary" {
   name                = "${var.application_name}-api-as-${var.backup_location}"
   location            = var.backup_location
   resource_group_name = var.resource_group_name
-  app_service_plan_id = azurerm_app_service_plan.app-service-plan-secondary.id
+  app_service_plan_id = var.secondary_app_service_plan_id
   https_only          = true
 
   site_config {

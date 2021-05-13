@@ -96,3 +96,9 @@ variable "api_url_dev" {
 variable "api_port" {
     type = number
 }
+variable "primary_app_service_plan_id" {
+    type = string
+}
+variable "secondary_app_service_plan_id" {
+    type = string
+}

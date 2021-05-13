@@ -1,9 +1,9 @@
-resource "azurerm_app_service_slot" "app-service-primary-staging" {
+resource "azurerm_app_service_slot" "app-service-api-primary-staging" {
     name                    = "staging-api"
     app_service_name        = azurerm_app_service.app-service-primary.name
     location                = var.location
     resource_group_name     = var.resource_group_name
-    app_service_plan_id     = azurerm_app_service_plan.app-service-plan-primary.id
+    app_service_plan_id     = var.primary_app_service_plan_id
     https_only              = true
     client_affinity_enabled = true
 
@@ -45,12 +45,12 @@ resource "azurerm_app_service_slot" "app-service-primary-staging" {
 
 }
 
-resource "azurerm_app_service_slot" "app-service-secondary-staging" {
+resource "azurerm_app_service_slot" "app-service-api-secondary-staging" {
     name                    = "staging-api"
     app_service_name        = azurerm_app_service.app-service-secondary.name
     location                = var.backup_location
     resource_group_name     = var.resource_group_name
-    app_service_plan_id     = azurerm_app_service_plan.app-service-plan-secondary.id
+    app_service_plan_id     = var.secondary_app_service_plan_id
     https_only              = true
     client_affinity_enabled = true
 
