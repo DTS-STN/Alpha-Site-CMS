@@ -37,7 +37,8 @@
       "type": "enumeration",
       "enum": [
         "active",
-        "coming_soon"
+        "coming_soon",
+        "alpha"
       ],
       "default": "coming_soon"
     }
