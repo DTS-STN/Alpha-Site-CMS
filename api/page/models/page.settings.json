@@ -16,7 +16,8 @@
       "components": [
         "page-elements.list",
         "page-elements.quote",
-        "page-elements.text-call-to-action"
+        "page-elements.text-call-to-action",
+        "page-elements.rich-text"
       ]
     },
     "Title_EN": {

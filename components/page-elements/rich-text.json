@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_page_elements_rich_text",
+  "info": {
+    "name": "RichText",
+    "icon": "quote-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Rich_Text_Content_EN" :{
+      "type": "richtext",
+      "required": true
+    },
+    "Rich_Text_Content_FR" :{
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
