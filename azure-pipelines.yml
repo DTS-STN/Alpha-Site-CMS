@@ -39,5 +39,5 @@ stages:
         azureSubscription: $(DEC_DEV_SUBSCRIPTION_ID)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
-        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(imageRepository):$(tag) --docker-registry-server-url %env.ACR_DOMAIN% --name alphasite-strapi-admin-as-CanadaCentral --resource-group ESdCDPSBDMAppService
-                       az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(imageRepository):$(tag) --docker-registry-server-url %env.ACR_DOMAIN% --name alphasite-strapi-admin-as-CanadaEast --resource-group ESdCDPSBDMAppService'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(imageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaCentral --resource-group ESdCDPSBDMAppService
+                       az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(imageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaEast --resource-group ESdCDPSBDMAppService'
