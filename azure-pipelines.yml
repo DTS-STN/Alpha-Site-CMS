@@ -32,7 +32,7 @@ stages:
         command: buildAndPush
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        containerRegistry: $(alphasite_acr_connection)
+        containerRegistry: 'alphasiteACRdev'
         tags: |
           $(tag)
     - task: AzureCLI@2
