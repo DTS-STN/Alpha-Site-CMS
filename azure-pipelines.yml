@@ -36,7 +36,7 @@ stages:
           $(tag)
     - task: AzureCLI@2
       inputs:
-        azureSubscription: $(DEC_DEV_SUBSCRIPTION)
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(imageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaCentral --resource-group ESdCDPSBDMAppService
