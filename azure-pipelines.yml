@@ -23,7 +23,7 @@ stages:
   displayName: Build and push stage
   jobs:
   - job: BuildAdmin
-    displayName: Build Admin and Push Admin
+    displayName: Build and Push Admin
     pool:
       vmImage: $(vmImageName)
     steps:
@@ -71,7 +71,7 @@ stages:
         azureSubscription: $(DECD_DEV_SUBSCRIPTION)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
-        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaEast--resource-group ESdCDPSBDMAppService'        
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaEast --resource-group ESdCDPSBDMAppService'        
 
   - job: DeployAPI
     displayName: Deploy API Container
