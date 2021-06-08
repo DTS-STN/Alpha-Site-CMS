@@ -10,8 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  imageRepository: 'dtsstnalphasitecms'
-  containerRegistry: 'alphasiteacrdev.azurecr.io'
+  imageRepository: 'strapi-admin-ADO'
   dockerfilePath: '**/Admin.Dockerfile'
   tag: $(Build.BuildId)
   # Agent VM image name
@@ -32,7 +31,7 @@ stages:
         command: buildAndPush
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        containerRegistry: 'alphasiteACRdev'
+        containerRegistry: $(ACR_NAME)
         tags: |
           $(tag)
     - task: AzureCLI@2
@@ -40,4 +39,5 @@ stages:
         azureSubscription: $(DECD_DEV_SUBSCRIPTION_ID)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
-        inlineScript: 'echo hello'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(imageRepository):$(tag) --docker-registry-server-url %env.ACR_DOMAIN% --name alphasite-strapi-admin-as-CanadaCentral --resource-group ESdCDPSBDMAppService
+                       az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(imageRepository):$(tag) --docker-registry-server-url %env.ACR_DOMAIN% --name alphasite-strapi-admin-as-CanadaEast --resource-group ESdCDPSBDMAppService'
