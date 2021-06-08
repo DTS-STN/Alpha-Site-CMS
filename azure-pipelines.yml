@@ -10,8 +10,8 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  adminImageRepository: 'strapi-admin-ADO'
-  apiImageRepository: 'strapi-api-ADO'
+  adminImageRepository: 'strapi-admin-ado'
+  apiImageRepository: 'strapi-api-ado'
   adminDockerfilePath: '**/Admin.Dockerfile'
   apiDockerfilePath: '**/Api.Dockerfile'
   tag: $(Build.BuildId)
