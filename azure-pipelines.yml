@@ -37,7 +37,7 @@ stages:
           $(tag)
     - task: AzureCLI@2
       inputs:
-        azureSubscription: 'EsDBDMDECDSub($(DECD_DEV_SUBSCRIPTION_ID))'
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION_ID)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: 'echo hello'
