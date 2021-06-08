@@ -13,6 +13,7 @@ variables:
   imageRepository: 'dtsstnalphasitecms'
   containerRegistry: 'alphasiteacrdev.azurecr.io'
   dockerfilePath: '**/Admin.Dockerfile'
+  tag: $(Build.BuildId)
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
