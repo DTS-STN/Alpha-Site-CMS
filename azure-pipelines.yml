@@ -10,7 +10,6 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: $(alphasite_acr_connection)
   imageRepository: 'dtsstnalphasitecms'
   containerRegistry: 'alphasiteacrdev.azurecr.io'
   dockerfilePath: '**/Admin.Dockerfile'
@@ -32,7 +31,7 @@ stages:
         command: buildAndPush
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        containerRegistry: $(dockerRegistryServiceConnection)
+        containerRegistry: $(alphasite_acr_connection)
         tags: |
           $(tag)
     - task: AzureCLI@2
