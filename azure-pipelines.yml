@@ -22,7 +22,7 @@ stages:
 - stage: Build
   displayName: Build and push stage
   jobs:
-  - job: Build
+  - job: BuildAdmin
     displayName: Build Admin
     pool:
       vmImage: $(vmImageName)
@@ -37,7 +37,7 @@ stages:
         tags: |
           $(tag)
   
-  - job: Build
+  - job: BuildApi
     displayName: Build API
     pool:
       vmImage: $(vmImageName)
@@ -55,7 +55,7 @@ stages:
 - stage: Deploy
   displayName: Deploy Containers to App Service
   jobs:  
-  - job: Deploy
+  - job: DeployAdmin
     displayName: Deploy Admin Container
     pool:
       vmImage: $(vmImageName)
@@ -67,7 +67,7 @@ stages:
         scriptLocation: 'inlineScript'
         inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaCentral --resource-group ESdCDPSBDMAppService
                        az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaEast --resource-group ESdCDPSBDMAppService'
-  - job: Deploy
+  - job: DeployAPI
     displayName: Deploy API Container
     pool:
       vmImage: $(vmImageName)
