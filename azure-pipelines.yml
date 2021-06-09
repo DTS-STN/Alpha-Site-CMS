@@ -14,7 +14,7 @@ variables:
   apiImageRepository: 'strapi-api'
   adminDockerfilePath: '**/Admin.Dockerfile'
   apiDockerfilePath: '**/Api.Dockerfile'
-  tag: 'ADO-$(Build.BuildNumber)'
+  tag: 'ADO-$(Build.BuildId)'
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
