@@ -65,41 +65,41 @@ stages:
         command: 'push'
         tags: |
           $(tag)
-# - stage: Deploy
-#   displayName: Deploy Containers to App Service
-#   jobs:  
-#   - job: DeployAdmin
-#     displayName: Deploy Admin Container
-#     pool:
-#       vmImage: $(vmImageName)
-#     steps:
-#     - task: AzureCLI@2
-#       inputs:
-#         azureSubscription: $(DECD_DEV_SUBSCRIPTION)
-#         scriptType: 'bash'
-#         scriptLocation: 'inlineScript'
-#         inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaCentral --resource-group ESdCDPSBDMAppService'
-#     - task: AzureCLI@2
-#       inputs:
-#         azureSubscription: $(DECD_DEV_SUBSCRIPTION)
-#         scriptType: 'bash'
-#         scriptLocation: 'inlineScript'
-#         inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaEast --resource-group ESdCDPSBDMAppService'        
+- stage: Deploy
+  displayName: Deploy Containers to App Service
+  jobs:  
+  - job: DeployAdmin
+    displayName: Deploy Admin Container
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaCentral --resource-group $(RESOURCE_GROUP)'
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaEast --resource-group $(RESOURCE_GROUP)'        
 
-#   - job: DeployAPI
-#     displayName: Deploy API Container
-#     pool:
-#       vmImage: $(vmImageName)
-#     steps:
-#     - task: AzureCLI@2
-#       inputs:
-#         azureSubscription: $(DECD_DEV_SUBSCRIPTION)
-#         scriptType: 'bash'
-#         scriptLocation: 'inlineScript'
-#         inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-api-as-CanadaCentral --resource-group ESdCDPSBDMAppService'
-#     - task: AzureCLI@2
-#       inputs:
-#         azureSubscription: $(DECD_DEV_SUBSCRIPTION)
-#         scriptType: 'bash'
-#         scriptLocation: 'inlineScript'
-#         inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-api-as-CanadaEast --resource-group ESdCDPSBDMAppService'
+  - job: DeployAPI
+    displayName: Deploy API Container
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-api-as-CanadaCentral --resource-group $(RESOURCE_GROUP)'
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-api-as-CanadaEast --resource-group $(RESOURCE_GROUP)'
