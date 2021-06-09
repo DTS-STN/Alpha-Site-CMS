@@ -33,7 +33,7 @@ stages:
         repository: $(adminImageRepository)
         command: 'build'
         Dockerfile: '**/Admin.Dockerfile'
-        arguments: '--build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
+        arguments: '--pull --build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
         tags: |
           $(tag)
     - task: Docker@2
@@ -55,7 +55,7 @@ stages:
         repository: $(apiImageRepository)
         command: 'build'
         Dockerfile: '**/Api.Dockerfile'
-        arguments: '--build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
+        arguments: '--pull --build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
         tags: |
           $(tag)
     - task: Docker@2
