@@ -1,0 +1,105 @@
+# Docker
+# Build and push an image to Azure Container Registry
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- master
+
+resources:
+- repo: self
+
+variables:
+  # Container registry service connection established during pipeline creation
+  adminImageRepository: 'strapi-admin'
+  apiImageRepository: 'strapi-api'
+  adminDockerfilePath: '**/Admin.Dockerfile'
+  apiDockerfilePath: '**/Api.Dockerfile'
+  tag: 'ADO-$(Build.BuildId)'
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  displayName: Build and push stage
+  jobs:
+  - job: BuildAdmin
+    displayName: Build and Push Admin
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: Docker@2
+      inputs:
+        containerRegistry: $(ACR_NAME)
+        repository: $(adminImageRepository)
+        command: 'build'
+        Dockerfile: '**/Admin.Dockerfile'
+        arguments: '--pull --build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
+        tags: |
+          $(tag)
+    - task: Docker@2
+      inputs:
+        containerRegistry: $(ACR_NAME)
+        repository: $(adminImageRepository)
+        command: 'push'
+        tags: |
+          $(tag)
+
+  - job: BuildApi
+    displayName: Build and Push API
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: Docker@2
+      inputs:
+        containerRegistry: $(ACR_NAME)
+        repository: $(apiImageRepository)
+        command: 'build'
+        Dockerfile: '**/Api.Dockerfile'
+        arguments: '--pull --build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
+        tags: |
+          $(tag)
+    - task: Docker@2
+      inputs:
+        containerRegistry: $(ACR_NAME)
+        repository: $(apiImageRepository)
+        command: 'push'
+        tags: |
+          $(tag)
+- stage: Deploy
+  displayName: Deploy Containers to App Service
+  jobs:  
+  - job: DeployAdmin
+    displayName: Deploy Admin Container
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaCentral --resource-group $(RESOURCE_GROUP)'
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaEast --resource-group $(RESOURCE_GROUP)'        
+
+  - job: DeployAPI
+    displayName: Deploy API Container
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-api-as-CanadaCentral --resource-group $(RESOURCE_GROUP)'
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-api-as-CanadaEast --resource-group $(RESOURCE_GROUP)'
