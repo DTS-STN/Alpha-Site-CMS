@@ -33,7 +33,7 @@ stages:
         repository: $(adminImageRepository)
         command: 'build'
         Dockerfile: '**/Admin.Dockerfile'
-        arguments: '--pull --build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
+        arguments: '--build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
         tags: |
           $(tag)
     - task: Docker@2
@@ -41,7 +41,9 @@ stages:
         containerRegistry: $(ACR_NAME)
         repository: $(adminImageRepository)
         command: 'push'
-    
+        tags: |
+          $(tag)
+
   - job: BuildApi
     displayName: Build and Push API
     pool:
@@ -53,7 +55,7 @@ stages:
         repository: $(apiImageRepository)
         command: 'build'
         Dockerfile: '**/Api.Dockerfile'
-        arguments: '--pull --build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
+        arguments: '--build-arg STRAPI_API_BACKEND_URL=$(STRAPI_API_BACKEND_URL)'
         tags: |
           $(tag)
     - task: Docker@2
@@ -61,6 +63,8 @@ stages:
         containerRegistry: $(ACR_NAME)
         repository: $(apiImageRepository)
         command: 'push'
+        tags: |
+          $(tag)
 # - stage: Deploy
 #   displayName: Deploy Containers to App Service
 #   jobs:  
