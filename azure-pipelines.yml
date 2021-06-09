@@ -14,8 +14,7 @@ variables:
   apiImageRepository: 'strapi-api'
   adminDockerfilePath: '**/Admin.Dockerfile'
   apiDockerfilePath: '**/Api.Dockerfile'
-  tag: 'ADO-$(Build.BuildId)'
-  # Agent VM image name
+  STRAPI_API_BACKEND_URL: 'https://alphasite-api.dts-stn.com'
   vmImageName: 'ubuntu-latest'
 
 stages:
