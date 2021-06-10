@@ -8,6 +8,8 @@ trigger:
 resources:
 - repo: self
 
+pr: none
+
 variables:
   # Container registry service connection established during pipeline creation
   adminImageRepository: 'strapi-admin'
