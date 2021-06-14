@@ -17,7 +17,8 @@
         "page-elements.list",
         "page-elements.quote",
         "page-elements.text-call-to-action",
-        "page-elements.rich-text"
+        "page-elements.rich-text",
+        "page-elements.call-to-action"
       ]
     },
     "Title_EN": {
@@ -52,15 +53,31 @@
       "plugin": "upload",
       "required": false
     },
+    "BannerTitle_EN": {
+      "type": "string",
+      "required": "false"
+    },
+    "BannerTitle_FR": {
+      "type": "string",
+      "required": "false"
+    },
+    "BannerText_EN": {
+      "type": "string",
+      "required": "false"
+    },
+    "BannerText_FR": {
+      "type": "string",
+      "required": "false"
+    },
     "PagePath_EN": {
       "type": "string",
       "required": true,
-      "regex": "^([a-z]*-[a-z]*)*$"
+      "regex": "^([a-z]-?)*$"
     },
     "PagePath_FR": {
       "type": "string",
       "required": true,
-      "regex": "^([a-z]*-[a-z]*)*$"
+      "regex": "^([a-z]-?)*$"
     }
   }
 }
