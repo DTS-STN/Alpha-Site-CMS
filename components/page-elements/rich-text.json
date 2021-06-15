@@ -7,6 +7,14 @@
   },
   "options": {},
   "attributes": {
+    "Title_EN": {
+      "type": "string",
+      "required": true
+    },
+    "Title_FR": {
+      "type": "string",
+      "required": true
+    },
     "Rich_Text_Content_EN" :{
       "type": "richtext",
       "required": true
