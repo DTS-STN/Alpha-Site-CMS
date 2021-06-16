@@ -22,6 +22,14 @@
     "Link_FR": {
       "type": "string",
       "required": true
+    },
+    "ButtonType": {
+      "type": "enumeration",
+      "enum": [
+        "secondary",
+        "tertiary",
+        "disabled"
+      ]
     }
   }
 }

@@ -7,20 +7,24 @@
   },
   "options": {},
   "attributes": {
-    "Title_EN": {
-      "type": "string",
-      "required": true
-    },
-    "Title_FR": {
-      "type": "string",
-      "required": true
-    },
     "Rich_Text_Content_EN" :{
       "type": "richtext",
       "required": true
     },
     "Rich_Text_Content_FR" :{
       "type": "richtext",
+      "required": true
+    },
+    "Size": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "three_quarters",
+        "two_thirds",
+        "half",
+        "third",
+        "quarter"
+      ],
       "required": true
     }
   }
