@@ -35,6 +35,14 @@
       ],
       "required": true
     },
+    "ButtonText_EN": {
+      "type": "string",
+      "required": true
+    },
+    "ButtonText_FR": {
+      "type": "string",
+      "required": true
+    },
     "Link_EN": {
       "type": "string",
       "required": true

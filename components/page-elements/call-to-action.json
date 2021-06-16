@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_page_elements_call_to_action_button",
+  "info": {
+    "name": "CallToActionButton",
+    "icon": "external-link-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Text_EN": {
+      "type": "string",
+      "required": true
+    },
+    "Text_FR": {
+      "type": "string",
+      "required": true
+    },
+    "Link_EN": {
+      "type": "string",
+      "required": true
+    },
+    "Link_FR": {
+      "type": "string",
+      "required": true
+    },
+    "ButtonType": {
+      "type": "enumeration",
+      "enum": [
+        "secondary",
+        "tertiary",
+        "disabled"
+      ]
+    }
+  }
+}

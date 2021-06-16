@@ -33,7 +33,7 @@ services:
     depends_on:
       - api
     ports:
-      - 3000:80
+      - 8000:80
     build:
       context: .
       dockerfile: Admin.Dockerfile
