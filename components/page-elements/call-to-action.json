@@ -26,6 +26,7 @@
     "ButtonType": {
       "type": "enumeration",
       "enum": [
+        "default",
         "secondary",
         "tertiary",
         "disabled"
