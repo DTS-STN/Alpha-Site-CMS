@@ -80,13 +80,7 @@ stages:
         azureSubscription: $(DECD_DEV_SUBSCRIPTION)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
-        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaCentral --resource-group $(RESOURCE_GROUP)'
-    - task: AzureCLI@2
-      inputs:
-        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
-        scriptType: 'bash'
-        scriptLocation: 'inlineScript'
-        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-admin-as-CanadaEast --resource-group $(RESOURCE_GROUP)'        
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name $(ADMIN_APPSERVICE)  --resource-group $(RESOURCE_GROUP)'
 
   - job: DeployAPI
     displayName: Deploy API Container
@@ -98,10 +92,4 @@ stages:
         azureSubscription: $(DECD_DEV_SUBSCRIPTION)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
-        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-api-as-CanadaCentral --resource-group $(RESOURCE_GROUP)'
-    - task: AzureCLI@2
-      inputs:
-        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
-        scriptType: 'bash'
-        scriptLocation: 'inlineScript'
-        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name alphasite-strapi-api-as-CanadaEast --resource-group $(RESOURCE_GROUP)'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name $(API_APPSERVICE) --resource-group $(RESOURCE_GROUP)'
