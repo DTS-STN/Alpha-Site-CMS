@@ -92,4 +92,4 @@ stages:
         azureSubscription: $(DECD_DEV_SUBSCRIPTION)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
-        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name $(API_APPSERVICE) --slot $SLOT_NAME) --resource-group $(RESOURCE_GROUP)'
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name $(API_APPSERVICE) --slot $(SLOT_NAME) --resource-group $(RESOURCE_GROUP)'
