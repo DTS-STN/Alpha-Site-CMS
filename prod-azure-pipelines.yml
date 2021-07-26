@@ -77,7 +77,7 @@ stages:
     steps:
     - task: AzureCLI@2
       inputs:
-        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        azureSubscription: $(DECD_PROD_SUBSCRIPTION)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(adminImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name $(ADMIN_APPSERVICE) --slot $(SLOT_NAME)  --resource-group $(RESOURCE_GROUP)'
@@ -89,7 +89,7 @@ stages:
     steps:
     - task: AzureCLI@2
       inputs:
-        azureSubscription: $(DECD_DEV_SUBSCRIPTION)
+        azureSubscription: $(DECD_PROD_SUBSCRIPTION)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(apiImageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name $(API_APPSERVICE) --slot $(SLOT_NAME) --resource-group $(RESOURCE_GROUP)'
