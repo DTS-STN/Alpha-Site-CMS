@@ -33,14 +33,14 @@
       "type": "string",
       "regex": "((\/.*)|())"
     },
-    "ExperimentStatus": {
+    "ExperimentStatus_EN": {
       "type": "enumeration",
       "enum": [
-        "active",
-        "coming_soon",
-        "alpha"
+        "upcoming_projects",
+        "current_projects",
+        "past_projects"
       ],
-      "default": "coming_soon"
+      "default": "upcoming_projects"
     }
   }
 }
