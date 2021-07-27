@@ -33,7 +33,7 @@
       "type": "string",
       "regex": "((\/.*)|())"
     },
-    "ExperimentStatus_EN": {
+    "ExperimentStatus": {
       "type": "enumeration",
       "enum": [
         "upcoming_projects",
