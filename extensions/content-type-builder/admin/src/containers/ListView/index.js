@@ -294,7 +294,7 @@ const ListView = () => {
         <div className="container-fluid">
           <div className="row">
             <LeftMenu wait={wait} />
-            <div role="main" className="col-md-9 content" style={{ paddingLeft: '30px', paddingRight: '30px' }}>
+            <main className="col-md-9 content" style={{ paddingLeft: '30px', paddingRight: '30px' }}>
               <Header {...headerProps} />
               <ListWrapper style={{ marginBottom: 80 }}>
                 <ListHeader actions={listActions} title={listTitle} />
@@ -310,7 +310,7 @@ const ListView = () => {
                   isMain
                 />
               </ListWrapper>
-            </div>
+            </main>
           </div>
         </div>
       </Wrapper>

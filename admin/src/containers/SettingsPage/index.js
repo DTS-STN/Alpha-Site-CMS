@@ -113,14 +113,14 @@ function SettingsPage() {
               </StyledLeftMenu>
             </MenuWrapper>
           </div>
-          <div className="col-md-9" role="main">
+          <main className="col-md-9">
             <Switch>
               {appRoutes}
               {globalSectionCreatedRoutes}
               {pluginsLinksRoutes}
               <Route path={`${settingsBaseURL}/:pluginId`} component={SettingDispatcher} />
             </Switch>
-          </div>
+          </main>
         </div>
         {headerSearchState.show && <HeaderSearch label={headerSearchState.label} />}
       </Wrapper>

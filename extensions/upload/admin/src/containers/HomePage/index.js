@@ -344,29 +344,31 @@ const HomePage = () => {
   ) : null;
 
   return (
-    <Container role="main">
-      <Header {...headerProps} isLoading={isLoading} />
-      {content}
-      <ModalStepper
-        initialFileToEdit={fileToEdit}
-        initialStep={modalInitialStep}
-        isOpen={isModalOpen}
-        onClosed={handleModalClose}
-        onRemoveFileFromDataToDelete={handleRemoveFileFromDataToDelete}
-        onToggle={handleClickToggleModal}
-        refetchData={fetchListData}
-      />
-      <PopUpWarning
-        isOpen={isPopupOpen}
-        isConfirmButtonLoading={showModalConfirmButtonLoading}
-        onConfirm={handleConfirmDeleteMedias}
-        onClosed={handleClosedModalDeleteAll}
-        toggleModal={handleClickTogglePopup}
-        popUpWarningType="danger"
-      />
-      <Padded bottom size="md" />
-      <Padded bottom size="md" />
-    </Container>
+    <main>
+      <Container>
+        <Header {...headerProps} isLoading={isLoading} />
+        {content}
+        <ModalStepper
+          initialFileToEdit={fileToEdit}
+          initialStep={modalInitialStep}
+          isOpen={isModalOpen}
+          onClosed={handleModalClose}
+          onRemoveFileFromDataToDelete={handleRemoveFileFromDataToDelete}
+          onToggle={handleClickToggleModal}
+          refetchData={fetchListData}
+        />
+        <PopUpWarning
+          isOpen={isPopupOpen}
+          isConfirmButtonLoading={showModalConfirmButtonLoading}
+          onConfirm={handleConfirmDeleteMedias}
+          onClosed={handleClosedModalDeleteAll}
+          toggleModal={handleClickTogglePopup}
+          popUpWarningType="danger"
+        />
+        <Padded bottom size="md" />
+        <Padded bottom size="md" />
+      </Container>
+    </main>
   );
 };
 

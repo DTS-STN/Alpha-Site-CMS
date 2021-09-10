@@ -60,7 +60,7 @@ const MarketPlacePage = () => {
   };
 
   return (
-    <div role="main">
+    <main>
       <PageTitle
         title={formatMessage({
           id: 'app.components.InstallPluginPage.helmet',
@@ -94,7 +94,7 @@ const MarketPlacePage = () => {
           })}
         </div>
       </Wrapper>
-    </div>
+    </main>
   );
 };
 

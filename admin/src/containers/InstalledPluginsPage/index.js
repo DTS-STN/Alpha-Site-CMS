@@ -38,7 +38,7 @@ const InstalledPluginsPage = () => {
   const rows = generateRows(plugins, onConfirm);
 
   return (
-    <div role="main">
+    <main>
       <PageTitle
         title={formatMessage({
           id: 'app.components.ListPluginsPage.helmet.title',
@@ -66,7 +66,7 @@ const InstalledPluginsPage = () => {
           />
         </ListWrapper>
       </ContainerFluid>
-    </div>
+    </main>
   );
 };
 
