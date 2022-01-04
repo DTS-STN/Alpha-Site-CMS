@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
   "info": {
-    "name": "Page",
+    "displayName": "Page",
+    "singularName": "page",
+    "pluralName": "pages",
     "description": ""
   },
   "options": {

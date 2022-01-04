@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "experiments",
   "info": {
-    "name": "Experiment",
+    "displayName": "Experiment",
+    "singularName": "experiment",
+    "pluralName": "experiments",
     "description": ""
   },
   "options": {
