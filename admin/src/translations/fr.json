@@ -182,5 +182,9 @@
   "notification.error": "Une erreur est survenue",
   "notification.error.layout": "Impossible de récupérer le layout de l'admin",
   "notification.form.error.fields": "Le formulaire contient des erreurs",
-  "request.error.model.unknown": "Le model n'existe pas"
+  "request.error.model.unknown": "Le model n'existe pas",
+  "Settings.roles.form.permissions.delete": "Supprimer",
+  "Settings.roles.form.permissions.update": "Actualiser",
+  "Settings.roles.form.permissions.duplicate": "Dupliquer",
+  "Settings.roles.form.permissions.lock": "Verrouiller"
 }
