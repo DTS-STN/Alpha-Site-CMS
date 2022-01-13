@@ -9,7 +9,8 @@ ENV STRAPI_API_BACKEND_URL $STRAPI_API_BACKEND_URL
 
 COPY ./ ./
 
-RUN npm install && npm run build
+RUN yarn install
+RUN yarn build
 
 FROM nginx
 

@@ -11,6 +11,7 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "ExperimentTitle_EN": {
       "type": "string",
@@ -28,11 +29,11 @@
     },
     "ExperimentLink_EN": {
       "type": "string",
-      "regex": "((\/.*)|())"
+      "regex": "((/.*)|())"
     },
     "ExperimentLink_FR": {
       "type": "string",
-      "regex": "((\/.*)|())"
+      "regex": "((/.*)|())"
     },
     "ExperimentStatus": {
       "type": "enumeration",
