@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "m:generateLangCSVs": "zx ./maintenance/runner.mjs"
   },
   "devDependencies": {
     "yarn-audit-fix": "^3.3.1"
@@ -24,7 +25,8 @@
     "@strapi/utils": "4.0.0",
     "knex": "<0.20.0",
     "pg": "latest",
-    "strapi-provider-upload-azure-storage": "2.0.0"
+    "strapi-provider-upload-azure-storage": "2.0.0",
+    "zx": "^4.3.0"
   },
   "author": {
     "name": "A Strapi developer"

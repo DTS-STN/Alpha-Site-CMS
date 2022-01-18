@@ -136,3 +136,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 terraform/variables.json
+
+
+maintenance/*/build
