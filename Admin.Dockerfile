@@ -12,7 +12,7 @@ COPY ./ ./
 RUN yarn install
 RUN yarn build
 
-FROM nginx
+FROM nginx:1
 
 COPY --from=0 build /usr/share/nginx/html
 COPY ./nginx/conf.d /etc/nginx/conf.d
