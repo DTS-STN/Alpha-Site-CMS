@@ -1,5 +1,6 @@
 {
   "kind": "collectionType",
+  "collectionName": "pages",
   "info": {
     "displayName": "Page",
     "singularName": "page",
@@ -37,22 +38,18 @@
       "default": false
     },
     "BannerImage_EN": {
-      "model": "file",
-      "via": "related",
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload",
-      "required": false
+      "type": "media",
+      "multiple": false
     },
     "BannerImage_FR": {
-      "model": "file",
-      "via": "related",
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload",
-      "required": false
+      "type": "media",
+      "multiple": false
     },
     "BannerTitle_EN": {
       "type": "string"
