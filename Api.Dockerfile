@@ -1,4 +1,6 @@
-FROM strapi/base
+FROM node:lts-alpine
+
+RUN apk add --no-cache --virtual python make g++ pkgconf libsecret-dev
 
 ARG NODE_ENV="production"
 ARG STRAPI_API_HOST="0.0.0.0"
@@ -16,8 +18,7 @@ ENV STORAGE_ACCOUNT_URL ""
 ENV STORAGE_CONTAINER_NAME ""
 ENV STRAPI_ADMIN_JWT_SECRET ""
 
-COPY ./package.json ./
-COPY ./yarn.lock ./
+COPY ./ ./
 
 RUN yarn install
 
