@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "m:generateLangCSVs": "zx ./maintenance/runner.mjs"
+    "maintenance": "zx ./maintenance/runner.mjs"
   },
   "devDependencies": {
     "yarn-audit-fix": "^3.3.1"
@@ -23,6 +23,7 @@
     "@strapi/plugin-users-permissions": "4.0.0",
     "@strapi/strapi": "4.0.0",
     "@strapi/utils": "4.0.0",
+    "csv": "^6.0.5",
     "knex": "<0.20.0",
     "pg": "latest",
     "strapi-provider-upload-azure-storage": "2.0.0",
