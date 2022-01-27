@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_page_elements_banners",
+  "info": {
+    "displayName": "Banner",
+    "icon": "audio-description",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Display": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

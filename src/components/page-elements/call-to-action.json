@@ -1,29 +1,21 @@
 {
   "collectionName": "components_page_elements_call_to_action_button",
   "info": {
-    "name": "CallToActionButton",
+    "displayName": "CallToActionButton",
     "icon": "external-link-alt",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "Text_EN": {
+    "Text": {
       "type": "string",
       "required": true
     },
-    "Text_FR": {
+    "Link": {
       "type": "string",
       "required": true
     },
-    "Link_EN": {
-      "type": "string",
-      "required": true
-    },
-    "Link_FR": {
-      "type": "string",
-      "required": true
-    },
-    "ButtonType": {
+    "Type": {
       "type": "enumeration",
       "enum": [
         "default",
@@ -31,6 +23,9 @@
         "tertiary",
         "disabled"
       ]
+    },
+    "Title": {
+      "type": "text"
     }
   }
 }
