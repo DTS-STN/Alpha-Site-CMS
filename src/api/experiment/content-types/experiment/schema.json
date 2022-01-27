@@ -1,5 +1,6 @@
 {
   "kind": "collectionType",
+  "collectionName": "experiments",
   "info": {
     "displayName": "Experiment",
     "singularName": "experiment",
