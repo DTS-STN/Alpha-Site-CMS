@@ -1,17 +1,13 @@
 {
   "collectionName": "components_page_elements_quotes",
   "info": {
-    "name": "Quote",
+    "displayName": "Quote",
     "icon": "align-justify",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "Quote_EN": {
-      "type": "string",
-      "required": true
-    },
-    "Quote_FR": {
+    "Quote": {
       "type": "string",
       "required": true
     },
