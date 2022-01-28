@@ -6,4 +6,7 @@ module.exports = ({ env }) => ({
   cron: {
     enabled: false
   },
+  app: {
+    keys: ["myKey1"]
+  }
 });
