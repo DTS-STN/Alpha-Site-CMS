@@ -2,76 +2,46 @@
   "kind": "collectionType",
   "collectionName": "pages",
   "info": {
-    "displayName": "Page",
     "singularName": "page",
     "pluralName": "pages",
+    "displayName": "Page",
     "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "Components": {
-      "type": "dynamiczone",
-      "components": [
-        "page-elements.list",
-        "page-elements.quote",
-        "page-elements.text-call-to-action",
-        "page-elements.rich-text",
-        "page-elements.call-to-action"
-      ]
-    },
-    "Title_EN": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "Title_FR": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "EnableBanner": {
-      "type": "boolean",
-      "default": false
-    },
-    "BannerImage_EN": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "BannerImage_FR": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "BannerTitle_EN": {
+    "Title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "type": "string"
     },
-    "BannerTitle_FR": {
+    "Banner": {
+      "displayName": "Banner",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-elements.banner"
+    },
+    "Link": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "type": "string"
-    },
-    "BannerText_EN": {
-      "type": "string"
-    },
-    "BannerText_FR": {
-      "type": "string"
-    },
-    "PagePath_EN": {
-      "type": "string",
-      "required": true,
-      "regex": "^([a-z]-?)*$"
-    },
-    "PagePath_FR": {
-      "type": "string",
-      "required": true,
-      "regex": "^([a-z]-?)*$"
     }
   }
 }

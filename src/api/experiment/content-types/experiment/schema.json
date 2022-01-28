@@ -2,48 +2,57 @@
   "kind": "collectionType",
   "collectionName": "experiments",
   "info": {
-    "displayName": "Experiment",
     "singularName": "experiment",
     "pluralName": "experiments",
+    "displayName": "Experiment",
     "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "ExperimentTitle_EN": {
-      "type": "string",
-      "required": true
+    "Title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     },
-    "ExperimentTitle_FR": {
-      "type": "string",
-      "required": true
+    "Description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
     },
-    "ExperimentDescription_EN": {
-      "type": "text"
-    },
-    "ExperimentDescription_FR": {
-      "type": "text"
-    },
-    "ExperimentLink_EN": {
-      "type": "string",
-      "regex": "((/.*)|())"
-    },
-    "ExperimentLink_FR": {
-      "type": "string",
-      "regex": "((/.*)|())"
-    },
-    "ExperimentStatus": {
+    "Status": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "type": "enumeration",
       "enum": [
         "upcoming_projects",
         "current_projects",
         "past_projects"
       ],
-      "default": "upcoming_projects"
+      "required": true
+    },
+    "Link": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
