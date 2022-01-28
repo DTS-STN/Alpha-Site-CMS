@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-01-27T17:39:01.537Z"
+    "x-generation-date": "2022-01-28T15:26:13.183Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -75,9 +75,6 @@
                               "Description": {
                                 "type": "string"
                               },
-                              "Link": {
-                                "type": "string"
-                              },
                               "Status": {
                                 "type": "string",
                                 "enum": [
@@ -85,6 +82,9 @@
                                   "current_projects",
                                   "past_projects"
                                 ]
+                              },
+                              "Link": {
+                                "type": "string"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -403,9 +403,6 @@
                                             "Description": {
                                               "type": "string"
                                             },
-                                            "Link": {
-                                              "type": "string"
-                                            },
                                             "Status": {
                                               "type": "string",
                                               "enum": [
@@ -413,6 +410,9 @@
                                                 "current_projects",
                                                 "past_projects"
                                               ]
+                                            },
+                                            "Link": {
+                                              "type": "string"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -781,9 +781,6 @@
                             "Description": {
                               "type": "string"
                             },
-                            "Link": {
-                              "type": "string"
-                            },
                             "Status": {
                               "type": "string",
                               "enum": [
@@ -791,6 +788,9 @@
                                 "current_projects",
                                 "past_projects"
                               ]
+                            },
+                            "Link": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -1109,9 +1109,6 @@
                                           "Description": {
                                             "type": "string"
                                           },
-                                          "Link": {
-                                            "type": "string"
-                                          },
                                           "Status": {
                                             "type": "string",
                                             "enum": [
@@ -1119,6 +1116,9 @@
                                               "current_projects",
                                               "past_projects"
                                             ]
+                                          },
+                                          "Link": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -1410,9 +1410,6 @@
                             "Description": {
                               "type": "string"
                             },
-                            "Link": {
-                              "type": "string"
-                            },
                             "Status": {
                               "type": "string",
                               "enum": [
@@ -1420,6 +1417,9 @@
                                 "current_projects",
                                 "past_projects"
                               ]
+                            },
+                            "Link": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -1738,9 +1738,6 @@
                                           "Description": {
                                             "type": "string"
                                           },
-                                          "Link": {
-                                            "type": "string"
-                                          },
                                           "Status": {
                                             "type": "string",
                                             "enum": [
@@ -1748,6 +1745,9 @@
                                               "current_projects",
                                               "past_projects"
                                             ]
+                                          },
+                                          "Link": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -2025,9 +2025,6 @@
                             "Description": {
                               "type": "string"
                             },
-                            "Link": {
-                              "type": "string"
-                            },
                             "Status": {
                               "type": "string",
                               "enum": [
@@ -2035,6 +2032,9 @@
                                 "current_projects",
                                 "past_projects"
                               ]
+                            },
+                            "Link": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -2353,9 +2353,6 @@
                                           "Description": {
                                             "type": "string"
                                           },
-                                          "Link": {
-                                            "type": "string"
-                                          },
                                           "Status": {
                                             "type": "string",
                                             "enum": [
@@ -2363,6 +2360,9 @@
                                               "current_projects",
                                               "past_projects"
                                             ]
+                                          },
+                                          "Link": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -2631,9 +2631,6 @@
                       "Description": {
                         "type": "string"
                       },
-                      "Link": {
-                        "type": "string"
-                      },
                       "Status": {
                         "type": "string",
                         "enum": [
@@ -2641,6 +2638,9 @@
                           "current_projects",
                           "past_projects"
                         ]
+                      },
+                      "Link": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -2900,9 +2900,6 @@
                             "Description": {
                               "type": "string"
                             },
-                            "Link": {
-                              "type": "string"
-                            },
                             "Status": {
                               "type": "string",
                               "enum": [
@@ -2910,6 +2907,9 @@
                                 "current_projects",
                                 "past_projects"
                               ]
+                            },
+                            "Link": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -3228,9 +3228,6 @@
                                           "Description": {
                                             "type": "string"
                                           },
-                                          "Link": {
-                                            "type": "string"
-                                          },
                                           "Status": {
                                             "type": "string",
                                             "enum": [
@@ -3238,6 +3235,9 @@
                                               "current_projects",
                                               "past_projects"
                                             ]
+                                          },
+                                          "Link": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -3926,7 +3926,7 @@
                                   }
                                 }
                               },
-                              "Path": {
+                              "Link": {
                                 "type": "string"
                               },
                               "createdAt": {
@@ -4630,7 +4630,7 @@
                                                 }
                                               }
                                             },
-                                            "Path": {
+                                            "Link": {
                                               "type": "string"
                                             },
                                             "createdAt": {
@@ -5384,7 +5384,7 @@
                                 }
                               }
                             },
-                            "Path": {
+                            "Link": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -6088,7 +6088,7 @@
                                               }
                                             }
                                           },
-                                          "Path": {
+                                          "Link": {
                                             "type": "string"
                                           },
                                           "createdAt": {
@@ -6341,7 +6341,86 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "Path": {
+                      "Title": {
+                        "type": "string"
+                      },
+                      "Banner": {
+                        "type": "object",
+                        "properties": {
+                          "Image": {
+                            "oneOf": [
+                              {
+                                "type": "integer"
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ],
+                            "example": "string or id"
+                          },
+                          "Title": {
+                            "type": "string"
+                          },
+                          "Description": {
+                            "type": "string"
+                          },
+                          "Display": {
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Link": {
+                        "type": "string"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "publishedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "createdBy": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ],
+                        "example": "string or id"
+                      },
+                      "updatedBy": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ],
+                        "example": "string or id"
+                      },
+                      "localizations": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "integer"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ],
+                          "example": "string or id"
+                        }
+                      },
+                      "locale": {
                         "type": "string"
                       }
                     }
@@ -6760,7 +6839,7 @@
                                 }
                               }
                             },
-                            "Path": {
+                            "Link": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -7464,7 +7543,7 @@
                                               }
                                             }
                                           },
-                                          "Path": {
+                                          "Link": {
                                             "type": "string"
                                           },
                                           "createdAt": {
@@ -8127,7 +8206,7 @@
                                 }
                               }
                             },
-                            "Path": {
+                            "Link": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -8831,7 +8910,7 @@
                                               }
                                             }
                                           },
-                                          "Path": {
+                                          "Link": {
                                             "type": "string"
                                           },
                                           "createdAt": {
@@ -9123,7 +9202,7 @@
                           }
                         }
                       },
-                      "Path": {
+                      "Link": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -9768,7 +9847,7 @@
                                 }
                               }
                             },
-                            "Path": {
+                            "Link": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -10472,7 +10551,7 @@
                                               }
                                             }
                                           },
-                                          "Path": {
+                                          "Link": {
                                             "type": "string"
                                           },
                                           "createdAt": {
@@ -10736,7 +10815,86 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "Path": {
+                      "Title": {
+                        "type": "string"
+                      },
+                      "Banner": {
+                        "type": "object",
+                        "properties": {
+                          "Image": {
+                            "oneOf": [
+                              {
+                                "type": "integer"
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ],
+                            "example": "string or id"
+                          },
+                          "Title": {
+                            "type": "string"
+                          },
+                          "Description": {
+                            "type": "string"
+                          },
+                          "Display": {
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Link": {
+                        "type": "string"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "publishedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "createdBy": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ],
+                        "example": "string or id"
+                      },
+                      "updatedBy": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ],
+                        "example": "string or id"
+                      },
+                      "localizations": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "integer"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ],
+                          "example": "string or id"
+                        }
+                      },
+                      "locale": {
                         "type": "string"
                       }
                     }

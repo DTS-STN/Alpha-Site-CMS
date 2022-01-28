@@ -25,9 +25,6 @@
                               "Description": {
                                 "type": "string"
                               },
-                              "Link": {
-                                "type": "string"
-                              },
                               "Status": {
                                 "type": "string",
                                 "enum": [
@@ -35,6 +32,9 @@
                                   "current_projects",
                                   "past_projects"
                                 ]
+                              },
+                              "Link": {
+                                "type": "string"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -353,9 +353,6 @@
                                             "Description": {
                                               "type": "string"
                                             },
-                                            "Link": {
-                                              "type": "string"
-                                            },
                                             "Status": {
                                               "type": "string",
                                               "enum": [
@@ -363,6 +360,9 @@
                                                 "current_projects",
                                                 "past_projects"
                                               ]
+                                            },
+                                            "Link": {
+                                              "type": "string"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -731,9 +731,6 @@
                             "Description": {
                               "type": "string"
                             },
-                            "Link": {
-                              "type": "string"
-                            },
                             "Status": {
                               "type": "string",
                               "enum": [
@@ -741,6 +738,9 @@
                                 "current_projects",
                                 "past_projects"
                               ]
+                            },
+                            "Link": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -1059,9 +1059,6 @@
                                           "Description": {
                                             "type": "string"
                                           },
-                                          "Link": {
-                                            "type": "string"
-                                          },
                                           "Status": {
                                             "type": "string",
                                             "enum": [
@@ -1069,6 +1066,9 @@
                                               "current_projects",
                                               "past_projects"
                                             ]
+                                          },
+                                          "Link": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -1360,9 +1360,6 @@
                             "Description": {
                               "type": "string"
                             },
-                            "Link": {
-                              "type": "string"
-                            },
                             "Status": {
                               "type": "string",
                               "enum": [
@@ -1370,6 +1367,9 @@
                                 "current_projects",
                                 "past_projects"
                               ]
+                            },
+                            "Link": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -1688,9 +1688,6 @@
                                           "Description": {
                                             "type": "string"
                                           },
-                                          "Link": {
-                                            "type": "string"
-                                          },
                                           "Status": {
                                             "type": "string",
                                             "enum": [
@@ -1698,6 +1695,9 @@
                                               "current_projects",
                                               "past_projects"
                                             ]
+                                          },
+                                          "Link": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -1975,9 +1975,6 @@
                             "Description": {
                               "type": "string"
                             },
-                            "Link": {
-                              "type": "string"
-                            },
                             "Status": {
                               "type": "string",
                               "enum": [
@@ -1985,6 +1982,9 @@
                                 "current_projects",
                                 "past_projects"
                               ]
+                            },
+                            "Link": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -2303,9 +2303,6 @@
                                           "Description": {
                                             "type": "string"
                                           },
-                                          "Link": {
-                                            "type": "string"
-                                          },
                                           "Status": {
                                             "type": "string",
                                             "enum": [
@@ -2313,6 +2310,9 @@
                                               "current_projects",
                                               "past_projects"
                                             ]
+                                          },
+                                          "Link": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -2581,9 +2581,6 @@
                       "Description": {
                         "type": "string"
                       },
-                      "Link": {
-                        "type": "string"
-                      },
                       "Status": {
                         "type": "string",
                         "enum": [
@@ -2591,6 +2588,9 @@
                           "current_projects",
                           "past_projects"
                         ]
+                      },
+                      "Link": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -2850,9 +2850,6 @@
                             "Description": {
                               "type": "string"
                             },
-                            "Link": {
-                              "type": "string"
-                            },
                             "Status": {
                               "type": "string",
                               "enum": [
@@ -2860,6 +2857,9 @@
                                 "current_projects",
                                 "past_projects"
                               ]
+                            },
+                            "Link": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -3178,9 +3178,6 @@
                                           "Description": {
                                             "type": "string"
                                           },
-                                          "Link": {
-                                            "type": "string"
-                                          },
                                           "Status": {
                                             "type": "string",
                                             "enum": [
@@ -3188,6 +3185,9 @@
                                               "current_projects",
                                               "past_projects"
                                             ]
+                                          },
+                                          "Link": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",

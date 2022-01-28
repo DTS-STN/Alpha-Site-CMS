@@ -409,7 +409,7 @@
                                   }
                                 }
                               },
-                              "Path": {
+                              "Link": {
                                 "type": "string"
                               },
                               "createdAt": {
@@ -1113,7 +1113,7 @@
                                                 }
                                               }
                                             },
-                                            "Path": {
+                                            "Link": {
                                               "type": "string"
                                             },
                                             "createdAt": {
@@ -1867,7 +1867,7 @@
                                 }
                               }
                             },
-                            "Path": {
+                            "Link": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -2571,7 +2571,7 @@
                                               }
                                             }
                                           },
-                                          "Path": {
+                                          "Link": {
                                             "type": "string"
                                           },
                                           "createdAt": {
@@ -2824,7 +2824,86 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "Path": {
+                      "Title": {
+                        "type": "string"
+                      },
+                      "Banner": {
+                        "type": "object",
+                        "properties": {
+                          "Image": {
+                            "oneOf": [
+                              {
+                                "type": "integer"
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ],
+                            "example": "string or id"
+                          },
+                          "Title": {
+                            "type": "string"
+                          },
+                          "Description": {
+                            "type": "string"
+                          },
+                          "Display": {
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Link": {
+                        "type": "string"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "publishedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "createdBy": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ],
+                        "example": "string or id"
+                      },
+                      "updatedBy": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ],
+                        "example": "string or id"
+                      },
+                      "localizations": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "integer"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ],
+                          "example": "string or id"
+                        }
+                      },
+                      "locale": {
                         "type": "string"
                       }
                     }
@@ -3243,7 +3322,7 @@
                                 }
                               }
                             },
-                            "Path": {
+                            "Link": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -3947,7 +4026,7 @@
                                               }
                                             }
                                           },
-                                          "Path": {
+                                          "Link": {
                                             "type": "string"
                                           },
                                           "createdAt": {
@@ -4610,7 +4689,7 @@
                                 }
                               }
                             },
-                            "Path": {
+                            "Link": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -5314,7 +5393,7 @@
                                               }
                                             }
                                           },
-                                          "Path": {
+                                          "Link": {
                                             "type": "string"
                                           },
                                           "createdAt": {
@@ -5606,7 +5685,7 @@
                           }
                         }
                       },
-                      "Path": {
+                      "Link": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -6251,7 +6330,7 @@
                                 }
                               }
                             },
-                            "Path": {
+                            "Link": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -6955,7 +7034,7 @@
                                               }
                                             }
                                           },
-                                          "Path": {
+                                          "Link": {
                                             "type": "string"
                                           },
                                           "createdAt": {
@@ -7219,7 +7298,86 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "Path": {
+                      "Title": {
+                        "type": "string"
+                      },
+                      "Banner": {
+                        "type": "object",
+                        "properties": {
+                          "Image": {
+                            "oneOf": [
+                              {
+                                "type": "integer"
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ],
+                            "example": "string or id"
+                          },
+                          "Title": {
+                            "type": "string"
+                          },
+                          "Description": {
+                            "type": "string"
+                          },
+                          "Display": {
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Link": {
+                        "type": "string"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "publishedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "createdBy": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ],
+                        "example": "string or id"
+                      },
+                      "updatedBy": {
+                        "oneOf": [
+                          {
+                            "type": "integer"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ],
+                        "example": "string or id"
+                      },
+                      "localizations": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "integer"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ],
+                          "example": "string or id"
+                        }
+                      },
+                      "locale": {
                         "type": "string"
                       }
                     }

@@ -32,14 +32,6 @@
       },
       "type": "richtext"
     },
-    "Link": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "uid"
-    },
     "Status": {
       "pluginOptions": {
         "i18n": {
@@ -53,6 +45,14 @@
         "past_projects"
       ],
       "required": true
+    },
+    "Link": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

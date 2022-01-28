@@ -35,14 +35,13 @@
       },
       "component": "page-elements.banner"
     },
-    "Path": {
+    "Link": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "uid",
-      "required": true
+      "type": "string"
     }
   }
 }
