@@ -1,18 +1,22 @@
 {
   "collectionName": "components_sub_components_list_items",
   "info": {
-    "name": "ListItem",
-    "icon": "circle"
+    "displayName": "ListItem",
+    "icon": "circle",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "ItemName_EN": {
+    "Title": {
       "type": "string",
       "required": true
     },
-    "ItemName_FR": {
-      "type": "string",
-      "required": true
+    "Thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -1,26 +1,14 @@
 {
   "collectionName": "components_page_elements_text_call_to_actions",
   "info": {
-    "name": "TextCallToAction",
+    "displayName": "TextCallToAction",
     "icon": "external-link-alt",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "Title_EN": {
+    "Title": {
       "type": "string",
-      "required": true
-    },
-    "Title_FR": {
-      "type": "string",
-      "required": true
-    },
-    "Text_EN": {
-      "type": "text",
-      "required": true
-    },
-    "Text_FR": {
-      "type": "text",
       "required": true
     },
     "Size": {
@@ -35,19 +23,11 @@
       ],
       "required": true
     },
-    "ButtonText_EN": {
-      "type": "string",
+    "Text": {
+      "type": "text",
       "required": true
     },
-    "ButtonText_FR": {
-      "type": "string",
-      "required": true
-    },
-    "Link_EN": {
-      "type": "string",
-      "required": true
-    },
-    "Link_FR": {
+    "Link": {
       "type": "string",
       "required": true
     }

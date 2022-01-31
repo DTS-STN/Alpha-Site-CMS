@@ -1,16 +1,13 @@
 {
   "collectionName": "components_page_elements_lists",
   "info": {
-    "name": "List",
-    "icon": "clipboard-list"
+    "displayName": "List",
+    "icon": "clipboard-list",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "ListName_EN": {
-      "type": "string",
-      "required": true
-    },
-    "ListName_FR": {
+    "Name": {
       "type": "string",
       "required": true
     },
@@ -27,10 +24,11 @@
       "required": true,
       "default": "full"
     },
-    "ListItems": {
+    "Items": {
       "type": "component",
       "repeatable": true,
-      "component": "sub-components.list-item"
+      "component": "sub-components.list-item",
+      "min": 1
     }
   }
 }
