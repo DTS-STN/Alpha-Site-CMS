@@ -24,17 +24,6 @@
       },
       "type": "string"
     },
-    "Banner": {
-      "displayName": "Banner",
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "page-elements.banner"
-    },
     "Link": {
       "pluginOptions": {
         "i18n": {
