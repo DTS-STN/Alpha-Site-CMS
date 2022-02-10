@@ -19,9 +19,9 @@ export default async () => {
     quoted: true,
     header: true,
     columns: {
-      strapiId: 'ID',
-      strapiEn: 'EN',
-      strapiFr: 'FR'
+      id: 'ID',
+      en: 'EN',
+      fr: 'FR'
     }
   })
     .pipe(stream)
