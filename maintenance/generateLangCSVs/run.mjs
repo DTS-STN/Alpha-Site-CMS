@@ -1,19 +1,15 @@
 #!/usr/bin/env zx
 import 'zx/globals'
 
-import { generate, stringify } from 'csv'
+import { stringify } from 'csv'
 import { buildRows } from './util.mjs'
 
-const enFilePath = './sources/en.json'
-const frFilePath = './sources/fr.json'
-const buildPath = './build'
-
 export default async () => {
-  const en = JSON.parse(await fs.readFile(enFilePath))
-  const fr = JSON.parse(await fs.readFile(frFilePath))
+  const en = JSON.parse(await fs.readFile('./sources/en.json'))
+  const fr = JSON.parse(await fs.readFile('./sources/fr.json'))
 
   const mergedAndFlattened = buildRows(en, fr)
-  const stream = fs.createWriteStream(`${buildPath}/strapi-translations.csv`, { flags: 'a' });
+  const stream = fs.createWriteStream(`./build/strapi-translations.csv`, { flags: 'a' });
 
   stringify(mergedAndFlattened, {
     quoted: true,
