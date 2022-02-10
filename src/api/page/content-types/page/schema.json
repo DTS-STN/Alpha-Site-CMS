@@ -43,16 +43,6 @@
       },
       "component": "page-element.banner"
     },
-    "HomepageBanner": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "page-element.banner"
-    },
     "Heading": {
       "type": "component",
       "repeatable": true,

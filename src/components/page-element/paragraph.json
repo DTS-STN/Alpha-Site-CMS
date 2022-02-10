@@ -2,12 +2,13 @@
   "collectionName": "components_page_element_paragraphs",
   "info": {
     "displayName": "Paragraph",
-    "icon": "align-justify"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Text": {
-      "type": "string"
+      "type": "richtext"
     }
   }
 }
