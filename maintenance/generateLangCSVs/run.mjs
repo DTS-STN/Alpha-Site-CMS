@@ -2,24 +2,26 @@
 import 'zx/globals'
 
 import { generate, stringify } from 'csv'
+import { buildRows } from './util.mjs'
 
-const enFilePath = '../../src/admin/extensions/translations/en.json'
-const frFilePath = '../../src/admin/extensions/translations/fr.json'
+const enFilePath = './sources/en.json'
+const frFilePath = './sources/fr.json'
+const buildPath = './build'
 
 export default async () => {
-  const en = await fs.readFile(enFilePath)
-  // csv.generate({
-  //   length: 4
-  // }, () => {
+  const en = JSON.parse(await fs.readFile(enFilePath))
+  const fr = JSON.parse(await fs.readFile(frFilePath))
 
-  // })
-  var stream = fs.createWriteStream('./build/myFile.csv', { flags: 'a' });
-  stringify([[2, 3], [44, 3]], {
+  const mergedAndFlattened = buildRows(en, fr)
+  const stream = fs.createWriteStream(`${buildPath}/strapi-translations.csv`, { flags: 'a' });
+
+  stringify(mergedAndFlattened, {
     quoted: true,
     header: true,
     columns: {
-      year: 'birthYear',
-      phone: 'phone'
+      strapiId: 'strapi ID',
+      strapiEn: 'strapi En text',
+      strapiFr: 'strapi Fr text'
     }
   })
     .pipe(stream)

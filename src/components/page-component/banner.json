@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_page_component_banners",
+  "info": {
+    "displayName": "Banner",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}
