@@ -19,14 +19,10 @@ export default async () => {
     quoted: true,
     header: true,
     columns: {
-      strapiId: 'strapi ID',
-      strapiEn: 'strapi En text',
-      strapiFr: 'strapi Fr text'
+      strapiId: 'ID',
+      strapiEn: 'EN',
+      strapiFr: 'FR'
     }
   })
     .pipe(stream)
-
-  // console.log(xx)
-  // const fr = await fs.readFile(enFilePath)
-  // console.log(JSON.parse(en))
 }
