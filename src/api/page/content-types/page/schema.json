@@ -31,6 +31,57 @@
         }
       },
       "type": "string"
+    },
+    "HomePageBanner": {
+      "displayName": "Banner",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.banner"
+    },
+    "Heading": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.heading"
+    },
+    "Paragraph": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.paragraph"
+    },
+    "ActionButton": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.action-button"
+    },
+    "ReportProblem": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.call-to-action"
     }
   }
 }

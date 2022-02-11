@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_page_element_headings",
+  "info": {
+    "displayName": "Heading",
+    "icon": "envelope-open-text"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}
