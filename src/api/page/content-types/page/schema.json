@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "Title": {
+    "title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -24,7 +24,7 @@
       },
       "type": "string"
     },
-    "Link": {
+    "link": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -32,8 +32,7 @@
       },
       "type": "string"
     },
-    "HomePageBanner": {
-      "displayName": "Banner",
+    "banner": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -43,27 +42,7 @@
       },
       "component": "page-element.banner"
     },
-    "Heading": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "page-element.heading"
-    },
-    "Paragraph": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "page-element.paragraph"
-    },
-    "ActionButton": {
+    "actionButton": {
       "type": "component",
       "repeatable": true,
       "pluginOptions": {
@@ -73,7 +52,7 @@
       },
       "component": "page-element.action-button"
     },
-    "ReportProblem": {
+    "callToAction": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -82,6 +61,16 @@
         }
       },
       "component": "page-element.call-to-action"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.content"
     }
   }
 }

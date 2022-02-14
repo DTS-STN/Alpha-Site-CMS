@@ -7,13 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "text"
     },
-    "BannerImage": {
+    "bannerImage": {
       "type": "media",
       "multiple": false,
       "required": false,
