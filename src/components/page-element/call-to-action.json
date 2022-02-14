@@ -1,17 +1,17 @@
 {
   "collectionName": "components_page_element_call_to_actions",
   "info": {
-    "displayName": "CallToAction",
+    "displayName": "callToAction",
     "icon": "book-open",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": true
     },
@@ -19,7 +19,7 @@
       "type": "string",
       "required": true
     },
-    "Text": {
+    "text": {
       "type": "string",
       "required": true
     }

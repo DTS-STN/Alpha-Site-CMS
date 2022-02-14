@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "Text": {
+    "text": {
       "type": "string"
     },
     "href": {
