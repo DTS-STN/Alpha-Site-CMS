@@ -13,35 +13,24 @@ module.exports = (config, { strapi }) => {
       const fetch = require("node-fetch");
       var address = ctx.state.user.email;
 
-      //Test hitting feedback api
-      var feedbackToSend = {
-        project: "test",
-        pageUrl: "test",
-        feedback: "test",
-      };
-      console.log(address);
-      console.log(feedbackToSend);
-
       // Submit data to notify handler
       const response = await fetch(
-        "https://alphasite.dts-stn.com/api/feedback",
+        process.env.NOTIFY_BASE_API_URL + "/v2/notifications/email",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            Authorization: "ApiKey-v1 " + process.env.NOTIFY_API_KEY,
           },
-          body: JSON.stringify(feedbackToSend),
+          body: JSON.stringify({
+            email_address: address,
+            template_id: process.env.NOTIFY_EMAIL_TEMPLATE_ID,
+            personalisation: {
+              email: address,
+            },
+          }),
         }
       );
-
-      console.log(response.status)
-
-      // Output email status to console
-      if (response.status === 201 || response.status === 200) {
-        console.log("Email sent");
-      } else {
-        console.log("Email not sent");
-      }
     }
   };
 };
