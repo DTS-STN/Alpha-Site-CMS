@@ -10,5 +10,8 @@ module.exports = [
   "strapi::body",
   "strapi::favicon",
   "strapi::public",
-  "use-notification",
+  {
+    name: "global::use-notification",
+    config: {},
+  },
 ];
