@@ -1,24 +1,42 @@
 #!/usr/bin/env zx
 import 'zx/globals'
 
-import { stringify } from 'csv'
+import { parse } from 'csv'
 import { buildRows } from './util.mjs'
 
 export default async () => {
-  const en = JSON.parse(await fs.readFile('./sources/en.json'))
-  const fr = JSON.parse(await fs.readFile('./sources/fr.json'))
+  const parser = fs
+    .createReadStream('./sources/strapi-translations.csv')
+    .pipe(parse());
 
-  const mergedAndFlattened = buildRows(en, fr)
-  const stream = fs.createWriteStream(`./build/strapi-translations.csv`, { flags: 'a' });
+  const langsObject = {
+    en: {},
+    fr: {}
+  }
 
-  stringify(mergedAndFlattened, {
-    quoted: true,
-    header: true,
-    columns: {
-      id: 'ID',
-      en: 'EN',
-      fr: 'FR'
+  let i = 0
+  for await (const record of parser) {
+    if (i !== 0) {
+      langsObject.en[record[0]] = record[1]
+      langsObject.fr[record[0]] = record[2]
     }
-  })
-    .pipe(stream)
+    if (i === 0) i++;
+  }
+
+  console.log(langsObject.en)
+  fs.writeFileSync('./build/en.json', JSON.stringify(langsObject.en, null, 2), 'utf8');
+  fs.writeFileSync('./build/fr.json', JSON.stringify(langsObject.fr, null, 2), 'utf8');
+
+  // const stream = fs.createWriteStream(`./build/strapi-translations.csv`, { flags: 'a' });
+
+  // stringify(mergedAndFlattened, {
+  //   quoted: true,
+  //   header: true,
+  //   columns: {
+  //     id: 'ID',
+  //     en: 'EN',
+  //     fr: 'FR'
+  //   }
+  // })
+  //   .pipe(stream)
 }
