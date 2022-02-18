@@ -2,7 +2,6 @@
 import 'zx/globals'
 
 import { parse } from 'csv'
-import { buildRows } from './util.mjs'
 
 export default async () => {
   const parser = fs
@@ -23,20 +22,6 @@ export default async () => {
     if (i === 0) i++;
   }
 
-  console.log(langsObject.en)
   fs.writeFileSync('./build/en.json', JSON.stringify(langsObject.en, null, 2), 'utf8');
   fs.writeFileSync('./build/fr.json', JSON.stringify(langsObject.fr, null, 2), 'utf8');
-
-  // const stream = fs.createWriteStream(`./build/strapi-translations.csv`, { flags: 'a' });
-
-  // stringify(mergedAndFlattened, {
-  //   quoted: true,
-  //   header: true,
-  //   columns: {
-  //     id: 'ID',
-  //     en: 'EN',
-  //     fr: 'FR'
-  //   }
-  // })
-  //   .pipe(stream)
 }
