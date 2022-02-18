@@ -11,15 +11,13 @@ module.exports = [
   "strapi::favicon",
   "strapi::public",
   {
-    name: "global::use-notification",
+    name: "strapi::cors",
     config: {
-      cors: {
-        origin: [
-          "http://localhost:1337/",
-          "https://alphasite-admin.dts-stn.com",
-        ],
-        headers: ["*"],
-      },
+      enabled: true,
+      header: "*",
+      origin: ["http://localhost:1337", "https://alphasite-admin.dts-stn.com/"],
     },
+    name: "global::use-notification",
+    config: {},
   },
 ];
