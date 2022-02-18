@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_element_action_buttons",
+  "info": {
+    "displayName": "ActionButton",
+    "icon": "mouse-pointer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

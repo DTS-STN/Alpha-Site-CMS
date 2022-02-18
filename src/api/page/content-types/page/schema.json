@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "Title": {
+    "title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -24,8 +24,15 @@
       },
       "type": "string"
     },
-    "Banner": {
-      "displayName": "Banner",
+    "link": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "banner": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -33,15 +40,37 @@
           "localized": true
         }
       },
-      "component": "page-elements.banner"
+      "component": "page-element.banner"
     },
-    "Link": {
+    "actionButton": {
+      "type": "component",
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string"
+      "component": "page-element.action-button"
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.call-to-action"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.content"
     }
   }
 }

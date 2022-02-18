@@ -19,16 +19,25 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "Title": {
+                              "title": {
                                 "type": "string"
                               },
-                              "Banner": {
+                              "link": {
+                                "type": "string"
+                              },
+                              "banner": {
                                 "type": "object",
                                 "properties": {
                                   "id": {
                                     "type": "string"
                                   },
-                                  "Image": {
+                                  "title": {
+                                    "type": "string"
+                                  },
+                                  "description": {
+                                    "type": "string"
+                                  },
+                                  "bannerImage": {
                                     "type": "object",
                                     "properties": {
                                       "data": {
@@ -397,20 +406,62 @@
                                         }
                                       }
                                     }
-                                  },
-                                  "Title": {
-                                    "type": "string"
-                                  },
-                                  "Description": {
-                                    "type": "string"
-                                  },
-                                  "Display": {
-                                    "type": "boolean"
                                   }
                                 }
                               },
-                              "Link": {
-                                "type": "string"
+                              "actionButton": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    },
+                                    "href": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "callToAction": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "title": {
+                                    "type": "string"
+                                  },
+                                  "description": {
+                                    "type": "string"
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "content": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "heading": {
+                                      "type": "string"
+                                    },
+                                    "paragraph": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
                               },
                               "createdAt": {
                                 "type": "string",
@@ -723,16 +774,25 @@
                                         "attributes": {
                                           "type": "object",
                                           "properties": {
-                                            "Title": {
+                                            "title": {
                                               "type": "string"
                                             },
-                                            "Banner": {
+                                            "link": {
+                                              "type": "string"
+                                            },
+                                            "banner": {
                                               "type": "object",
                                               "properties": {
                                                 "id": {
                                                   "type": "string"
                                                 },
-                                                "Image": {
+                                                "title": {
+                                                  "type": "string"
+                                                },
+                                                "description": {
+                                                  "type": "string"
+                                                },
+                                                "bannerImage": {
                                                   "type": "object",
                                                   "properties": {
                                                     "data": {
@@ -1101,20 +1161,62 @@
                                                       }
                                                     }
                                                   }
-                                                },
-                                                "Title": {
-                                                  "type": "string"
-                                                },
-                                                "Description": {
-                                                  "type": "string"
-                                                },
-                                                "Display": {
-                                                  "type": "boolean"
                                                 }
                                               }
                                             },
-                                            "Link": {
-                                              "type": "string"
+                                            "actionButton": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "id": {
+                                                    "type": "string"
+                                                  },
+                                                  "text": {
+                                                    "type": "string"
+                                                  },
+                                                  "href": {
+                                                    "type": "string"
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "callToAction": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "title": {
+                                                  "type": "string"
+                                                },
+                                                "description": {
+                                                  "type": "string"
+                                                },
+                                                "href": {
+                                                  "type": "string"
+                                                },
+                                                "text": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "content": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "id": {
+                                                    "type": "string"
+                                                  },
+                                                  "heading": {
+                                                    "type": "string"
+                                                  },
+                                                  "paragraph": {
+                                                    "type": "string"
+                                                  }
+                                                }
+                                              }
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -1477,16 +1579,25 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "Title": {
+                            "title": {
                               "type": "string"
                             },
-                            "Banner": {
+                            "link": {
+                              "type": "string"
+                            },
+                            "banner": {
                               "type": "object",
                               "properties": {
                                 "id": {
                                   "type": "string"
                                 },
-                                "Image": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "bannerImage": {
                                   "type": "object",
                                   "properties": {
                                     "data": {
@@ -1855,20 +1966,62 @@
                                       }
                                     }
                                   }
-                                },
-                                "Title": {
-                                  "type": "string"
-                                },
-                                "Description": {
-                                  "type": "string"
-                                },
-                                "Display": {
-                                  "type": "boolean"
                                 }
                               }
                             },
-                            "Link": {
-                              "type": "string"
+                            "actionButton": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "callToAction": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "href": {
+                                  "type": "string"
+                                },
+                                "text": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "content": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "heading": {
+                                    "type": "string"
+                                  },
+                                  "paragraph": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
                             },
                             "createdAt": {
                               "type": "string",
@@ -2181,16 +2334,25 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "Title": {
+                                          "title": {
                                             "type": "string"
                                           },
-                                          "Banner": {
+                                          "link": {
+                                            "type": "string"
+                                          },
+                                          "banner": {
                                             "type": "object",
                                             "properties": {
                                               "id": {
                                                 "type": "string"
                                               },
-                                              "Image": {
+                                              "title": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "bannerImage": {
                                                 "type": "object",
                                                 "properties": {
                                                   "data": {
@@ -2559,20 +2721,62 @@
                                                     }
                                                   }
                                                 }
-                                              },
-                                              "Title": {
-                                                "type": "string"
-                                              },
-                                              "Description": {
-                                                "type": "string"
-                                              },
-                                              "Display": {
-                                                "type": "boolean"
                                               }
                                             }
                                           },
-                                          "Link": {
-                                            "type": "string"
+                                          "actionButton": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "text": {
+                                                  "type": "string"
+                                                },
+                                                "href": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "callToAction": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "string"
+                                              },
+                                              "title": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "href": {
+                                                "type": "string"
+                                              },
+                                              "text": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          },
+                                          "content": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "heading": {
+                                                  "type": "string"
+                                                },
+                                                "paragraph": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -2824,13 +3028,22 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "Title": {
+                      "title": {
                         "type": "string"
                       },
-                      "Banner": {
+                      "link": {
+                        "type": "string"
+                      },
+                      "banner": {
                         "type": "object",
                         "properties": {
-                          "Image": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "bannerImage": {
                             "oneOf": [
                               {
                                 "type": "integer"
@@ -2840,20 +3053,53 @@
                               }
                             ],
                             "example": "string or id"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Description": {
-                            "type": "string"
-                          },
-                          "Display": {
-                            "type": "boolean"
                           }
                         }
                       },
-                      "Link": {
-                        "type": "string"
+                      "actionButton": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "text": {
+                              "type": "string"
+                            },
+                            "href": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "callToAction": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "href": {
+                            "type": "string"
+                          },
+                          "text": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "content": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "heading": {
+                              "type": "string"
+                            },
+                            "paragraph": {
+                              "type": "string"
+                            }
+                          }
+                        }
                       },
                       "createdAt": {
                         "type": "string",
@@ -2932,16 +3178,25 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "Title": {
+                            "title": {
                               "type": "string"
                             },
-                            "Banner": {
+                            "link": {
+                              "type": "string"
+                            },
+                            "banner": {
                               "type": "object",
                               "properties": {
                                 "id": {
                                   "type": "string"
                                 },
-                                "Image": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "bannerImage": {
                                   "type": "object",
                                   "properties": {
                                     "data": {
@@ -3310,20 +3565,62 @@
                                       }
                                     }
                                   }
-                                },
-                                "Title": {
-                                  "type": "string"
-                                },
-                                "Description": {
-                                  "type": "string"
-                                },
-                                "Display": {
-                                  "type": "boolean"
                                 }
                               }
                             },
-                            "Link": {
-                              "type": "string"
+                            "actionButton": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "callToAction": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "href": {
+                                  "type": "string"
+                                },
+                                "text": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "content": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "heading": {
+                                    "type": "string"
+                                  },
+                                  "paragraph": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
                             },
                             "createdAt": {
                               "type": "string",
@@ -3636,16 +3933,25 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "Title": {
+                                          "title": {
                                             "type": "string"
                                           },
-                                          "Banner": {
+                                          "link": {
+                                            "type": "string"
+                                          },
+                                          "banner": {
                                             "type": "object",
                                             "properties": {
                                               "id": {
                                                 "type": "string"
                                               },
-                                              "Image": {
+                                              "title": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "bannerImage": {
                                                 "type": "object",
                                                 "properties": {
                                                   "data": {
@@ -4014,20 +4320,62 @@
                                                     }
                                                   }
                                                 }
-                                              },
-                                              "Title": {
-                                                "type": "string"
-                                              },
-                                              "Description": {
-                                                "type": "string"
-                                              },
-                                              "Display": {
-                                                "type": "boolean"
                                               }
                                             }
                                           },
-                                          "Link": {
-                                            "type": "string"
+                                          "actionButton": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "text": {
+                                                  "type": "string"
+                                                },
+                                                "href": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "callToAction": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "string"
+                                              },
+                                              "title": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "href": {
+                                                "type": "string"
+                                              },
+                                              "text": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          },
+                                          "content": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "heading": {
+                                                  "type": "string"
+                                                },
+                                                "paragraph": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -4299,16 +4647,25 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "Title": {
+                            "title": {
                               "type": "string"
                             },
-                            "Banner": {
+                            "link": {
+                              "type": "string"
+                            },
+                            "banner": {
                               "type": "object",
                               "properties": {
                                 "id": {
                                   "type": "string"
                                 },
-                                "Image": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "bannerImage": {
                                   "type": "object",
                                   "properties": {
                                     "data": {
@@ -4677,20 +5034,62 @@
                                       }
                                     }
                                   }
-                                },
-                                "Title": {
-                                  "type": "string"
-                                },
-                                "Description": {
-                                  "type": "string"
-                                },
-                                "Display": {
-                                  "type": "boolean"
                                 }
                               }
                             },
-                            "Link": {
-                              "type": "string"
+                            "actionButton": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "callToAction": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "href": {
+                                  "type": "string"
+                                },
+                                "text": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "content": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "heading": {
+                                    "type": "string"
+                                  },
+                                  "paragraph": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
                             },
                             "createdAt": {
                               "type": "string",
@@ -5003,16 +5402,25 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "Title": {
+                                          "title": {
                                             "type": "string"
                                           },
-                                          "Banner": {
+                                          "link": {
+                                            "type": "string"
+                                          },
+                                          "banner": {
                                             "type": "object",
                                             "properties": {
                                               "id": {
                                                 "type": "string"
                                               },
-                                              "Image": {
+                                              "title": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "bannerImage": {
                                                 "type": "object",
                                                 "properties": {
                                                   "data": {
@@ -5381,20 +5789,62 @@
                                                     }
                                                   }
                                                 }
-                                              },
-                                              "Title": {
-                                                "type": "string"
-                                              },
-                                              "Description": {
-                                                "type": "string"
-                                              },
-                                              "Display": {
-                                                "type": "boolean"
                                               }
                                             }
                                           },
-                                          "Link": {
-                                            "type": "string"
+                                          "actionButton": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "text": {
+                                                  "type": "string"
+                                                },
+                                                "href": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "callToAction": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "string"
+                                              },
+                                              "title": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "href": {
+                                                "type": "string"
+                                              },
+                                              "text": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          },
+                                          "content": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "heading": {
+                                                  "type": "string"
+                                                },
+                                                "paragraph": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -5657,13 +6107,22 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "Title": {
+                      "title": {
                         "type": "string"
                       },
-                      "Banner": {
+                      "link": {
+                        "type": "string"
+                      },
+                      "banner": {
                         "type": "object",
                         "properties": {
-                          "Image": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "bannerImage": {
                             "oneOf": [
                               {
                                 "type": "integer"
@@ -5673,20 +6132,53 @@
                               }
                             ],
                             "example": "string or id"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Description": {
-                            "type": "string"
-                          },
-                          "Display": {
-                            "type": "boolean"
                           }
                         }
                       },
-                      "Link": {
-                        "type": "string"
+                      "actionButton": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "text": {
+                              "type": "string"
+                            },
+                            "href": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "callToAction": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "href": {
+                            "type": "string"
+                          },
+                          "text": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "content": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "heading": {
+                              "type": "string"
+                            },
+                            "paragraph": {
+                              "type": "string"
+                            }
+                          }
+                        }
                       },
                       "createdAt": {
                         "type": "string",
@@ -5940,16 +6432,25 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "Title": {
+                            "title": {
                               "type": "string"
                             },
-                            "Banner": {
+                            "link": {
+                              "type": "string"
+                            },
+                            "banner": {
                               "type": "object",
                               "properties": {
                                 "id": {
                                   "type": "string"
                                 },
-                                "Image": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "bannerImage": {
                                   "type": "object",
                                   "properties": {
                                     "data": {
@@ -6318,20 +6819,62 @@
                                       }
                                     }
                                   }
-                                },
-                                "Title": {
-                                  "type": "string"
-                                },
-                                "Description": {
-                                  "type": "string"
-                                },
-                                "Display": {
-                                  "type": "boolean"
                                 }
                               }
                             },
-                            "Link": {
-                              "type": "string"
+                            "actionButton": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "callToAction": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "href": {
+                                  "type": "string"
+                                },
+                                "text": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "content": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "heading": {
+                                    "type": "string"
+                                  },
+                                  "paragraph": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
                             },
                             "createdAt": {
                               "type": "string",
@@ -6644,16 +7187,25 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "Title": {
+                                          "title": {
                                             "type": "string"
                                           },
-                                          "Banner": {
+                                          "link": {
+                                            "type": "string"
+                                          },
+                                          "banner": {
                                             "type": "object",
                                             "properties": {
                                               "id": {
                                                 "type": "string"
                                               },
-                                              "Image": {
+                                              "title": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "bannerImage": {
                                                 "type": "object",
                                                 "properties": {
                                                   "data": {
@@ -7022,20 +7574,62 @@
                                                     }
                                                   }
                                                 }
-                                              },
-                                              "Title": {
-                                                "type": "string"
-                                              },
-                                              "Description": {
-                                                "type": "string"
-                                              },
-                                              "Display": {
-                                                "type": "boolean"
                                               }
                                             }
                                           },
-                                          "Link": {
-                                            "type": "string"
+                                          "actionButton": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "text": {
+                                                  "type": "string"
+                                                },
+                                                "href": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "callToAction": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "string"
+                                              },
+                                              "title": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "href": {
+                                                "type": "string"
+                                              },
+                                              "text": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          },
+                                          "content": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "heading": {
+                                                  "type": "string"
+                                                },
+                                                "paragraph": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -7298,13 +7892,22 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "Title": {
+                      "title": {
                         "type": "string"
                       },
-                      "Banner": {
+                      "link": {
+                        "type": "string"
+                      },
+                      "banner": {
                         "type": "object",
                         "properties": {
-                          "Image": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "bannerImage": {
                             "oneOf": [
                               {
                                 "type": "integer"
@@ -7314,20 +7917,53 @@
                               }
                             ],
                             "example": "string or id"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Description": {
-                            "type": "string"
-                          },
-                          "Display": {
-                            "type": "boolean"
                           }
                         }
                       },
-                      "Link": {
-                        "type": "string"
+                      "actionButton": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "text": {
+                              "type": "string"
+                            },
+                            "href": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "callToAction": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "href": {
+                            "type": "string"
+                          },
+                          "text": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "content": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "heading": {
+                              "type": "string"
+                            },
+                            "paragraph": {
+                              "type": "string"
+                            }
+                          }
+                        }
                       },
                       "createdAt": {
                         "type": "string",
