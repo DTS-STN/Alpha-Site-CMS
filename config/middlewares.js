@@ -17,6 +17,8 @@ module.exports = [
       headers: ["*"],
       origin: ["http://localhost:1337", "https://alphasite-admin.dts-stn.com/"],
     },
+  },
+  {
     name: "global::use-notification",
     config: {},
   },
