@@ -12,6 +12,11 @@ module.exports = [
   "strapi::public",
   {
     name: "global::use-notification",
-    config: {},
+    config: {
+      cors: {
+        origin: ["*"],
+        headers: ["*"],
+      },
+    },
   },
 ];
