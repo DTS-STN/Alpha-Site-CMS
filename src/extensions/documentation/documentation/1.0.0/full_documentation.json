@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-02-14T19:22:17.749Z"
+    "x-generation-date": "2022-02-18T18:52:40.027Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5594,7 +5594,10 @@
                                               "items": {
                                                 "type": "object",
                                                 "properties": {
-                                                  "data": {
+                                                  "id": {
+                                                    "type": "string"
+                                                  },
+                                                  "attributes": {
                                                     "type": "object",
                                                     "properties": {
                                                       "name": {
@@ -6235,15 +6238,6 @@
                                                     }
                                                   }
                                                 }
-                                              },
-                                              "Title": {
-                                                "type": "string"
-                                              },
-                                              "Description": {
-                                                "type": "string"
-                                              },
-                                              "Display": {
-                                                "type": "boolean"
                                               }
                                             }
                                           },
@@ -8140,109 +8134,21 @@
         "tags": [
           "Page"
         ],
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "properties": {
-                  "data": {
-                    "type": "object",
-                    "properties": {
-                      "Title": {
-                        "type": "string"
-                      },
-                      "Banner": {
-                        "type": "object",
-                        "properties": {
-                          "Image": {
-                            "oneOf": [
-                              {
-                                "type": "integer"
-                              },
-                              {
-                                "type": "string"
-                              }
-                            ],
-                            "example": "string or id"
-                          },
-                          "Title": {
-                            "type": "string"
-                          },
-                          "Description": {
-                            "type": "string"
-                          },
-                          "Display": {
-                            "type": "boolean"
-                          }
-                        }
-                      },
-                      "Link": {
-                        "type": "string"
-                      },
-                      "createdAt": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
-                      "updatedAt": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
-                      "publishedAt": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
-                      "createdBy": {
-                        "oneOf": [
-                          {
-                            "type": "integer"
-                          },
-                          {
-                            "type": "string"
-                          }
-                        ],
-                        "example": "string or id"
-                      },
-                      "updatedBy": {
-                        "oneOf": [
-                          {
-                            "type": "integer"
-                          },
-                          {
-                            "type": "string"
-                          }
-                        ],
-                        "example": "string or id"
-                      },
-                      "localizations": {
-                        "type": "array",
-                        "items": {
-                          "oneOf": [
-                            {
-                              "type": "integer"
-                            },
-                            {
-                              "type": "string"
-                            }
-                          ],
-                          "example": "string or id"
-                        }
-                      },
-                      "locale": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
-              }
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
-        }
-      }
-    },
-    "/pages/{id}": {
-      "get": {
+        ],
+        "requestBody": {}
+      },
+      "put": {
         "responses": {
           "200": {
             "content": {
@@ -8948,7 +8854,10 @@
                                             "data": {
                                               "type": "object",
                                               "properties": {
-                                                "data": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "attributes": {
                                                   "type": "object",
                                                   "properties": {}
                                                 }
@@ -9527,15 +9436,6 @@
                                       }
                                     }
                                   }
-                                },
-                                "Title": {
-                                  "type": "string"
-                                },
-                                "Description": {
-                                  "type": "string"
-                                },
-                                "Display": {
-                                  "type": "boolean"
                                 }
                               }
                             },
@@ -10436,15 +10336,6 @@
                                       }
                                     }
                                   }
-                                },
-                                "Title": {
-                                  "type": "string"
-                                },
-                                "Description": {
-                                  "type": "string"
-                                },
-                                "Display": {
-                                  "type": "boolean"
                                 }
                               }
                             },

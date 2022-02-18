@@ -12,6 +12,14 @@ module.exports = [
   "strapi::public",
   {
     name: "global::use-notification",
-    config: {},
+    config: {
+      cors: {
+        origin: [
+          "http://localhost:1337/",
+          "https://alphasite-admin.dts-stn.com",
+        ],
+        headers: ["*"],
+      },
+    },
   },
 ];
