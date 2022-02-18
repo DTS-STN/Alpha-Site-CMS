@@ -14,7 +14,10 @@ module.exports = [
     name: "global::use-notification",
     config: {
       cors: {
-        origin: ["*"],
+        origin: [
+          "http://localhost:1337/",
+          "https://alphasite-admin.dts-stn.com",
+        ],
         headers: ["*"],
       },
     },
