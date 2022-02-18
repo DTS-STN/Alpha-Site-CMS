@@ -44,6 +44,7 @@
     "@strapi/utils": "4.0.7",
 >>>>>>> master
     "knex": "<0.20.0",
+    "node-fetch": "2",
     "pg": "latest",
     "react-router-dom": "^6.2.1",
     "strapi-provider-upload-azure-storage": "2.0.0",
