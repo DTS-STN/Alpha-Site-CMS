@@ -3,23 +3,19 @@
 module.exports = [
   "strapi::errors",
   "strapi::security",
-  "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
   "strapi::body",
   "strapi::favicon",
   "strapi::public",
+  "global::use-notification",
   {
     name: "strapi::cors",
     config: {
       enabled: true,
       headers: ["*"],
-      origin: ["http://localhost:1337", "https://alphasite-admin.dts-stn.com/"],
+      origin: ["https://alphasite-admin.dts-stn.com/", "http://localhost:1337"],
     },
-  },
-  {
-    name: "global::use-notification",
-    config: {},
   },
 ];
