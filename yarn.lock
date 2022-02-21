@@ -2491,6 +2491,14 @@
     "@strapi/utils" "4.0.7"
     sendmail "^1.6.1"
 
+"@strapi/provider-email-sendmail@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/@strapi/provider-email-sendmail/-/provider-email-sendmail-4.1.0.tgz#a3302d409f723b5a221cef979e62a93f7b6f83f3"
+  integrity sha512-alD+e/1X7dtcZ8szLTm3YiuhACNQ263s8yc86ymgWLxaoIRBnezzkhXm3d/eFwpBtIrRGDTqsV/WzBisxfMmqg==
+  dependencies:
+    "@strapi/utils" "4.1.0"
+    sendmail "^1.6.1"
+
 "@strapi/provider-upload-local@4.0.7":
   version "4.0.7"
   resolved "https://registry.npmjs.org/@strapi/provider-upload-local/-/provider-upload-local-4.0.7.tgz#4fa46492cb783627a9db967367f18c43653249a7"
@@ -2558,6 +2566,17 @@
   version "4.0.7"
   resolved "https://registry.npmjs.org/@strapi/utils/-/utils-4.0.7.tgz#718823fcf23c028a65ce8c317a36cc6d7321eb0c"
   integrity sha512-coGjVudsnlXvb20mobyeoguCfXKnLjXnKhYiMoS6wqy4ozazu12+5MsCh7Hs9UAkvK4Fzhf7+urvyoj/UpSkaQ==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "2.24.0"
+    http-errors "1.8.0"
+    lodash "4.17.21"
+    yup "0.32.9"
+
+"@strapi/utils@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/@strapi/utils/-/utils-4.1.0.tgz#535d9ffec7b00c4ce054cca110aa67eed06b4233"
+  integrity sha512-D6cee78u/iqff/BZSGJ4+NNHuBIFVj+ptEAwOXzKpm93LmQSuebIqI/ipqgMivzYtI3JATF1cjgQTx1kDPu1gA==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.24.0"
