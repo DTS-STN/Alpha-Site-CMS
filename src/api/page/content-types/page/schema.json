@@ -32,45 +32,22 @@
       },
       "type": "string"
     },
-    "banner": {
-      "type": "component",
-      "repeatable": false,
+    "components": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "page-element.banner"
-    },
-    "actionButton": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "page-element.action-button"
-    },
-    "callToAction": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "page-element.call-to-action"
-    },
-    "content": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "page-element.content"
+      "type": "dynamiczone",
+      "components": [
+        "page-element.action-button",
+        "page-element.banner",
+        "page-element.call-to-action",
+        "page-element.content",
+        "page-element.experiments",
+        "page-element.filter",
+        "page-element.navigation"
+      ]
     }
   }
 }

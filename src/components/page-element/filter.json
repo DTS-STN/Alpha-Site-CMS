@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_element_filters",
+  "info": {
+    "displayName": "filter",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "all": {
+      "type": "string"
+    },
+    "current": {
+      "type": "string"
+    },
+    "upcoming": {
+      "type": "string"
+    },
+    "past": {
+      "type": "string"
+    }
+  }
+}

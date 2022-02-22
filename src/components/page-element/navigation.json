@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_element_navigations",
+  "info": {
+    "displayName": "navigation",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "siteTitle": {
+      "type": "string"
+    },
+    "home": {
+      "type": "string"
+    },
+    "projects": {
+      "type": "string"
+    },
+    "signup": {
+      "type": "string"
+    },
+    "signupInfo": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_page_element_experiments",
+  "info": {
+    "displayName": "experiments",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "current_projects",
+        "past_projects",
+        "upcoming_projects"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
