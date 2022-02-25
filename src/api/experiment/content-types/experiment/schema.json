@@ -53,6 +53,16 @@
         }
       },
       "type": "string"
+    },
+    "actionButton": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.action-button"
     }
   }
 }

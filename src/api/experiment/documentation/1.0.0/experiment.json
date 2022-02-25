@@ -36,6 +36,23 @@
                               "Link": {
                                 "type": "string"
                               },
+                              "actionButton": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    },
+                                    "href": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
@@ -363,6 +380,23 @@
                                             },
                                             "Link": {
                                               "type": "string"
+                                            },
+                                            "actionButton": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "id": {
+                                                    "type": "string"
+                                                  },
+                                                  "text": {
+                                                    "type": "string"
+                                                  },
+                                                  "href": {
+                                                    "type": "string"
+                                                  }
+                                                }
+                                              }
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -742,6 +776,23 @@
                             "Link": {
                               "type": "string"
                             },
+                            "actionButton": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -1069,6 +1120,23 @@
                                           },
                                           "Link": {
                                             "type": "string"
+                                          },
+                                          "actionButton": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "text": {
+                                                  "type": "string"
+                                                },
+                                                "href": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -1371,6 +1439,23 @@
                             "Link": {
                               "type": "string"
                             },
+                            "actionButton": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -1698,6 +1783,23 @@
                                           },
                                           "Link": {
                                             "type": "string"
+                                          },
+                                          "actionButton": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "text": {
+                                                  "type": "string"
+                                                },
+                                                "href": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -1986,6 +2088,23 @@
                             "Link": {
                               "type": "string"
                             },
+                            "actionButton": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -2313,6 +2432,23 @@
                                           },
                                           "Link": {
                                             "type": "string"
+                                          },
+                                          "actionButton": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "text": {
+                                                  "type": "string"
+                                                },
+                                                "href": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -2592,6 +2728,20 @@
                       "Link": {
                         "type": "string"
                       },
+                      "actionButton": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "text": {
+                              "type": "string"
+                            },
+                            "href": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -2860,6 +3010,23 @@
                             },
                             "Link": {
                               "type": "string"
+                            },
+                            "actionButton": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
                             },
                             "createdAt": {
                               "type": "string",
@@ -3188,6 +3355,23 @@
                                           },
                                           "Link": {
                                             "type": "string"
+                                          },
+                                          "actionButton": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "text": {
+                                                  "type": "string"
+                                                },
+                                                "href": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
                                           },
                                           "createdAt": {
                                             "type": "string",
