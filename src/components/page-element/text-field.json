@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_element_text_fields",
+  "info": {
+    "displayName": "textField",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "richtext"
+    }
+  }
+}

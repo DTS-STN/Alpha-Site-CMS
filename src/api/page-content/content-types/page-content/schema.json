@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_contents",
+  "info": {
+    "singularName": "page-content",
+    "pluralName": "page-contents",
+    "displayName": "PageContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "home": {
+      "displayName": "home",
+      "type": "component",
+      "repeatable": false,
+      "component": "page-element.home"
+    }
+  }
+}
