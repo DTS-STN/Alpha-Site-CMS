@@ -11,10 +11,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "text",
-      "required": true
-    },
     "href": {
       "type": "string",
       "required": true
@@ -22,6 +18,9 @@
     "text": {
       "type": "string",
       "required": true
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
