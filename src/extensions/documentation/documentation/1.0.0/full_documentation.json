@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-03-04T16:59:47.187Z"
+    "x-generation-date": "2022-03-04T17:01:23.760Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4093,6 +4093,97 @@
                                   }
                                 }
                               },
+                              "about": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "title": {
+                                    "type": "string"
+                                  },
+                                  "description": {
+                                    "type": "string"
+                                  },
+                                  "siteNavigation": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "siteTitle": {
+                                        "type": "string"
+                                      },
+                                      "home": {
+                                        "type": "string"
+                                      },
+                                      "projects": {
+                                        "type": "string"
+                                      },
+                                      "about": {
+                                        "type": "string"
+                                      },
+                                      "signupInfo": {
+                                        "type": "string"
+                                      },
+                                      "signup": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "callToAction": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "title": {
+                                        "type": "string"
+                                      },
+                                      "href": {
+                                        "type": "string"
+                                      },
+                                      "text": {
+                                        "type": "string"
+                                      },
+                                      "description": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "textField": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "heading": {
+                                          "type": "string"
+                                        },
+                                        "paragraph": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "list": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "listItem": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
@@ -5229,6 +5320,97 @@
                                 }
                               }
                             },
+                            "about": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "siteNavigation": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "siteTitle": {
+                                      "type": "string"
+                                    },
+                                    "home": {
+                                      "type": "string"
+                                    },
+                                    "projects": {
+                                      "type": "string"
+                                    },
+                                    "about": {
+                                      "type": "string"
+                                    },
+                                    "signupInfo": {
+                                      "type": "string"
+                                    },
+                                    "signup": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "callToAction": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "href": {
+                                      "type": "string"
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "textField": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "heading": {
+                                        "type": "string"
+                                      },
+                                      "paragraph": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "list": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "listItem": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -5865,6 +6047,82 @@
                           }
                         }
                       },
+                      "about": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "siteNavigation": {
+                            "type": "object",
+                            "properties": {
+                              "siteTitle": {
+                                "type": "string"
+                              },
+                              "home": {
+                                "type": "string"
+                              },
+                              "projects": {
+                                "type": "string"
+                              },
+                              "about": {
+                                "type": "string"
+                              },
+                              "signupInfo": {
+                                "type": "string"
+                              },
+                              "signup": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "callToAction": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string"
+                              },
+                              "href": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "textField": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "heading": {
+                                  "type": "string"
+                                },
+                                "paragraph": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "list": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "listItem": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -6477,6 +6735,97 @@
                                     },
                                     "signup": {
                                       "type": "string"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "about": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "siteNavigation": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "siteTitle": {
+                                      "type": "string"
+                                    },
+                                    "home": {
+                                      "type": "string"
+                                    },
+                                    "projects": {
+                                      "type": "string"
+                                    },
+                                    "about": {
+                                      "type": "string"
+                                    },
+                                    "signupInfo": {
+                                      "type": "string"
+                                    },
+                                    "signup": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "callToAction": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "href": {
+                                      "type": "string"
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "textField": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "heading": {
+                                        "type": "string"
+                                      },
+                                      "paragraph": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "list": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "listItem": {
+                                        "type": "string"
+                                      }
                                     }
                                   }
                                 }
@@ -7527,6 +7876,97 @@
                                 }
                               }
                             },
+                            "about": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "siteNavigation": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "siteTitle": {
+                                      "type": "string"
+                                    },
+                                    "home": {
+                                      "type": "string"
+                                    },
+                                    "projects": {
+                                      "type": "string"
+                                    },
+                                    "about": {
+                                      "type": "string"
+                                    },
+                                    "signupInfo": {
+                                      "type": "string"
+                                    },
+                                    "signup": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "callToAction": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "href": {
+                                      "type": "string"
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "textField": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "heading": {
+                                        "type": "string"
+                                      },
+                                      "paragraph": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "list": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "listItem": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -8169,6 +8609,82 @@
                               },
                               "signup": {
                                 "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "about": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "siteNavigation": {
+                            "type": "object",
+                            "properties": {
+                              "siteTitle": {
+                                "type": "string"
+                              },
+                              "home": {
+                                "type": "string"
+                              },
+                              "projects": {
+                                "type": "string"
+                              },
+                              "about": {
+                                "type": "string"
+                              },
+                              "signupInfo": {
+                                "type": "string"
+                              },
+                              "signup": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "callToAction": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string"
+                              },
+                              "href": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "textField": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "heading": {
+                                  "type": "string"
+                                },
+                                "paragraph": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "list": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "listItem": {
+                                  "type": "string"
+                                }
                               }
                             }
                           }
