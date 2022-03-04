@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_page_element_projects",
+  "info": {
+    "displayName": "projects",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "experiment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-element.experiment"
+    },
+    "filterText": {
+      "type": "string"
+    },
+    "textField": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.text-field"
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-element.call-to-action"
+    }
+  }
+}

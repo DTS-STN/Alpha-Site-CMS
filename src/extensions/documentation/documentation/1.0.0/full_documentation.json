@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-03-03T15:38:32.407Z"
+    "x-generation-date": "2022-03-04T16:37:29.621Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3988,6 +3988,85 @@
                                   }
                                 }
                               },
+                              "projects": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "title": {
+                                    "type": "string"
+                                  },
+                                  "path": {
+                                    "type": "string"
+                                  },
+                                  "experiment": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "title": {
+                                        "type": "string"
+                                      },
+                                      "status": {
+                                        "type": "string",
+                                        "enum": [
+                                          "upcoming_projects",
+                                          "current_projects",
+                                          "past_projects"
+                                        ]
+                                      },
+                                      "link": {
+                                        "type": "string"
+                                      },
+                                      "description": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "filterText": {
+                                    "type": "string"
+                                  },
+                                  "textField": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "heading": {
+                                          "type": "string"
+                                        },
+                                        "paragraph": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "callToAction": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "title": {
+                                        "type": "string"
+                                      },
+                                      "href": {
+                                        "type": "string"
+                                      },
+                                      "text": {
+                                        "type": "string"
+                                      },
+                                      "description": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
@@ -5019,6 +5098,85 @@
                                 }
                               }
                             },
+                            "projects": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "path": {
+                                  "type": "string"
+                                },
+                                "experiment": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "status": {
+                                      "type": "string",
+                                      "enum": [
+                                        "upcoming_projects",
+                                        "current_projects",
+                                        "past_projects"
+                                      ]
+                                    },
+                                    "link": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "filterText": {
+                                  "type": "string"
+                                },
+                                "textField": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "heading": {
+                                        "type": "string"
+                                      },
+                                      "paragraph": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "callToAction": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "href": {
+                                      "type": "string"
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              }
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -5565,6 +5723,73 @@
                           }
                         }
                       },
+                      "projects": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "path": {
+                            "type": "string"
+                          },
+                          "experiment": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string"
+                              },
+                              "status": {
+                                "type": "string",
+                                "enum": [
+                                  "upcoming_projects",
+                                  "current_projects",
+                                  "past_projects"
+                                ]
+                              },
+                              "link": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "filterText": {
+                            "type": "string"
+                          },
+                          "textField": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "heading": {
+                                  "type": "string"
+                                },
+                                "paragraph": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "callToAction": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string"
+                              },
+                              "href": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -6072,6 +6297,85 @@
                                       "paragraph": {
                                         "type": "string"
                                       }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "projects": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "path": {
+                                  "type": "string"
+                                },
+                                "experiment": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "status": {
+                                      "type": "string",
+                                      "enum": [
+                                        "upcoming_projects",
+                                        "current_projects",
+                                        "past_projects"
+                                      ]
+                                    },
+                                    "link": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "filterText": {
+                                  "type": "string"
+                                },
+                                "textField": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "heading": {
+                                        "type": "string"
+                                      },
+                                      "paragraph": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "callToAction": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "href": {
+                                      "type": "string"
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
                                     }
                                   }
                                 }
@@ -7017,6 +7321,85 @@
                                 }
                               }
                             },
+                            "projects": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "path": {
+                                  "type": "string"
+                                },
+                                "experiment": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "status": {
+                                      "type": "string",
+                                      "enum": [
+                                        "upcoming_projects",
+                                        "current_projects",
+                                        "past_projects"
+                                      ]
+                                    },
+                                    "link": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "filterText": {
+                                  "type": "string"
+                                },
+                                "textField": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "heading": {
+                                        "type": "string"
+                                      },
+                                      "paragraph": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "callToAction": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "href": {
+                                      "type": "string"
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    },
+                                    "description": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              }
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -7569,6 +7952,73 @@
                                 "paragraph": {
                                   "type": "string"
                                 }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "projects": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "path": {
+                            "type": "string"
+                          },
+                          "experiment": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string"
+                              },
+                              "status": {
+                                "type": "string",
+                                "enum": [
+                                  "upcoming_projects",
+                                  "current_projects",
+                                  "past_projects"
+                                ]
+                              },
+                              "link": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "filterText": {
+                            "type": "string"
+                          },
+                          "textField": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "heading": {
+                                  "type": "string"
+                                },
+                                "paragraph": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "callToAction": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string"
+                              },
+                              "href": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
                               }
                             }
                           }
