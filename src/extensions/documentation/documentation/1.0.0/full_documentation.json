@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-03-04T17:01:23.760Z"
+    "x-generation-date": "2022-03-04T18:17:10.718Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3985,6 +3985,20 @@
                                         }
                                       }
                                     }
+                                  },
+                                  "list": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "listItem": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
                                   }
                                 }
                               },
@@ -5212,6 +5226,20 @@
                                       }
                                     }
                                   }
+                                },
+                                "list": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "listItem": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             },
@@ -5954,6 +5982,17 @@
                                 }
                               }
                             }
+                          },
+                          "list": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "listItem": {
+                                  "type": "string"
+                                }
+                              }
+                            }
                           }
                         }
                       },
@@ -6628,6 +6667,20 @@
                                         "type": "string"
                                       },
                                       "paragraph": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "list": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "listItem": {
                                         "type": "string"
                                       }
                                     }
@@ -7768,6 +7821,20 @@
                                       }
                                     }
                                   }
+                                },
+                                "list": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "listItem": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             },
@@ -8517,6 +8584,17 @@
                                   "type": "string"
                                 },
                                 "paragraph": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "list": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "listItem": {
                                   "type": "string"
                                 }
                               }

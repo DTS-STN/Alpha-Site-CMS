@@ -32,6 +32,11 @@
       "type": "component",
       "repeatable": true,
       "component": "page-element.text-field"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.list"
     }
   }
 }

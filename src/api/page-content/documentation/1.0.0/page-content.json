@@ -468,6 +468,20 @@
                                         }
                                       }
                                     }
+                                  },
+                                  "list": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "listItem": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
                                   }
                                 }
                               },
@@ -1695,6 +1709,20 @@
                                       }
                                     }
                                   }
+                                },
+                                "list": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "listItem": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             },
@@ -2437,6 +2465,17 @@
                                 }
                               }
                             }
+                          },
+                          "list": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "listItem": {
+                                  "type": "string"
+                                }
+                              }
+                            }
                           }
                         }
                       },
@@ -3111,6 +3150,20 @@
                                         "type": "string"
                                       },
                                       "paragraph": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                },
+                                "list": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "listItem": {
                                         "type": "string"
                                       }
                                     }
@@ -4251,6 +4304,20 @@
                                       }
                                     }
                                   }
+                                },
+                                "list": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "listItem": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             },
@@ -5000,6 +5067,17 @@
                                   "type": "string"
                                 },
                                 "paragraph": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "list": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "listItem": {
                                   "type": "string"
                                 }
                               }
