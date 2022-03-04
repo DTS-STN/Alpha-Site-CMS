@@ -30,6 +30,11 @@
       "type": "component",
       "repeatable": false,
       "component": "page-element.call-to-action"
+    },
+    "siteNavigation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-element.site-navigation"
     }
   }
 }

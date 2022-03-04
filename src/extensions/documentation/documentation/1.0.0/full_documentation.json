@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-03-04T16:37:29.621Z"
+    "x-generation-date": "2022-03-04T16:59:47.187Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4064,6 +4064,32 @@
                                         "type": "string"
                                       }
                                     }
+                                  },
+                                  "siteNavigation": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "siteTitle": {
+                                        "type": "string"
+                                      },
+                                      "home": {
+                                        "type": "string"
+                                      },
+                                      "projects": {
+                                        "type": "string"
+                                      },
+                                      "about": {
+                                        "type": "string"
+                                      },
+                                      "signupInfo": {
+                                        "type": "string"
+                                      },
+                                      "signup": {
+                                        "type": "string"
+                                      }
+                                    }
                                   }
                                 }
                               },
@@ -5174,6 +5200,32 @@
                                       "type": "string"
                                     }
                                   }
+                                },
+                                "siteNavigation": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "siteTitle": {
+                                      "type": "string"
+                                    },
+                                    "home": {
+                                      "type": "string"
+                                    },
+                                    "projects": {
+                                      "type": "string"
+                                    },
+                                    "about": {
+                                      "type": "string"
+                                    },
+                                    "signupInfo": {
+                                      "type": "string"
+                                    },
+                                    "signup": {
+                                      "type": "string"
+                                    }
+                                  }
                                 }
                               }
                             },
@@ -5787,6 +5839,29 @@
                                 "type": "string"
                               }
                             }
+                          },
+                          "siteNavigation": {
+                            "type": "object",
+                            "properties": {
+                              "siteTitle": {
+                                "type": "string"
+                              },
+                              "home": {
+                                "type": "string"
+                              },
+                              "projects": {
+                                "type": "string"
+                              },
+                              "about": {
+                                "type": "string"
+                              },
+                              "signupInfo": {
+                                "type": "string"
+                              },
+                              "signup": {
+                                "type": "string"
+                              }
+                            }
                           }
                         }
                       },
@@ -6375,6 +6450,32 @@
                                       "type": "string"
                                     },
                                     "description": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "siteNavigation": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "siteTitle": {
+                                      "type": "string"
+                                    },
+                                    "home": {
+                                      "type": "string"
+                                    },
+                                    "projects": {
+                                      "type": "string"
+                                    },
+                                    "about": {
+                                      "type": "string"
+                                    },
+                                    "signupInfo": {
+                                      "type": "string"
+                                    },
+                                    "signup": {
                                       "type": "string"
                                     }
                                   }
@@ -7397,6 +7498,32 @@
                                       "type": "string"
                                     }
                                   }
+                                },
+                                "siteNavigation": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "siteTitle": {
+                                      "type": "string"
+                                    },
+                                    "home": {
+                                      "type": "string"
+                                    },
+                                    "projects": {
+                                      "type": "string"
+                                    },
+                                    "about": {
+                                      "type": "string"
+                                    },
+                                    "signupInfo": {
+                                      "type": "string"
+                                    },
+                                    "signup": {
+                                      "type": "string"
+                                    }
+                                  }
                                 }
                               }
                             },
@@ -8018,6 +8145,29 @@
                                 "type": "string"
                               },
                               "description": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "siteNavigation": {
+                            "type": "object",
+                            "properties": {
+                              "siteTitle": {
+                                "type": "string"
+                              },
+                              "home": {
+                                "type": "string"
+                              },
+                              "projects": {
+                                "type": "string"
+                              },
+                              "about": {
+                                "type": "string"
+                              },
+                              "signupInfo": {
+                                "type": "string"
+                              },
+                              "signup": {
                                 "type": "string"
                               }
                             }

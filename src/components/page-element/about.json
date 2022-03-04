@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_page_element_abouts",
+  "info": {
+    "displayName": "about",
+    "icon": "phone",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "siteNavigation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-element.site-navigation"
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-element.call-to-action"
+    },
+    "textField": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.text-field"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.list"
+    }
+  }
+}
