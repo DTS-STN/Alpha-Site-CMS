@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_page_element_homes",
+  "collectionName": "components_page_element_projects",
   "info": {
-    "displayName": "home",
-    "icon": "address-book",
+    "displayName": "projects",
+    "icon": "book",
     "description": ""
   },
   "options": {},
@@ -13,30 +13,28 @@
     "path": {
       "type": "string"
     },
-    "banner": {
+    "experiment": {
       "type": "component",
       "repeatable": false,
-      "component": "page-element.banner"
+      "component": "page-element.experiment"
     },
-    "actionButton": {
-      "type": "component",
-      "repeatable": true,
-      "component": "page-element.action-button"
-    },
-    "callToAction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "page-element.call-to-action"
+    "filterText": {
+      "type": "string"
     },
     "textField": {
       "type": "component",
       "repeatable": true,
       "component": "page-element.text-field"
     },
-    "list": {
+    "callToAction": {
       "type": "component",
-      "repeatable": true,
-      "component": "page-element.list"
+      "repeatable": false,
+      "component": "page-element.call-to-action"
+    },
+    "siteNavigation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-element.site-navigation"
     }
   }
 }

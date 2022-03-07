@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_page_element_homes",
+  "collectionName": "components_page_element_abouts",
   "info": {
-    "displayName": "home",
-    "icon": "address-book",
+    "displayName": "about",
+    "icon": "phone",
     "description": ""
   },
   "options": {},
@@ -10,18 +10,13 @@
     "title": {
       "type": "string"
     },
-    "path": {
+    "description": {
       "type": "string"
     },
-    "banner": {
+    "siteNavigation": {
       "type": "component",
       "repeatable": false,
-      "component": "page-element.banner"
-    },
-    "actionButton": {
-      "type": "component",
-      "repeatable": true,
-      "component": "page-element.action-button"
+      "component": "page-element.site-navigation"
     },
     "callToAction": {
       "type": "component",
