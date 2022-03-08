@@ -15,7 +15,7 @@
     },
     "experiment": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "page-element.experiment"
     },
     "filterText": {

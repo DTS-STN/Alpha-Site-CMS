@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-03-08T19:17:11.179Z"
+    "x-generation-date": "2022-03-08T19:32:07.937Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4015,27 +4015,30 @@
                                     "type": "string"
                                   },
                                   "experiment": {
-                                    "type": "object",
-                                    "properties": {
-                                      "id": {
-                                        "type": "string"
-                                      },
-                                      "title": {
-                                        "type": "string"
-                                      },
-                                      "status": {
-                                        "type": "string",
-                                        "enum": [
-                                          "upcoming_projects",
-                                          "current_projects",
-                                          "past_projects"
-                                        ]
-                                      },
-                                      "link": {
-                                        "type": "string"
-                                      },
-                                      "description": {
-                                        "type": "string"
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "title": {
+                                          "type": "string"
+                                        },
+                                        "status": {
+                                          "type": "string",
+                                          "enum": [
+                                            "upcoming_projects",
+                                            "current_projects",
+                                            "past_projects"
+                                          ]
+                                        },
+                                        "link": {
+                                          "type": "string"
+                                        },
+                                        "description": {
+                                          "type": "string"
+                                        }
                                       }
                                     }
                                   },
@@ -5445,27 +5448,30 @@
                                                   "type": "string"
                                                 },
                                                 "experiment": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "id": {
-                                                      "type": "string"
-                                                    },
-                                                    "title": {
-                                                      "type": "string"
-                                                    },
-                                                    "status": {
-                                                      "type": "string",
-                                                      "enum": [
-                                                        "upcoming_projects",
-                                                        "current_projects",
-                                                        "past_projects"
-                                                      ]
-                                                    },
-                                                    "link": {
-                                                      "type": "string"
-                                                    },
-                                                    "description": {
-                                                      "type": "string"
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "id": {
+                                                        "type": "string"
+                                                      },
+                                                      "title": {
+                                                        "type": "string"
+                                                      },
+                                                      "status": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "upcoming_projects",
+                                                          "current_projects",
+                                                          "past_projects"
+                                                        ]
+                                                      },
+                                                      "link": {
+                                                        "type": "string"
+                                                      },
+                                                      "description": {
+                                                        "type": "string"
+                                                      }
                                                     }
                                                   }
                                                 },
@@ -6925,27 +6931,30 @@
                                   "type": "string"
                                 },
                                 "experiment": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "title": {
-                                      "type": "string"
-                                    },
-                                    "status": {
-                                      "type": "string",
-                                      "enum": [
-                                        "upcoming_projects",
-                                        "current_projects",
-                                        "past_projects"
-                                      ]
-                                    },
-                                    "link": {
-                                      "type": "string"
-                                    },
-                                    "description": {
-                                      "type": "string"
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "title": {
+                                        "type": "string"
+                                      },
+                                      "status": {
+                                        "type": "string",
+                                        "enum": [
+                                          "upcoming_projects",
+                                          "current_projects",
+                                          "past_projects"
+                                        ]
+                                      },
+                                      "link": {
+                                        "type": "string"
+                                      },
+                                      "description": {
+                                        "type": "string"
+                                      }
                                     }
                                   }
                                 },
@@ -8355,27 +8364,30 @@
                                                 "type": "string"
                                               },
                                               "experiment": {
-                                                "type": "object",
-                                                "properties": {
-                                                  "id": {
-                                                    "type": "string"
-                                                  },
-                                                  "title": {
-                                                    "type": "string"
-                                                  },
-                                                  "status": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "upcoming_projects",
-                                                      "current_projects",
-                                                      "past_projects"
-                                                    ]
-                                                  },
-                                                  "link": {
-                                                    "type": "string"
-                                                  },
-                                                  "description": {
-                                                    "type": "string"
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "title": {
+                                                      "type": "string"
+                                                    },
+                                                    "status": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "upcoming_projects",
+                                                        "current_projects",
+                                                        "past_projects"
+                                                      ]
+                                                    },
+                                                    "link": {
+                                                      "type": "string"
+                                                    },
+                                                    "description": {
+                                                      "type": "string"
+                                                    }
                                                   }
                                                 }
                                               },
@@ -9344,24 +9356,27 @@
                             "type": "string"
                           },
                           "experiment": {
-                            "type": "object",
-                            "properties": {
-                              "title": {
-                                "type": "string"
-                              },
-                              "status": {
-                                "type": "string",
-                                "enum": [
-                                  "upcoming_projects",
-                                  "current_projects",
-                                  "past_projects"
-                                ]
-                              },
-                              "link": {
-                                "type": "string"
-                              },
-                              "description": {
-                                "type": "string"
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "status": {
+                                  "type": "string",
+                                  "enum": [
+                                    "upcoming_projects",
+                                    "current_projects",
+                                    "past_projects"
+                                  ]
+                                },
+                                "link": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                }
                               }
                             }
                           },
@@ -10453,27 +10468,30 @@
                                   "type": "string"
                                 },
                                 "experiment": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "title": {
-                                      "type": "string"
-                                    },
-                                    "status": {
-                                      "type": "string",
-                                      "enum": [
-                                        "upcoming_projects",
-                                        "current_projects",
-                                        "past_projects"
-                                      ]
-                                    },
-                                    "link": {
-                                      "type": "string"
-                                    },
-                                    "description": {
-                                      "type": "string"
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "title": {
+                                        "type": "string"
+                                      },
+                                      "status": {
+                                        "type": "string",
+                                        "enum": [
+                                          "upcoming_projects",
+                                          "current_projects",
+                                          "past_projects"
+                                        ]
+                                      },
+                                      "link": {
+                                        "type": "string"
+                                      },
+                                      "description": {
+                                        "type": "string"
+                                      }
                                     }
                                   }
                                 },
@@ -11883,27 +11901,30 @@
                                                 "type": "string"
                                               },
                                               "experiment": {
-                                                "type": "object",
-                                                "properties": {
-                                                  "id": {
-                                                    "type": "string"
-                                                  },
-                                                  "title": {
-                                                    "type": "string"
-                                                  },
-                                                  "status": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "upcoming_projects",
-                                                      "current_projects",
-                                                      "past_projects"
-                                                    ]
-                                                  },
-                                                  "link": {
-                                                    "type": "string"
-                                                  },
-                                                  "description": {
-                                                    "type": "string"
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "title": {
+                                                      "type": "string"
+                                                    },
+                                                    "status": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "upcoming_projects",
+                                                        "current_projects",
+                                                        "past_projects"
+                                                      ]
+                                                    },
+                                                    "link": {
+                                                      "type": "string"
+                                                    },
+                                                    "description": {
+                                                      "type": "string"
+                                                    }
                                                   }
                                                 }
                                               },
@@ -13272,27 +13293,30 @@
                                   "type": "string"
                                 },
                                 "experiment": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "title": {
-                                      "type": "string"
-                                    },
-                                    "status": {
-                                      "type": "string",
-                                      "enum": [
-                                        "upcoming_projects",
-                                        "current_projects",
-                                        "past_projects"
-                                      ]
-                                    },
-                                    "link": {
-                                      "type": "string"
-                                    },
-                                    "description": {
-                                      "type": "string"
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "title": {
+                                        "type": "string"
+                                      },
+                                      "status": {
+                                        "type": "string",
+                                        "enum": [
+                                          "upcoming_projects",
+                                          "current_projects",
+                                          "past_projects"
+                                        ]
+                                      },
+                                      "link": {
+                                        "type": "string"
+                                      },
+                                      "description": {
+                                        "type": "string"
+                                      }
                                     }
                                   }
                                 },
@@ -14702,27 +14726,30 @@
                                                 "type": "string"
                                               },
                                               "experiment": {
-                                                "type": "object",
-                                                "properties": {
-                                                  "id": {
-                                                    "type": "string"
-                                                  },
-                                                  "title": {
-                                                    "type": "string"
-                                                  },
-                                                  "status": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "upcoming_projects",
-                                                      "current_projects",
-                                                      "past_projects"
-                                                    ]
-                                                  },
-                                                  "link": {
-                                                    "type": "string"
-                                                  },
-                                                  "description": {
-                                                    "type": "string"
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "title": {
+                                                      "type": "string"
+                                                    },
+                                                    "status": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "upcoming_projects",
+                                                        "current_projects",
+                                                        "past_projects"
+                                                      ]
+                                                    },
+                                                    "link": {
+                                                      "type": "string"
+                                                    },
+                                                    "description": {
+                                                      "type": "string"
+                                                    }
                                                   }
                                                 }
                                               },
@@ -15702,24 +15729,27 @@
                             "type": "string"
                           },
                           "experiment": {
-                            "type": "object",
-                            "properties": {
-                              "title": {
-                                "type": "string"
-                              },
-                              "status": {
-                                "type": "string",
-                                "enum": [
-                                  "upcoming_projects",
-                                  "current_projects",
-                                  "past_projects"
-                                ]
-                              },
-                              "link": {
-                                "type": "string"
-                              },
-                              "description": {
-                                "type": "string"
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "status": {
+                                  "type": "string",
+                                  "enum": [
+                                    "upcoming_projects",
+                                    "current_projects",
+                                    "past_projects"
+                                  ]
+                                },
+                                "link": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                }
                               }
                             }
                           },
@@ -16986,27 +17016,30 @@
                                   "type": "string"
                                 },
                                 "experiment": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "title": {
-                                      "type": "string"
-                                    },
-                                    "status": {
-                                      "type": "string",
-                                      "enum": [
-                                        "upcoming_projects",
-                                        "current_projects",
-                                        "past_projects"
-                                      ]
-                                    },
-                                    "link": {
-                                      "type": "string"
-                                    },
-                                    "description": {
-                                      "type": "string"
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "title": {
+                                        "type": "string"
+                                      },
+                                      "status": {
+                                        "type": "string",
+                                        "enum": [
+                                          "upcoming_projects",
+                                          "current_projects",
+                                          "past_projects"
+                                        ]
+                                      },
+                                      "link": {
+                                        "type": "string"
+                                      },
+                                      "description": {
+                                        "type": "string"
+                                      }
                                     }
                                   }
                                 },
@@ -18416,27 +18449,30 @@
                                                 "type": "string"
                                               },
                                               "experiment": {
-                                                "type": "object",
-                                                "properties": {
-                                                  "id": {
-                                                    "type": "string"
-                                                  },
-                                                  "title": {
-                                                    "type": "string"
-                                                  },
-                                                  "status": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "upcoming_projects",
-                                                      "current_projects",
-                                                      "past_projects"
-                                                    ]
-                                                  },
-                                                  "link": {
-                                                    "type": "string"
-                                                  },
-                                                  "description": {
-                                                    "type": "string"
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "id": {
+                                                      "type": "string"
+                                                    },
+                                                    "title": {
+                                                      "type": "string"
+                                                    },
+                                                    "status": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "upcoming_projects",
+                                                        "current_projects",
+                                                        "past_projects"
+                                                      ]
+                                                    },
+                                                    "link": {
+                                                      "type": "string"
+                                                    },
+                                                    "description": {
+                                                      "type": "string"
+                                                    }
                                                   }
                                                 }
                                               },
@@ -19416,24 +19452,27 @@
                             "type": "string"
                           },
                           "experiment": {
-                            "type": "object",
-                            "properties": {
-                              "title": {
-                                "type": "string"
-                              },
-                              "status": {
-                                "type": "string",
-                                "enum": [
-                                  "upcoming_projects",
-                                  "current_projects",
-                                  "past_projects"
-                                ]
-                              },
-                              "link": {
-                                "type": "string"
-                              },
-                              "description": {
-                                "type": "string"
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "status": {
+                                  "type": "string",
+                                  "enum": [
+                                    "upcoming_projects",
+                                    "current_projects",
+                                    "past_projects"
+                                  ]
+                                },
+                                "link": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                }
                               }
                             }
                           },
