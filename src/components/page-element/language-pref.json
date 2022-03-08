@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_page_element_language_prefs",
+  "info": {
+    "displayName": "languagePref",
+    "icon": "language"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "en": {
+      "type": "string"
+    },
+    "fr": {
+      "type": "string"
+    }
+  }
+}

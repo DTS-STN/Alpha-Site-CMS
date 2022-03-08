@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_element_disabilities",
+  "info": {
+    "displayName": "disability",
+    "icon": "wheelchair"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "yes": {
+      "type": "string"
+    },
+    "no": {
+      "type": "string"
+    },
+    "notSure": {
+      "type": "string"
+    },
+    "preferNotAnswer": {
+      "type": "string"
+    }
+  }
+}

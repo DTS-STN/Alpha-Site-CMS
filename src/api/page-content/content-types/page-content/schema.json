@@ -10,23 +10,62 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "home": {
       "displayName": "home",
       "type": "component",
       "repeatable": false,
-      "component": "page-element.home"
+      "component": "page-element.home",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "projects": {
       "type": "component",
       "repeatable": false,
-      "component": "page-element.project"
+      "component": "page-element.project",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "about": {
       "type": "component",
       "repeatable": false,
-      "component": "page-element.about"
+      "component": "page-element.about",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "signupInfo": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.signup-info"
+    },
+    "signup": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.signup"
     }
   }
 }

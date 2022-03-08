@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_page_element_projects",
+  "collectionName": "components_page_element_signup_infos",
   "info": {
-    "displayName": "projects",
-    "icon": "book",
+    "displayName": "signupInfo",
+    "icon": "pen",
     "description": ""
   },
   "options": {},
@@ -13,28 +13,30 @@
     "path": {
       "type": "string"
     },
-    "experiment": {
-      "type": "component",
-      "repeatable": true,
-      "component": "page-element.experiment"
-    },
-    "filterText": {
-      "type": "string"
-    },
     "textField": {
       "type": "component",
       "repeatable": true,
       "component": "page-element.text-field"
     },
-    "callToAction": {
+    "list": {
       "type": "component",
-      "repeatable": false,
-      "component": "page-element.call-to-action"
+      "repeatable": true,
+      "component": "page-element.list"
     },
     "siteNavigation": {
       "type": "component",
       "repeatable": false,
       "component": "page-element.site-navigation"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.action-button"
+    },
+    "actionButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.action-button"
     }
   }
 }

@@ -13,11 +13,6 @@
     "path": {
       "type": "string"
     },
-    "banner": {
-      "type": "component",
-      "repeatable": false,
-      "component": "page-element.banner"
-    },
     "actionButton": {
       "type": "component",
       "repeatable": true,
@@ -37,6 +32,19 @@
       "type": "component",
       "repeatable": true,
       "component": "page-element.list"
+    },
+    "siteTitle": {
+      "type": "string"
+    },
+    "siteDescription": {
+      "type": "string"
+    },
+    "bannerImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

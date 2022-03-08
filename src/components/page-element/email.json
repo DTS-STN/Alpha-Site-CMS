@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_element_emails",
+  "info": {
+    "displayName": "email",
+    "icon": "mail-bulk"
+  },
+  "options": {},
+  "attributes": {
+    "emailLabel": {
+      "type": "string"
+    },
+    "confirmEmailLabel": {
+      "type": "string"
+    }
+  }
+}
