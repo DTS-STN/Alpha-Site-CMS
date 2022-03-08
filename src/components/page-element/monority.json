@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_page_element_monorities",
+  "info": {
+    "displayName": "monority",
+    "icon": "grin-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "yes": {
+      "type": "string"
+    },
+    "no": {
+      "type": "string"
+    },
+    "preferNotAnswer": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "black": {
+      "type": "string"
+    },
+    "chinese": {
+      "type": "string"
+    },
+    "filipino": {
+      "type": "string"
+    },
+    "japanese": {
+      "type": "string"
+    },
+    "korean": {
+      "type": "string"
+    },
+    "SA": {
+      "type": "string"
+    },
+    "SEA": {
+      "type": "string"
+    },
+    "nonWhiteAAA": {
+      "type": "string"
+    },
+    "LA": {
+      "type": "string"
+    },
+    "mixedOrigin": {
+      "type": "string"
+    },
+    "another": {
+      "type": "string"
+    }
+  }
+}

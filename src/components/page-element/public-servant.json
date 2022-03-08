@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_page_element_public_servants",
+  "info": {
+    "displayName": "publicServant",
+    "icon": "user-graduate"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "yes": {
+      "type": "string"
+    },
+    "no": {
+      "type": "string"
+    }
+  }
+}
