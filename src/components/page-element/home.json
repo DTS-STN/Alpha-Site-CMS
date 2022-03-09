@@ -28,23 +28,11 @@
       "repeatable": true,
       "component": "page-element.text-field"
     },
-    "list": {
+    "banner": {
+      "displayName": "banner",
       "type": "component",
-      "repeatable": true,
-      "component": "page-element.list"
-    },
-    "siteTitle": {
-      "type": "string"
-    },
-    "siteDescription": {
-      "type": "string"
-    },
-    "bannerImage": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": true
+      "repeatable": false,
+      "component": "page-element.banner"
     }
   }
 }

@@ -10,7 +10,7 @@
     "title": {
       "type": "string"
     },
-    "description": {
+    "path": {
       "type": "string"
     },
     "siteNavigation": {

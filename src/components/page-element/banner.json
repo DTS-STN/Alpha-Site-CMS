@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_page_element_banners",
+  "info": {
+    "displayName": "banner",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bannerImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
