@@ -7,12 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "path": {
-      "type": "string"
-    },
     "textField": {
       "type": "component",
       "repeatable": true,

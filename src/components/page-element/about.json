@@ -7,12 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "path": {
-      "type": "string"
-    },
     "siteNavigation": {
       "type": "component",
       "repeatable": false,
@@ -27,11 +21,6 @@
       "type": "component",
       "repeatable": true,
       "component": "page-element.text-field"
-    },
-    "list": {
-      "type": "component",
-      "repeatable": true,
-      "component": "page-element.list"
     }
   }
 }
