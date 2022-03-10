@@ -7,12 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "path": {
-      "type": "string"
-    },
     "siteNavigation": {
       "type": "component",
       "repeatable": false,
