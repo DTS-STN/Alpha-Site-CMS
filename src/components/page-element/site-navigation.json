@@ -1,12 +1,13 @@
 {
   "collectionName": "components_page_element_site_navigations",
   "info": {
-    "displayName": "siteNavigation",
-    "icon": "link"
+    "displayName": "navigation",
+    "icon": "link",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "siteTitle": {
+    "sclabsTitle": {
       "type": "string"
     },
     "home": {
@@ -19,9 +20,6 @@
       "type": "string"
     },
     "signupInfo": {
-      "type": "string"
-    },
-    "signup": {
       "type": "string"
     }
   }

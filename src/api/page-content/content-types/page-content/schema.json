@@ -16,21 +16,6 @@
     }
   },
   "attributes": {
-    "page": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "dynamiczone",
-      "components": [
-        "page-element.about",
-        "page-element.home",
-        "page-element.project",
-        "page-element.signup",
-        "page-element.signup-info"
-      ]
-    },
     "title": {
       "pluginOptions": {
         "i18n": {
@@ -46,6 +31,56 @@
         }
       },
       "type": "string"
+    },
+    "navigation": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.site-navigation"
+    },
+    "textField": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.text-field"
+    },
+    "actionButton": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.action-button"
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.call-to-action"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.banner"
     }
   }
 }

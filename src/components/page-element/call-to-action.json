@@ -9,15 +9,15 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "href": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "text": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "description": {
       "type": "richtext"
