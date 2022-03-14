@@ -29,4 +29,6 @@ COPY . .
 
 EXPOSE 1337
 
+RUN yarn build
+
 CMD ["yarn", "start"]
