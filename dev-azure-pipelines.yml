@@ -43,8 +43,6 @@ stages:
         command: 'push'
         tags: |
           $(tag)
-
-
 - stage: Deploy
   displayName: Deploy Containers to App Service
   jobs:

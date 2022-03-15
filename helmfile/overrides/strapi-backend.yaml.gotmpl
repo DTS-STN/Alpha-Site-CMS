@@ -51,4 +51,6 @@ extraEnv:
     value: {{ requiredEnv "STRAPI_ADMIN_JWT_SECRET" | quote }}
   - name: STRAPI_API_BACKEND_URL
     value: {{ requiredEnv "STRAPI_API_BACKEND_URL" | quote }}
+  - name: STRAPI_ADMIN_BACKEND_URL
+    value: {{ requiredEnv "STRAPI_ADMIN_BACKEND_URL" | quote }}
 
