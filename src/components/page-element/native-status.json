@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_page_element_native_statuses",
+  "info": {
+    "displayName": "nativeStatus",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "firstNations": {
+      "type": "string"
+    },
+    "metis": {
+      "type": "string"
+    },
+    "inuit": {
+      "type": "string"
+    },
+    "doesNotApply": {
+      "type": "string"
+    },
+    "preferNotAnswer": {
+      "type": "string"
+    }
+  }
+}

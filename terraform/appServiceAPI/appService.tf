@@ -9,7 +9,7 @@ resource "azurerm_app_service" "app-service-primary" {
   site_config {
     always_on = "true"
 
-# TODO change docker values to production 
+# TODO change docker values to production
 
     linux_fx_version  = "DOCKER|${var.staging_docker_registry}/${var.staging_docker_container_api}" #define the images to use for your application
 
@@ -40,7 +40,8 @@ resource "azurerm_app_service" "app-service-primary" {
     "DATABASE_PASSWORD" = var.database_pass_dev
     "DATABASE_SSL" = true
     "STRAPI_API_BACKEND_URL" = var.api_url_dev
-    "STRAPI_API_HOST" = "0.0.0.0" 
+    "STRAPI_ADMIN_BACKEND_URL" = var.api_url_dev
+    "STRAPI_API_HOST" = "0.0.0.0"
     "STRAPI_API_PORT" = var.api_port
     "STRAPI_STORAGE" = "azure"
     "STORAGE_ACCOUNT" = var.storage_account_name
@@ -92,7 +93,8 @@ resource "azurerm_app_service" "app-service-secondary" {
     "DATABASE_PASSWORD" = var.database_pass_dev
     "DATABASE_SSL" = true
     "STRAPI_API_BACKEND_URL" = var.api_url_dev
-    "STRAPI_API_HOST" = "0.0.0.0" 
+    "STRAPI_ADMIN_BACKEND_URL" = var.api_url_dev
+    "STRAPI_API_HOST" = "0.0.0.0"
     "STRAPI_API_PORT" = var.api_port
     "STRAPI_STORAGE" = "azure"
     "STORAGE_ACCOUNT" = var.storage_account_name

@@ -1,8 +1,8 @@
 {
   "collectionName": "components_page_element_banners",
   "info": {
-    "displayName": "Banner",
-    "icon": "pager",
+    "displayName": "banner",
+    "icon": "image",
     "description": ""
   },
   "options": {},
@@ -13,9 +13,9 @@
     "description": {
       "type": "text"
     },
-    "bannerImage": {
+    "image": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images"

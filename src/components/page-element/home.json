@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_page_element_homes",
+  "info": {
+    "displayName": "home",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "actionButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.action-button"
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-element.call-to-action"
+    },
+    "textField": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.text-field"
+    },
+    "banner": {
+      "displayName": "banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "page-element.banner"
+    }
+  }
+}

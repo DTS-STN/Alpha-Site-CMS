@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -707,11 +708,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/experiments"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1311,6 +1313,7 @@
           "Experiment"
         ],
         "parameters": [],
+        "operationId": "post/experiments",
         "requestBody": {
           "required": true,
           "content": {
@@ -1341,6 +1344,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1951,11 +1955,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/experiments/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2566,6 +2571,7 @@
             }
           }
         ],
+        "operationId": "put/experiments/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -2654,6 +2660,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2824,13 +2831,14 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/experiments/{id}"
       }
     },
     "/experiments/{id}/localizations": {
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -3441,6 +3449,7 @@
             }
           }
         ],
+        "operationId": "post/experiments/{id}/localizations",
         "requestBody": {
           "required": true,
           "content": {

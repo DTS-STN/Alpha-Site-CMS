@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_element_site_navigations",
+  "info": {
+    "displayName": "navigation",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sclabsTitle": {
+      "type": "string"
+    },
+    "home": {
+      "type": "string"
+    },
+    "projects": {
+      "type": "string"
+    },
+    "about": {
+      "type": "string"
+    },
+    "signupInfo": {
+      "type": "string"
+    }
+  }
+}

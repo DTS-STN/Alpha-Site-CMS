@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_element_genders",
+  "info": {
+    "displayName": "gender",
+    "icon": "user-friends"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "man": {
+      "type": "string"
+    },
+    "woman": {
+      "type": "string"
+    },
+    "another": {
+      "type": "string"
+    },
+    "preferNotAnswer": {
+      "type": "string"
+    }
+  }
+}

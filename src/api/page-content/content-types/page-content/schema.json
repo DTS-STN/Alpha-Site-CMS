@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
+  "collectionName": "page_contents",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "Page",
+    "singularName": "page-content",
+    "pluralName": "page-contents",
+    "displayName": "PageContent",
     "description": ""
   },
   "options": {
@@ -24,7 +24,7 @@
       },
       "type": "string"
     },
-    "link": {
+    "url": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -32,7 +32,7 @@
       },
       "type": "string"
     },
-    "banner": {
+    "navigation": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -40,7 +40,17 @@
           "localized": true
         }
       },
-      "component": "page-element.banner"
+      "component": "page-element.site-navigation"
+    },
+    "textField": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page-element.text-field"
     },
     "actionButton": {
       "type": "component",
@@ -62,15 +72,15 @@
       },
       "component": "page-element.call-to-action"
     },
-    "content": {
+    "banner": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "page-element.content"
+      "component": "page-element.banner"
     }
   }
 }

@@ -11,6 +11,7 @@ module.exports = ({ env }) => ({
     },
     debug: false,
     useNullAsDefault: true,
+    autoMigration: true
   },
   settings: {},
 });
