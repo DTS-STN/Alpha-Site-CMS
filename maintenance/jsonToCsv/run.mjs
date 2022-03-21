@@ -9,8 +9,7 @@ export default async () => {
   const fr = JSON.parse(await fs.readFile('./sources/fr.json'))
 
   const mergedAndFlattened = buildRows(en, fr)
-  const stream = fs.createWriteStream(`./build/strapi-translations.csv`, { flags: 'a' });
-  console.log("test")
+  const stream = fs.createWriteStream(`./build/strapi-translations.csv`, { flags: 'w' });
 
   stringify(mergedAndFlattened, {
     quoted: true,
