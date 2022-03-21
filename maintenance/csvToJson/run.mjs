@@ -3,9 +3,11 @@ import 'zx/globals'
 
 import { parse } from 'csv'
 
-export default async () => {
+export default async ({
+  build, base, sources
+}) => {
   const parser = fs
-    .createReadStream('./sources/strapi-translations.csv')
+    .createReadStream(`${sources}/strapi-translations.csv`)
     .pipe(parse());
 
   const langsObject = {
@@ -22,6 +24,6 @@ export default async () => {
     if (i === 0) i++;
   }
 
-  fs.writeFileSync('./build/en.json', JSON.stringify(langsObject.en, null, 2), 'utf8');
-  fs.writeFileSync('./build/fr.json', JSON.stringify(langsObject.fr, null, 2), 'utf8');
+  fs.writeFileSync(`${build}/en.json`, JSON.stringify(langsObject.en, null, 2), 'utf8');
+  fs.writeFileSync(`${build}/fr.json`, JSON.stringify(langsObject.fr, null, 2), 'utf8');
 }
