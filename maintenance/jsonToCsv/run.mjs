@@ -10,6 +10,7 @@ export default async () => {
 
   const mergedAndFlattened = buildRows(en, fr)
   const stream = fs.createWriteStream(`./build/strapi-translations.csv`, { flags: 'a' });
+  console.log("test")
 
   stringify(mergedAndFlattened, {
     quoted: true,
