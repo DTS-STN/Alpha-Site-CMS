@@ -7,14 +7,14 @@ try {
   if (!scriptToRun) throw new Error(`Pass in a script name to run.`)
   const currentDir = path.join(__dirname)
   const scriptBasePath = path.join(currentDir, scriptToRun)
-  console.log(`deleting and rebuilding build folder for ${scriptToRun}`)
-  await $`rm -rf ${scriptBasePath}/build`
-  await $`mkdir ${scriptBasePath}/build`
   const paths = {
     base: scriptBasePath,
     build: path.join(scriptBasePath, 'build'),
     sources: path.join(scriptBasePath, 'sources')
   }
+  console.log(`deleting and rebuilding build folder for ${scriptToRun}`)
+  await $`rm -rf ${paths.build}`
+  await $`mkdir ${paths.build}`
   const { default: script } = await import(path.join(scriptBasePath, 'run.mjs'))
   console.log(`starting imported script`)
   await script(paths)
