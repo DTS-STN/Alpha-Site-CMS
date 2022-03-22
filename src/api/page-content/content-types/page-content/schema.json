@@ -81,6 +81,16 @@
         }
       },
       "component": "page-element.banner"
+    },
+    "formField": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "form-element.form-field"
     }
   }
 }

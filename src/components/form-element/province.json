@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_page_element_provinces",
+  "info": {
+    "displayName": "province",
+    "icon": "map-marker-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "ON": {
+      "type": "string"
+    },
+    "QC": {
+      "type": "string"
+    },
+    "NL": {
+      "type": "string"
+    },
+    "PE": {
+      "type": "string"
+    },
+    "NS": {
+      "type": "string"
+    },
+    "NB": {
+      "type": "string"
+    },
+    "SK": {
+      "type": "string"
+    },
+    "MB": {
+      "type": "string"
+    },
+    "AB": {
+      "type": "string"
+    },
+    "BC": {
+      "type": "string"
+    },
+    "YT": {
+      "type": "string"
+    },
+    "NT": {
+      "type": "string"
+    },
+    "NU": {
+      "type": "string"
+    }
+  }
+}
