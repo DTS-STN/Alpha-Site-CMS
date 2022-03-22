@@ -1,5 +1,7 @@
 #!/usr/bin/env zx
 import 'zx/globals'
+const mkdirp = require('mkdirp')
+const rimraf = require('rimraf')
 
 const scriptToRun = process.argv[3]?.trim?.()
 
@@ -14,7 +16,8 @@ try {
   }
   console.log(`deleting and rebuilding build folder for ${scriptToRun}`)
   await $`rm -rf ${paths.build}`
-  await $`mkdir ${paths.build}`
+  rimraf.sync(paths.build)
+  mkdirp.sync(paths.build)
   const { default: script } = await import(path.join(scriptBasePath, 'run.mjs'))
   console.log(`starting imported script`)
   await script(paths)
