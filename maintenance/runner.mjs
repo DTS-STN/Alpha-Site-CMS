@@ -1,5 +1,6 @@
 #!/usr/bin/env zx
 import 'zx/globals'
+import { pathToFileURL } from 'url';
 const mkdirp = require('mkdirp')
 const rimraf = require('rimraf')
 
@@ -18,7 +19,7 @@ try {
   await $`rm -rf ${paths.build}`
   rimraf.sync(paths.build)
   mkdirp.sync(paths.build)
-  const { default: script } = await import(path.join(scriptBasePath, 'run.mjs'))
+  const { default: script } = await import(pathToFileURL(path.join(scriptBasePath, 'run.mjs')))
   console.log(`starting imported script`)
   await script(paths)
   console.log(`script finished running`)
