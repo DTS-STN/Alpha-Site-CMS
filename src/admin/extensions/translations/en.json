@@ -104,7 +104,7 @@
   "Settings.apiTokens.title": "API Tokens",
   "Settings.apiTokens.types.full-access": "Full access",
   "Settings.apiTokens.types.read-only": "Read-only",
-  "Settings.application.description": "Administration panel’s global information",
+  "Settings.application.description": "Administration panel’s global information.",
   "Settings.application.strapiVersion": "strapi version",
   "Settings.application.edition-title": "current plan",
   "Settings.application.details": "Details",
