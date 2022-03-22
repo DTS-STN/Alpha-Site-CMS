@@ -1,8 +1,12 @@
 #!/usr/bin/env zx
 import 'zx/globals'
 
-export default async () => {
-  const fileContents = fs.readFileSync('./sources/someinput.txt', 'utf8')
+export default async ({
+  build,
+  sources,
+  base
+}) => {
+  const fileContents = fs.readFileSync(path.join(sources, 'someinput.txt'), 'utf8')
   const transformedContents = fileContents.trim().toUpperCase()
-  fs.writeFileSync('./build/someoutput.txt', transformedContents, 'utf8');
+  fs.writeFileSync(path.join(build, 'someinput.txt'), transformedContents, 'utf8');
 }

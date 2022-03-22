@@ -5,31 +5,20 @@ const scriptToRun = process.argv[3]?.trim?.()
 
 try {
   if (!scriptToRun) throw new Error(`Pass in a script name to run.`)
-  const currentDir = __dirname
-  const scriptBasePath = `${currentDir}/${scriptToRun}`
+  const currentDir = path.join(__dirname)
+  const scriptBasePath = path.join(currentDir, scriptToRun)
   console.log(`deleting and rebuilding build folder for ${scriptToRun}`)
   await $`rm -rf ${scriptBasePath}/build`
   await $`mkdir ${scriptBasePath}/build`
-
-  console.log(scriptBasePath)
-  console.log({
+  const paths = {
     base: scriptBasePath,
-    build: `${scriptBasePath}/build`,
-    sources: `${scriptBasePath}/sources`
-  })
-  const { default: script } = await import(`${scriptBasePath}/run.mjs`)
-  console.log(`imported ${scriptToRun}/run.mjs`)
-
+    build: path.join(scriptBasePath, 'build'),
+    sources: path.join(scriptBasePath, 'sources')
+  }
+  const { default: script } = await import(path.join(scriptBasePath, 'run.mjs'))
   console.log(`starting imported script`)
-
-  console.log(await script({
-    base: scriptBasePath,
-    build: `${scriptBasePath}/build`,
-    sources: `${scriptBasePath}/sources`
-  }))
+  await script(paths)
   console.log(`script finished running`)
-
-  cd('../..')
 } catch (e) {
   console.log('~~~')
   console.log("error running the script! details:")
