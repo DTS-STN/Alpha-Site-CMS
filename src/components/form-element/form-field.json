@@ -1,0 +1,68 @@
+{
+  "collectionName": "components_page_element_form_fields",
+  "info": {
+    "displayName": "FormField",
+    "icon": "remove-format",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "textField": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.text-field"
+    },
+    "email": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.email"
+    },
+    "yearOfBirthRange": {
+      "type": "string"
+    },
+    "languagePref": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.language-pref"
+    },
+    "gender": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.gender"
+    },
+    "nativeStatus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.native-status"
+    },
+    "disability": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.disability"
+    },
+    "minority": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.monority"
+    },
+    "income": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.income"
+    },
+    "publicServant": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.public-servant"
+    },
+    "agreeToCondition": {
+      "type": "text"
+    },
+    "error": {
+      "displayName": "error",
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.error"
+    }
+  }
+}

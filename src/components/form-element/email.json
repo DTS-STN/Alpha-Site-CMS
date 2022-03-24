@@ -2,7 +2,8 @@
   "collectionName": "components_page_element_emails",
   "info": {
     "displayName": "email",
-    "icon": "mail-bulk"
+    "icon": "mail-bulk",
+    "description": ""
   },
   "options": {},
   "attributes": {

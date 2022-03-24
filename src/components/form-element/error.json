@@ -1,51 +1,51 @@
 {
-  "collectionName": "components_page_element_provinces",
+  "collectionName": "components_form_element_errors",
   "info": {
-    "displayName": "province",
-    "icon": "map-marker-alt"
+    "displayName": "error",
+    "icon": "exclamation-triangle"
   },
   "options": {},
   "attributes": {
-    "label": {
+    "required": {
       "type": "string"
     },
-    "ON": {
+    "disability": {
       "type": "string"
     },
-    "QC": {
+    "email": {
       "type": "string"
     },
-    "NL": {
+    "integer": {
       "type": "string"
     },
-    "PE": {
+    "birth": {
       "type": "string"
     },
-    "NS": {
+    "select": {
       "type": "string"
     },
-    "NB": {
+    "term": {
       "type": "string"
     },
-    "SK": {
+    "submit": {
       "type": "string"
     },
-    "MB": {
+    "submitError": {
       "type": "string"
     },
-    "AB": {
+    "submitErrors": {
       "type": "string"
     },
-    "BC": {
+    "error": {
       "type": "string"
     },
-    "YT": {
+    "age": {
       "type": "string"
     },
-    "NT": {
+    "emailNotExist": {
       "type": "string"
     },
-    "NU": {
+    "emailNotMatch": {
       "type": "string"
     }
   }

@@ -1,21 +1,22 @@
 {
-  "collectionName": "components_page_element_disabilities",
+  "collectionName": "components_page_element_genders",
   "info": {
-    "displayName": "disability",
-    "icon": "wheelchair"
+    "displayName": "gender",
+    "icon": "user-friends",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "label": {
       "type": "string"
     },
-    "yes": {
+    "man": {
       "type": "string"
     },
-    "no": {
+    "woman": {
       "type": "string"
     },
-    "notSure": {
+    "another": {
       "type": "string"
     },
     "preferNotAnswer": {
