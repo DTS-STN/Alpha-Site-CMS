@@ -1,27 +1,23 @@
 version: "3"
 
 services:
-  nginx:
-    image: nginx
-    ports:
-      - 8080:80
-    environment:
-      - NGINX_UPSTREAM_HOST=api:1337
-      - NGINX_PORT=80
-    volumes:
-      - ./nginx:/etc/nginx/templates
   admin:
     depends_on:
       - postgres
     ports:
-      - 8000:80
+      - 2222:5535
     build:
       context: .
       dockerfile: Admin.Dockerfile
       args:
-        - STRAPI_API_BACKEND_URL=http://localhost:8080
-        - STRAPI_ADMIN_BACKEND_URL=http://localhost:8080
+        - STRAPI_API_BACKEND_URL=http://localhost:2222
+        - STRAPI_ADMIN_BACKEND_URL=http://localhost:2222
     environment:
+      - NODE_ENV=development
+      - PORT=5535
+      - NOTIFY_BASE_API_URL=https://api.notification.canada.ca
+      - NOTIFY_API_KEY=9153d32b-97eb-4845-ba54-3b0e9b992203
+      - NOTIFY_EMAIL_TEMPLATE_ID=1ffcea4c-9e11-47dc-a510-7f376b522ae1
       - DATABASE_CLIENT=postgres
       - DATABASE_HOST=postgres
       - DATABASE_PORT=5432
