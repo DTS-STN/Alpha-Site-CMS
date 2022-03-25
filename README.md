@@ -21,6 +21,8 @@ $ docker-compose up
 ```
 This launches the app and the Postgres containers in an isolated environment.
 
+**Note:** Docker will pick up the `.env` in the project root and use it for any `ENV` variables required by `docker-compose.yml`. 
+
 ## Deployment Pipeline
 Deployment occurs automatically when code is merged into `master`. All integrated environments of ours are currently managed by Azure's container service; meaning our app is deployed in a Docker container by Azure to an environment provided and managed by Azure "app services".
 
@@ -38,11 +40,11 @@ Our integrated environments are maintained as Azure app services and thus the en
 **Important:** When the app is ran as a Docker container, either locally or in an integrated environment (Azure), it expects two `build` `args`: `STRAPI_API_BACKEND_URL` and `STRAPI_ADMIN_BACKEND_URL`. These two `args` should have the same value as they indicate the 1 **public** URL to the application. 
 
 ### Available Variables
-`STRAPI_API_BACKEND_URL`: Public url of the admin panel, should be identical to `STRAPI_ADMIN_BACKEND_URL`\
-`STRAPI_ADMIN_BACKEND_URL`: Public url of the admin panel, should be identical to `STRAPI_API_BACKEND_URL`\
-`NOTIFY_BASE_API_URL`: Base URL for all GC Notify API calls\
-`NOTIFY_API_KEY`: GC Notify API key for the project\
-`NOTIFY_EMAIL_TEMPLATE_ID`: GC Notify template ID for sign in notification\
+`STRAPI_API_BACKEND_URL`: Public url of the admin panel, should be identical to `STRAPI_ADMIN_BACKEND_URL` and required if running the app in Docker\
+`STRAPI_ADMIN_BACKEND_URL`: Public url of the admin panel, should be identical to `STRAPI_API_BACKEND_URL` and required if running the app in Docker\
+`NOTIFY_BASE_API_URL`: Required base URL for all GC Notify API calls\
+`NOTIFY_API_KEY`: Required GC Notify API key for the project\
+`NOTIFY_EMAIL_TEMPLATE_ID`: Required GC Notify template ID for sign in notification\
 `DATABASE_HOST`: The postgresql address\
 `DATABASE_PORT`: The postgresql port\
 `DATASBASE_USERNAME`: The postgresql user to use for strapi\

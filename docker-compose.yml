@@ -10,14 +10,14 @@ services:
       context: .
       dockerfile: Admin.Dockerfile
       args:
-        - STRAPI_API_BACKEND_URL=http://localhost:2222
-        - STRAPI_ADMIN_BACKEND_URL=http://localhost:2222
+        - STRAPI_API_BACKEND_URL=${STRAPI_API_BACKEND_URL}
+        - STRAPI_ADMIN_BACKEND_URL=${STRAPI_ADMIN_BACKEND_URL}
     environment:
       - NODE_ENV=development
-      - PORT=5535
-      - NOTIFY_BASE_API_URL=https://api.notification.canada.ca
-      - NOTIFY_API_KEY=9153d32b-97eb-4845-ba54-3b0e9b992203
-      - NOTIFY_EMAIL_TEMPLATE_ID=1ffcea4c-9e11-47dc-a510-7f376b522ae1
+      - PORT=2222
+      - NOTIFY_BASE_API_URL=${NOTIFY_BASE_API_URL}
+      - NOTIFY_API_KEY=${NOTIFY_API_KEY}
+      - NOTIFY_EMAIL_TEMPLATE_ID=${NOTIFY_EMAIL_TEMPLATE_ID}
       - DATABASE_CLIENT=postgres
       - DATABASE_HOST=postgres
       - DATABASE_PORT=5432
