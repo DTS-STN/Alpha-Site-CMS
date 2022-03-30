@@ -20,12 +20,6 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "title": {
-                                "type": "string"
-                              },
-                              "url": {
-                                "type": "string"
-                              },
                               "textField": {
                                 "type": "array",
                                 "items": {
@@ -374,12 +368,6 @@
                                         "attributes": {
                                           "type": "object",
                                           "properties": {
-                                            "title": {
-                                              "type": "string"
-                                            },
-                                            "url": {
-                                              "type": "string"
-                                            },
                                             "textField": {
                                               "type": "array",
                                               "items": {
@@ -779,12 +767,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -1133,12 +1115,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -1427,12 +1403,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {
@@ -1707,12 +1677,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -2061,12 +2025,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -2355,12 +2313,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {

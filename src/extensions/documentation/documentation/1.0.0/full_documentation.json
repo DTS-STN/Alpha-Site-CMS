@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-03-30T17:05:06.797Z"
+    "x-generation-date": "2022-03-30T19:06:33.372Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -70,12 +70,6 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "title": {
-                                "type": "string"
-                              },
-                              "url": {
-                                "type": "string"
-                              },
                               "textField": {
                                 "type": "array",
                                 "items": {
@@ -427,12 +421,6 @@
                                         "attributes": {
                                           "type": "object",
                                           "properties": {
-                                            "title": {
-                                              "type": "string"
-                                            },
-                                            "url": {
-                                              "type": "string"
-                                            },
                                             "textField": {
                                               "type": "array",
                                               "items": {
@@ -835,12 +823,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -1192,12 +1174,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -1489,12 +1465,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {
@@ -1772,12 +1742,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -2129,12 +2093,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -2426,12 +2384,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {
@@ -6022,12 +5974,6 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "title": {
-                                "type": "string"
-                              },
-                              "url": {
-                                "type": "string"
-                              },
                               "banner": {
                                 "type": "object",
                                 "properties": {
@@ -6783,12 +6729,6 @@
                                         "attributes": {
                                           "type": "object",
                                           "properties": {
-                                            "title": {
-                                              "type": "string"
-                                            },
-                                            "url": {
-                                              "type": "string"
-                                            },
                                             "banner": {
                                               "type": "object",
                                               "properties": {
@@ -7595,12 +7535,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "banner": {
                               "type": "object",
                               "properties": {
@@ -8356,12 +8290,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "banner": {
                                             "type": "object",
                                             "properties": {
@@ -9057,12 +8985,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "banner": {
                         "type": "object",
                         "properties": {
@@ -9379,12 +9301,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "banner": {
                               "type": "object",
                               "properties": {
@@ -10140,12 +10056,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "banner": {
                                             "type": "object",
                                             "properties": {
@@ -10841,12 +10751,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "banner": {
                         "type": "object",
                         "properties": {
@@ -26832,12 +26736,6 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "title": {
-                                "type": "string"
-                              },
-                              "url": {
-                                "type": "string"
-                              },
                               "textField": {
                                 "type": "array",
                                 "items": {
@@ -27189,12 +27087,6 @@
                                         "attributes": {
                                           "type": "object",
                                           "properties": {
-                                            "title": {
-                                              "type": "string"
-                                            },
-                                            "url": {
-                                              "type": "string"
-                                            },
                                             "textField": {
                                               "type": "array",
                                               "items": {
@@ -27597,12 +27489,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -27954,12 +27840,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -28251,12 +28131,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {
@@ -28534,12 +28408,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -28891,12 +28759,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -29188,12 +29050,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {
@@ -29308,12 +29164,6 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "title": {
-                                "type": "string"
-                              },
-                              "url": {
-                                "type": "string"
-                              },
                               "textField": {
                                 "type": "array",
                                 "items": {
@@ -29973,12 +29823,6 @@
                                         "attributes": {
                                           "type": "object",
                                           "properties": {
-                                            "title": {
-                                              "type": "string"
-                                            },
-                                            "url": {
-                                              "type": "string"
-                                            },
                                             "textField": {
                                               "type": "array",
                                               "items": {
@@ -30689,12 +30533,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -31354,12 +31192,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -31959,12 +31791,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {
@@ -32520,12 +32346,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -33185,12 +33005,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -33790,12 +33604,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {
@@ -34188,12 +33996,6 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "title": {
-                                "type": "string"
-                              },
-                              "url": {
-                                "type": "string"
-                              },
                               "textField": {
                                 "type": "array",
                                 "items": {
@@ -34542,12 +34344,6 @@
                                         "attributes": {
                                           "type": "object",
                                           "properties": {
-                                            "title": {
-                                              "type": "string"
-                                            },
-                                            "url": {
-                                              "type": "string"
-                                            },
                                             "textField": {
                                               "type": "array",
                                               "items": {
@@ -34947,12 +34743,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -35301,12 +35091,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -35595,12 +35379,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {
@@ -35875,12 +35653,6 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "title": {
-                              "type": "string"
-                            },
-                            "url": {
-                              "type": "string"
-                            },
                             "textField": {
                               "type": "array",
                               "items": {
@@ -36229,12 +36001,6 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "url": {
-                                            "type": "string"
-                                          },
                                           "textField": {
                                             "type": "array",
                                             "items": {
@@ -36523,12 +36289,6 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "title": {
-                        "type": "string"
-                      },
-                      "url": {
-                        "type": "string"
-                      },
                       "textField": {
                         "type": "array",
                         "items": {
