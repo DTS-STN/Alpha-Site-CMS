@@ -157,6 +157,16 @@
           "localized": true
         }
       }
+    },
+    "error": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "form-element.error"
     }
   }
 }

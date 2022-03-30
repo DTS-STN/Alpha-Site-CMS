@@ -324,6 +324,56 @@
                                   }
                                 }
                               },
+                              "error": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "required": {
+                                    "type": "string"
+                                  },
+                                  "disability": {
+                                    "type": "string"
+                                  },
+                                  "email": {
+                                    "type": "string"
+                                  },
+                                  "integer": {
+                                    "type": "string"
+                                  },
+                                  "birth": {
+                                    "type": "string"
+                                  },
+                                  "select": {
+                                    "type": "string"
+                                  },
+                                  "term": {
+                                    "type": "string"
+                                  },
+                                  "submit": {
+                                    "type": "string"
+                                  },
+                                  "submitError": {
+                                    "type": "string"
+                                  },
+                                  "submitErrors": {
+                                    "type": "string"
+                                  },
+                                  "error": {
+                                    "type": "string"
+                                  },
+                                  "age": {
+                                    "type": "string"
+                                  },
+                                  "emailNotExist": {
+                                    "type": "string"
+                                  },
+                                  "emailNotMatch": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
@@ -936,6 +986,56 @@
                                                   "href": {
                                                     "type": "string"
                                                   }
+                                                }
+                                              }
+                                            },
+                                            "error": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "string"
+                                                },
+                                                "required": {
+                                                  "type": "string"
+                                                },
+                                                "disability": {
+                                                  "type": "string"
+                                                },
+                                                "email": {
+                                                  "type": "string"
+                                                },
+                                                "integer": {
+                                                  "type": "string"
+                                                },
+                                                "birth": {
+                                                  "type": "string"
+                                                },
+                                                "select": {
+                                                  "type": "string"
+                                                },
+                                                "term": {
+                                                  "type": "string"
+                                                },
+                                                "submit": {
+                                                  "type": "string"
+                                                },
+                                                "submitError": {
+                                                  "type": "string"
+                                                },
+                                                "submitErrors": {
+                                                  "type": "string"
+                                                },
+                                                "error": {
+                                                  "type": "string"
+                                                },
+                                                "age": {
+                                                  "type": "string"
+                                                },
+                                                "emailNotExist": {
+                                                  "type": "string"
+                                                },
+                                                "emailNotMatch": {
+                                                  "type": "string"
                                                 }
                                               }
                                             },
@@ -1605,6 +1705,56 @@
                                 }
                               }
                             },
+                            "error": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "required": {
+                                  "type": "string"
+                                },
+                                "disability": {
+                                  "type": "string"
+                                },
+                                "email": {
+                                  "type": "string"
+                                },
+                                "integer": {
+                                  "type": "string"
+                                },
+                                "birth": {
+                                  "type": "string"
+                                },
+                                "select": {
+                                  "type": "string"
+                                },
+                                "term": {
+                                  "type": "string"
+                                },
+                                "submit": {
+                                  "type": "string"
+                                },
+                                "submitError": {
+                                  "type": "string"
+                                },
+                                "submitErrors": {
+                                  "type": "string"
+                                },
+                                "error": {
+                                  "type": "string"
+                                },
+                                "age": {
+                                  "type": "string"
+                                },
+                                "emailNotExist": {
+                                  "type": "string"
+                                },
+                                "emailNotMatch": {
+                                  "type": "string"
+                                }
+                              }
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -2220,6 +2370,56 @@
                                               }
                                             }
                                           },
+                                          "error": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "string"
+                                              },
+                                              "required": {
+                                                "type": "string"
+                                              },
+                                              "disability": {
+                                                "type": "string"
+                                              },
+                                              "email": {
+                                                "type": "string"
+                                              },
+                                              "integer": {
+                                                "type": "string"
+                                              },
+                                              "birth": {
+                                                "type": "string"
+                                              },
+                                              "select": {
+                                                "type": "string"
+                                              },
+                                              "term": {
+                                                "type": "string"
+                                              },
+                                              "submit": {
+                                                "type": "string"
+                                              },
+                                              "submitError": {
+                                                "type": "string"
+                                              },
+                                              "submitErrors": {
+                                                "type": "string"
+                                              },
+                                              "error": {
+                                                "type": "string"
+                                              },
+                                              "age": {
+                                                "type": "string"
+                                              },
+                                              "emailNotExist": {
+                                                "type": "string"
+                                              },
+                                              "emailNotMatch": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -2739,6 +2939,53 @@
                             "href": {
                               "type": "string"
                             }
+                          }
+                        }
+                      },
+                      "error": {
+                        "type": "object",
+                        "properties": {
+                          "required": {
+                            "type": "string"
+                          },
+                          "disability": {
+                            "type": "string"
+                          },
+                          "email": {
+                            "type": "string"
+                          },
+                          "integer": {
+                            "type": "string"
+                          },
+                          "birth": {
+                            "type": "string"
+                          },
+                          "select": {
+                            "type": "string"
+                          },
+                          "term": {
+                            "type": "string"
+                          },
+                          "submit": {
+                            "type": "string"
+                          },
+                          "submitError": {
+                            "type": "string"
+                          },
+                          "submitErrors": {
+                            "type": "string"
+                          },
+                          "error": {
+                            "type": "string"
+                          },
+                          "age": {
+                            "type": "string"
+                          },
+                          "emailNotExist": {
+                            "type": "string"
+                          },
+                          "emailNotMatch": {
+                            "type": "string"
                           }
                         }
                       },
@@ -3289,6 +3536,56 @@
                                 }
                               }
                             },
+                            "error": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "required": {
+                                  "type": "string"
+                                },
+                                "disability": {
+                                  "type": "string"
+                                },
+                                "email": {
+                                  "type": "string"
+                                },
+                                "integer": {
+                                  "type": "string"
+                                },
+                                "birth": {
+                                  "type": "string"
+                                },
+                                "select": {
+                                  "type": "string"
+                                },
+                                "term": {
+                                  "type": "string"
+                                },
+                                "submit": {
+                                  "type": "string"
+                                },
+                                "submitError": {
+                                  "type": "string"
+                                },
+                                "submitErrors": {
+                                  "type": "string"
+                                },
+                                "error": {
+                                  "type": "string"
+                                },
+                                "age": {
+                                  "type": "string"
+                                },
+                                "emailNotExist": {
+                                  "type": "string"
+                                },
+                                "emailNotMatch": {
+                                  "type": "string"
+                                }
+                              }
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -3904,6 +4201,56 @@
                                               }
                                             }
                                           },
+                                          "error": {
+                                            "type": "object",
+                                            "properties": {
+                                              "id": {
+                                                "type": "string"
+                                              },
+                                              "required": {
+                                                "type": "string"
+                                              },
+                                              "disability": {
+                                                "type": "string"
+                                              },
+                                              "email": {
+                                                "type": "string"
+                                              },
+                                              "integer": {
+                                                "type": "string"
+                                              },
+                                              "birth": {
+                                                "type": "string"
+                                              },
+                                              "select": {
+                                                "type": "string"
+                                              },
+                                              "term": {
+                                                "type": "string"
+                                              },
+                                              "submit": {
+                                                "type": "string"
+                                              },
+                                              "submitError": {
+                                                "type": "string"
+                                              },
+                                              "submitErrors": {
+                                                "type": "string"
+                                              },
+                                              "error": {
+                                                "type": "string"
+                                              },
+                                              "age": {
+                                                "type": "string"
+                                              },
+                                              "emailNotExist": {
+                                                "type": "string"
+                                              },
+                                              "emailNotMatch": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -4423,6 +4770,53 @@
                             "href": {
                               "type": "string"
                             }
+                          }
+                        }
+                      },
+                      "error": {
+                        "type": "object",
+                        "properties": {
+                          "required": {
+                            "type": "string"
+                          },
+                          "disability": {
+                            "type": "string"
+                          },
+                          "email": {
+                            "type": "string"
+                          },
+                          "integer": {
+                            "type": "string"
+                          },
+                          "birth": {
+                            "type": "string"
+                          },
+                          "select": {
+                            "type": "string"
+                          },
+                          "term": {
+                            "type": "string"
+                          },
+                          "submit": {
+                            "type": "string"
+                          },
+                          "submitError": {
+                            "type": "string"
+                          },
+                          "submitErrors": {
+                            "type": "string"
+                          },
+                          "error": {
+                            "type": "string"
+                          },
+                          "age": {
+                            "type": "string"
+                          },
+                          "emailNotExist": {
+                            "type": "string"
+                          },
+                          "emailNotMatch": {
+                            "type": "string"
                           }
                         }
                       },
