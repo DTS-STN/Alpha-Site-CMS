@@ -1,0 +1,162 @@
+{
+  "kind": "singleType",
+  "collectionName": "signups",
+  "info": {
+    "singularName": "signup",
+    "pluralName": "signups",
+    "displayName": "signup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "url": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "textField": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.text-field",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "email": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.email",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "yearOfBirthRange": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "languagePref": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.language-pref",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "province": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.province",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "gender": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.gender",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "nativeStatus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.native-status",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "disability": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.disability",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "minority": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.monority",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "income": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.income",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "publicServant": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-element.public-servant",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "agreeToCondition": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "actionButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.action-button",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

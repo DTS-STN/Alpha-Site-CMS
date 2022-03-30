@@ -57,13 +57,13 @@
                                     "id": {
                                       "type": "string"
                                     },
-                                    "heading": {
-                                      "type": "string"
-                                    },
-                                    "paragraph": {
+                                    "title": {
                                       "type": "string"
                                     },
                                     "text": {
+                                      "type": "string"
+                                    },
+                                    "link": {
                                       "type": "string"
                                     }
                                   }
@@ -507,13 +507,13 @@
                                         "id": {
                                           "type": "string"
                                         },
-                                        "heading": {
-                                          "type": "string"
-                                        },
-                                        "paragraph": {
+                                        "title": {
                                           "type": "string"
                                         },
                                         "text": {
+                                          "type": "string"
+                                        },
+                                        "link": {
                                           "type": "string"
                                         }
                                       }
@@ -1503,13 +1503,13 @@
                                                   "id": {
                                                     "type": "string"
                                                   },
-                                                  "heading": {
-                                                    "type": "string"
-                                                  },
-                                                  "paragraph": {
+                                                  "title": {
                                                     "type": "string"
                                                   },
                                                   "text": {
+                                                    "type": "string"
+                                                  },
+                                                  "link": {
                                                     "type": "string"
                                                   }
                                                 }
@@ -1953,13 +1953,13 @@
                                                       "id": {
                                                         "type": "string"
                                                       },
-                                                      "heading": {
-                                                        "type": "string"
-                                                      },
-                                                      "paragraph": {
+                                                      "title": {
                                                         "type": "string"
                                                       },
                                                       "text": {
+                                                        "type": "string"
+                                                      },
+                                                      "link": {
                                                         "type": "string"
                                                       }
                                                     }
@@ -3000,13 +3000,13 @@
                                   "id": {
                                     "type": "string"
                                   },
-                                  "heading": {
-                                    "type": "string"
-                                  },
-                                  "paragraph": {
+                                  "title": {
                                     "type": "string"
                                   },
                                   "text": {
+                                    "type": "string"
+                                  },
+                                  "link": {
                                     "type": "string"
                                   }
                                 }
@@ -3450,13 +3450,13 @@
                                       "id": {
                                         "type": "string"
                                       },
-                                      "heading": {
-                                        "type": "string"
-                                      },
-                                      "paragraph": {
+                                      "title": {
                                         "type": "string"
                                       },
                                       "text": {
+                                        "type": "string"
+                                      },
+                                      "link": {
                                         "type": "string"
                                       }
                                     }
@@ -4446,13 +4446,13 @@
                                                 "id": {
                                                   "type": "string"
                                                 },
-                                                "heading": {
-                                                  "type": "string"
-                                                },
-                                                "paragraph": {
+                                                "title": {
                                                   "type": "string"
                                                 },
                                                 "text": {
+                                                  "type": "string"
+                                                },
+                                                "link": {
                                                   "type": "string"
                                                 }
                                               }
@@ -4896,13 +4896,13 @@
                                                     "id": {
                                                       "type": "string"
                                                     },
-                                                    "heading": {
-                                                      "type": "string"
-                                                    },
-                                                    "paragraph": {
+                                                    "title": {
                                                       "type": "string"
                                                     },
                                                     "text": {
+                                                      "type": "string"
+                                                    },
+                                                    "link": {
                                                       "type": "string"
                                                     }
                                                   }
@@ -5826,13 +5826,13 @@
                         "items": {
                           "type": "object",
                           "properties": {
-                            "heading": {
-                              "type": "string"
-                            },
-                            "paragraph": {
+                            "title": {
                               "type": "string"
                             },
                             "text": {
+                              "type": "string"
+                            },
+                            "link": {
                               "type": "string"
                             }
                           }
@@ -5902,13 +5902,13 @@
                             "items": {
                               "type": "object",
                               "properties": {
-                                "heading": {
-                                  "type": "string"
-                                },
-                                "paragraph": {
+                                "title": {
                                   "type": "string"
                                 },
                                 "text": {
+                                  "type": "string"
+                                },
+                                "link": {
                                   "type": "string"
                                 }
                               }
@@ -6279,13 +6279,13 @@
                                   "id": {
                                     "type": "string"
                                   },
-                                  "heading": {
-                                    "type": "string"
-                                  },
-                                  "paragraph": {
+                                  "title": {
                                     "type": "string"
                                   },
                                   "text": {
+                                    "type": "string"
+                                  },
+                                  "link": {
                                     "type": "string"
                                   }
                                 }
@@ -6729,13 +6729,13 @@
                                       "id": {
                                         "type": "string"
                                       },
-                                      "heading": {
-                                        "type": "string"
-                                      },
-                                      "paragraph": {
+                                      "title": {
                                         "type": "string"
                                       },
                                       "text": {
+                                        "type": "string"
+                                      },
+                                      "link": {
                                         "type": "string"
                                       }
                                     }
@@ -7725,13 +7725,13 @@
                                                 "id": {
                                                   "type": "string"
                                                 },
-                                                "heading": {
-                                                  "type": "string"
-                                                },
-                                                "paragraph": {
+                                                "title": {
                                                   "type": "string"
                                                 },
                                                 "text": {
+                                                  "type": "string"
+                                                },
+                                                "link": {
                                                   "type": "string"
                                                 }
                                               }
@@ -8175,13 +8175,13 @@
                                                     "id": {
                                                       "type": "string"
                                                     },
-                                                    "heading": {
-                                                      "type": "string"
-                                                    },
-                                                    "paragraph": {
+                                                    "title": {
                                                       "type": "string"
                                                     },
                                                     "text": {
+                                                      "type": "string"
+                                                    },
+                                                    "link": {
                                                       "type": "string"
                                                     }
                                                   }
@@ -9131,13 +9131,13 @@
                                   "id": {
                                     "type": "string"
                                   },
-                                  "heading": {
-                                    "type": "string"
-                                  },
-                                  "paragraph": {
+                                  "title": {
                                     "type": "string"
                                   },
                                   "text": {
+                                    "type": "string"
+                                  },
+                                  "link": {
                                     "type": "string"
                                   }
                                 }
@@ -9581,13 +9581,13 @@
                                       "id": {
                                         "type": "string"
                                       },
-                                      "heading": {
-                                        "type": "string"
-                                      },
-                                      "paragraph": {
+                                      "title": {
                                         "type": "string"
                                       },
                                       "text": {
+                                        "type": "string"
+                                      },
+                                      "link": {
                                         "type": "string"
                                       }
                                     }
@@ -10577,13 +10577,13 @@
                                                 "id": {
                                                   "type": "string"
                                                 },
-                                                "heading": {
-                                                  "type": "string"
-                                                },
-                                                "paragraph": {
+                                                "title": {
                                                   "type": "string"
                                                 },
                                                 "text": {
+                                                  "type": "string"
+                                                },
+                                                "link": {
                                                   "type": "string"
                                                 }
                                               }
@@ -11027,13 +11027,13 @@
                                                     "id": {
                                                       "type": "string"
                                                     },
-                                                    "heading": {
-                                                      "type": "string"
-                                                    },
-                                                    "paragraph": {
+                                                    "title": {
                                                       "type": "string"
                                                     },
                                                     "text": {
+                                                      "type": "string"
+                                                    },
+                                                    "link": {
                                                       "type": "string"
                                                     }
                                                   }
@@ -11968,13 +11968,13 @@
                         "items": {
                           "type": "object",
                           "properties": {
-                            "heading": {
-                              "type": "string"
-                            },
-                            "paragraph": {
+                            "title": {
                               "type": "string"
                             },
                             "text": {
+                              "type": "string"
+                            },
+                            "link": {
                               "type": "string"
                             }
                           }
@@ -12044,13 +12044,13 @@
                             "items": {
                               "type": "object",
                               "properties": {
-                                "heading": {
-                                  "type": "string"
-                                },
-                                "paragraph": {
+                                "title": {
                                   "type": "string"
                                 },
                                 "text": {
+                                  "type": "string"
+                                },
+                                "link": {
                                   "type": "string"
                                 }
                               }
@@ -12597,13 +12597,13 @@
                                   "id": {
                                     "type": "string"
                                   },
-                                  "heading": {
-                                    "type": "string"
-                                  },
-                                  "paragraph": {
+                                  "title": {
                                     "type": "string"
                                   },
                                   "text": {
+                                    "type": "string"
+                                  },
+                                  "link": {
                                     "type": "string"
                                   }
                                 }
@@ -13047,13 +13047,13 @@
                                       "id": {
                                         "type": "string"
                                       },
-                                      "heading": {
-                                        "type": "string"
-                                      },
-                                      "paragraph": {
+                                      "title": {
                                         "type": "string"
                                       },
                                       "text": {
+                                        "type": "string"
+                                      },
+                                      "link": {
                                         "type": "string"
                                       }
                                     }
@@ -14043,13 +14043,13 @@
                                                 "id": {
                                                   "type": "string"
                                                 },
-                                                "heading": {
-                                                  "type": "string"
-                                                },
-                                                "paragraph": {
+                                                "title": {
                                                   "type": "string"
                                                 },
                                                 "text": {
+                                                  "type": "string"
+                                                },
+                                                "link": {
                                                   "type": "string"
                                                 }
                                               }
@@ -14493,13 +14493,13 @@
                                                     "id": {
                                                       "type": "string"
                                                     },
-                                                    "heading": {
-                                                      "type": "string"
-                                                    },
-                                                    "paragraph": {
+                                                    "title": {
                                                       "type": "string"
                                                     },
                                                     "text": {
+                                                      "type": "string"
+                                                    },
+                                                    "link": {
                                                       "type": "string"
                                                     }
                                                   }
@@ -15434,13 +15434,13 @@
                         "items": {
                           "type": "object",
                           "properties": {
-                            "heading": {
-                              "type": "string"
-                            },
-                            "paragraph": {
+                            "title": {
                               "type": "string"
                             },
                             "text": {
+                              "type": "string"
+                            },
+                            "link": {
                               "type": "string"
                             }
                           }
@@ -15510,13 +15510,13 @@
                             "items": {
                               "type": "object",
                               "properties": {
-                                "heading": {
-                                  "type": "string"
-                                },
-                                "paragraph": {
+                                "title": {
                                   "type": "string"
                                 },
                                 "text": {
+                                  "type": "string"
+                                },
+                                "link": {
                                   "type": "string"
                                 }
                               }

@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "signup_infos",
+  "info": {
+    "singularName": "signup-info",
+    "pluralName": "signup-infos",
+    "displayName": "signup-info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "url": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "textField": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.text-field",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "actionButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-element.action-button",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
