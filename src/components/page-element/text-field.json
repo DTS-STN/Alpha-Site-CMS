@@ -7,13 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "heading": {
+    "title": {
       "type": "string"
     },
-    "paragraph": {
+    "text": {
       "type": "richtext"
     },
-    "text": {
+    "link": {
       "type": "string"
     }
   }
