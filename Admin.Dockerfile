@@ -1,5 +1,6 @@
 FROM node:lts-alpine
-
+RUN groupadd -r habetrot && useradd -r -s /bin/null -g habetrot habetrot
+USER habetrot
 RUN apk add --no-cache --virtual python make g++ pkgconf libsecret-dev
 
 ARG NODE_ENV='production'
