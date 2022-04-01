@@ -83,26 +83,36 @@
       "component": "page-element.banner"
     },
     "formField": {
-      "type": "component",
-      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "form-element.form-field"
+      "type": "dynamiczone",
+      "components": [
+        "form-element.disability",
+        "form-element.email",
+        "form-element.error",
+        "form-element.gender",
+        "form-element.income",
+        "form-element.language-pref",
+        "form-element.monority",
+        "form-element.native-status",
+        "form-element.province",
+        "form-element.public-servant",
+        "page-element.text-field",
+        "form-element.year-of-birth"
+      ]
     },
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": true,
+    "list": {
+      "type": "component",
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "page-element.list"
     }
   }
 }
