@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "heading": {
       "type": "string"
     },
-    "text": {
+    "paragraph": {
       "type": "richtext"
     },
     "link": {

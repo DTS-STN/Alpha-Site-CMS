@@ -415,10 +415,10 @@
                                     "id": {
                                       "type": "string"
                                     },
-                                    "title": {
+                                    "heading": {
                                       "type": "string"
                                     },
-                                    "text": {
+                                    "paragraph": {
                                       "type": "string"
                                     },
                                     "link": {
@@ -1170,10 +1170,10 @@
                                                   "id": {
                                                     "type": "string"
                                                   },
-                                                  "title": {
+                                                  "heading": {
                                                     "type": "string"
                                                   },
-                                                  "text": {
+                                                  "paragraph": {
                                                     "type": "string"
                                                   },
                                                   "link": {
@@ -1976,10 +1976,10 @@
                                   "id": {
                                     "type": "string"
                                   },
-                                  "title": {
+                                  "heading": {
                                     "type": "string"
                                   },
-                                  "text": {
+                                  "paragraph": {
                                     "type": "string"
                                   },
                                   "link": {
@@ -2731,10 +2731,10 @@
                                                 "id": {
                                                   "type": "string"
                                                 },
-                                                "title": {
+                                                "heading": {
                                                   "type": "string"
                                                 },
-                                                "text": {
+                                                "paragraph": {
                                                   "type": "string"
                                                 },
                                                 "link": {
@@ -3061,10 +3061,10 @@
                         "items": {
                           "type": "object",
                           "properties": {
-                            "title": {
+                            "heading": {
                               "type": "string"
                             },
-                            "text": {
+                            "paragraph": {
                               "type": "string"
                             },
                             "link": {
@@ -3742,10 +3742,10 @@
                                   "id": {
                                     "type": "string"
                                   },
-                                  "title": {
+                                  "heading": {
                                     "type": "string"
                                   },
-                                  "text": {
+                                  "paragraph": {
                                     "type": "string"
                                   },
                                   "link": {
@@ -4497,10 +4497,10 @@
                                                 "id": {
                                                   "type": "string"
                                                 },
-                                                "title": {
+                                                "heading": {
                                                   "type": "string"
                                                 },
-                                                "text": {
+                                                "paragraph": {
                                                   "type": "string"
                                                 },
                                                 "link": {
@@ -4827,10 +4827,10 @@
                         "items": {
                           "type": "object",
                           "properties": {
-                            "title": {
+                            "heading": {
                               "type": "string"
                             },
-                            "text": {
+                            "paragraph": {
                               "type": "string"
                             },
                             "link": {

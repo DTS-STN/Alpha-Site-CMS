@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_form_element_year_of_births",
+  "info": {
+    "displayName": "yearOfBirth",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "yearOfBirthRange": {
+      "type": "string"
+    }
+  }
+}
