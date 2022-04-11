@@ -13194,6 +13194,11 @@ std-env@^2.2.1:
   dependencies:
     ci-info "^3.1.1"
 
+strapi-plugin-notes@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-notes/-/strapi-plugin-notes-1.0.0.tgz#3a84241855cf81c176171e5573fbe3e029a9597e"
+  integrity sha512-BMMLPVm30Hvxxov+SWzmmNw4kHf9w1AhbomBNkthtDCl3HSOyUw+P8WTeuZ6e1XcKR49pTO/CEerw8zGBdOuGg==
+
 strapi-provider-upload-azure-storage@2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/strapi-provider-upload-azure-storage/-/strapi-provider-upload-azure-storage-2.0.0.tgz#487c750b8cdc3a0b5d3e450ec1277a0e4ff8b7d9"
