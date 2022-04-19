@@ -5,6 +5,15 @@ module.exports = ({ env }) => {
       "entity-notes": {
         enabled: true,
       },
+      "user-permissions": {
+        jwtSecret: env(
+          "STRAPI_ADMIN_JWT_SECRET",
+          "bbc63056fa9b1d5f2582f643d2b38e12"
+        ),
+        jwt: {
+          expiresIn: "8h",
+        },
+      },
       upload: {
         provider: "azure-storage",
         providerOptions: {
