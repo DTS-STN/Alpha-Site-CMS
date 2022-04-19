@@ -1,21 +1,18 @@
-module.exports = ({ env }) => {
-  var storage = env("STRAPI_STORAGE", "local");
-  if (storage === "azure") {
+module.exports= ({env}) => {
+  var storage = env("STRAPI_STORAGE", "local")
+  if( storage === "azure"){
     return {
-      "entity-notes": {
-        enabled: true,
-      },
       upload: {
-        provider: "azure-storage",
+        provider: 'azure-storage',
         providerOptions: {
-          account: env("STORAGE_ACCOUNT"),
-          accountKey: env("STORAGE_ACCOUNT_KEY"),
-          serviceBaseURL: env("STORAGE_URL"),
-          containerName: env("STORAGE_CONTAINER_NAME"),
-          defaultPath: "assets",
-          maxConcurrent: 10,
-        },
-      },
-    };
+          account: env('STORAGE_ACCOUNT'),
+          accountKey: env('STORAGE_ACCOUNT_KEY'),
+          serviceBaseURL: env('STORAGE_URL'),
+          containerName: env('STORAGE_CONTAINER_NAME'),
+          defaultPath: 'assets',
+          maxConcurrent: 10
+        }
+      }
+    }
   }
 };
