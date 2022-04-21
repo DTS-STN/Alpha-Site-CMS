@@ -10,7 +10,7 @@ services:
       context: .
       dockerfile: Admin.Dockerfile
       args:
-        - STRAPI_API_BACKEND_URL=${STRAPI_API_BACKEND_URL}
+        - STRAPI_API_BACKEND_URL=${STRAPI_ADMIN_BACKEND_URL}
         - STRAPI_ADMIN_BACKEND_URL=${STRAPI_ADMIN_BACKEND_URL}
     environment:
       - NODE_ENV=development

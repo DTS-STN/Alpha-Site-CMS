@@ -37,11 +37,10 @@ For local development, the `.env` file is used since the app doesn't run in Dock
 ### Integrated Environments
 Our integrated environments are maintained as Azure app services and thus the entire configuration of the pipeline for the deployment job(s) can be found in the `Admin (app service) > Configuration` section. If you'd like to see/update pipeline configuration values, please request access to it.
 
-**Important:** When the app is ran as a Docker container, either locally or in an integrated environment (Azure), it expects two `build` `args`: `STRAPI_API_BACKEND_URL` and `STRAPI_ADMIN_BACKEND_URL`. These two `args` should have the same value as they indicate the 1 **public** URL to the application. 
+**Important:** When the app is ran as a Docker container, either locally or in an integrated environment (Azure), it expects one `build` `args`: `STRAPI_ADMIN_BACKEND_URL`.
 
 ### Available Variables
-`STRAPI_API_BACKEND_URL`: Public url of the admin panel, should be identical to `STRAPI_ADMIN_BACKEND_URL` and required if running the app in Docker\
-`STRAPI_ADMIN_BACKEND_URL`: Public url of the admin panel, should be identical to `STRAPI_API_BACKEND_URL` and required if running the app in Docker\
+`STRAPI_ADMIN_BACKEND_URL`: Public url of the admin panel\
 `NOTIFY_BASE_API_URL`: Required base URL for all GC Notify API calls\
 `NOTIFY_API_KEY`: Required GC Notify API key for the project\
 `NOTIFY_EMAIL_TEMPLATE_ID`: Required GC Notify template ID for sign in notification\
