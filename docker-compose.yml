@@ -25,9 +25,9 @@ services:
       - DATABASE_USERNAME=strapi
       - DATABASE_PASSWORD=strapi
       - STRAPI_ADMIN_JWT_SECRET=someJWTSecret
+      - JWT_SECRET=someJWTSecret
   postgres:
     image: postgres
-    restart: alwaysgit p
     volumes:
       - ./.tmp/postgres:/var/lib/postgresql/data
     ports:
