@@ -1,27 +1,41 @@
 version: "3"
 services:
-  wordpress:
-    image: wordpress
-    restart: always
+  scl-admin:
+    image: scl-admin
+    build: './scl-admin'
     ports:
       - 8080:80
+    restart: always
     environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: exampleuser
-      WORDPRESS_DB_PASSWORD: examplepass
-      WORDPRESS_DB_NAME: exampledb
+      WORDPRESS_DB_HOST: scl-mysql
+      WORDPRESS_DB_NAME: scl
+      WORDPRESS_DB_USER: sclUser
+      WORDPRESS_DB_PASSWORD: 123123
+      WORDPRESS_DEBUG: 1
     volumes:
-      - wordpress:/var/www/html
-  db:
+      - scl-admin:/var/www/html
+    tmpfs:
+      - /tmp
+      - /run
+    depends_on:
+      - scl-mysql
+    networks:
+      - scl-cms-network
+    read_only: true
+  scl-mysql:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_DATABASE: exampledb
-      MYSQL_USER: exampleuser
-      MYSQL_PASSWORD: examplepass
+      MYSQL_DATABASE: scl
+      MYSQL_USER: sclUser
+      MYSQL_PASSWORD: 123123
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
-      - db:/var/lib/mysql
+      - scl-mysql:/var/lib/mysql
+    networks:
+      - scl-cms-network
 volumes:
-  wordpress:
-  db:
+  scl-admin:
+  scl-mysql:
+networks:
+  scl-cms-network: {}
