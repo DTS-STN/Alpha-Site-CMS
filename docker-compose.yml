@@ -1,37 +1,27 @@
 version: "3"
-
 services:
-  admin:
-    depends_on:
-      - postgres
+  wordpress:
+    image: wordpress
+    restart: always
     ports:
-      - 2222:5535
-    build:
-      context: .
-      dockerfile: Admin.Dockerfile
-      args:
-        - STRAPI_ADMIN_BACKEND_URL=${STRAPI_ADMIN_BACKEND_URL}
+      - 8080:80
     environment:
-      - NODE_ENV=development
-      - PORT=2222
-      - NOTIFY_BASE_API_URL=${NOTIFY_BASE_API_URL}
-      - NOTIFY_API_KEY=${NOTIFY_API_KEY}
-      - NOTIFY_EMAIL_TEMPLATE_ID=${NOTIFY_EMAIL_TEMPLATE_ID}
-      - DATABASE_CLIENT=postgres
-      - DATABASE_HOST=postgres
-      - DATABASE_PORT=5432
-      - DATABASE_NAME=strapi
-      - DATABASE_USERNAME=strapi
-      - DATABASE_PASSWORD=strapi
-      - STRAPI_ADMIN_JWT_SECRET=someJWTSecret
-      - JWT_SECRET=someJWTSecret
-  postgres:
-    image: postgres
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
     volumes:
-      - ./.tmp/postgres:/var/lib/postgresql/data
-    ports:
-      - 5433:5432
+      - wordpress:/var/www/html
+  db:
+    image: mysql:5.7
+    restart: always
     environment:
-      POSTGRES_USER: strapi
-      POSTGRES_PASSWORD: strapi
-      POSTGRES_DB: strapi
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  wordpress:
+  db:
