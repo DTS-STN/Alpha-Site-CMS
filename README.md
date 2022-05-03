@@ -57,3 +57,8 @@ Our integrated environments are maintained as Azure app services and thus the en
 `STORAGE_ACCOUNT_URL`: If using azure storage. The full url of the storage account\
 `STORAGE_ACCOUNT_CONTAINER`: If using azure storage. The blob container name\
 `STRAPI_ADMIN_JWT_SECRET`: Secret used to encode JWT tokens.
+
+
+### WordPress
+#### Localization
+Go to https://make.wordpress.org/polyglots/teams/ for a list of currently support language packs for the admin panel. From here, download the packs needed for the site into the /wp-content/translations folder.
