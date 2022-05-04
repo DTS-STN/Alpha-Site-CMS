@@ -15,8 +15,8 @@ function create_banners_post_type() {
   // CPT Options
       array(
           'labels' => array(
-              'name' => __( 'Banners' ),
-              'singular_name' => __( 'Banner', )
+              'name' => __( 'Banners', 'scl-content-types-plugin' ),
+              'singular_name' => __( 'Banner', 'scl-content-types-plugin' )
           ),
           'public' => true,
           'has_archive' => true,

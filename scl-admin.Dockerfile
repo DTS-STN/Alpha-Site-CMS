@@ -5,6 +5,7 @@ RUN set -eux; \
 	cp -s wp-config-docker.php wp-config.php
 
 # COPY custom-theme/ ./wp-content/themes/custom-theme/
+COPY .htaccess ./
 COPY wp-content/languages ./wp-content/languages
 COPY wp-content/plugins ./wp-content/plugins
 
