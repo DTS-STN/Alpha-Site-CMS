@@ -15,7 +15,7 @@
     "jest": "^27.4.7",
     "mkdirp": "^1.0.4",
     "rimraf": "^3.0.2",
-    "sqlite3": "^5.0.2",
+    "sqlite3": "^5.0.3",
     "supertest": "^6.2.2",
     "yarn-audit-fix": "^3.3.1",
     "zx": "^4.3.0"
