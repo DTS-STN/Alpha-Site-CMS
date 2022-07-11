@@ -17,3 +17,5 @@ variables:
   tag: 'ADO-$(Build.BuildId)'
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
+
+stages:
